@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --color-rn-yellow: #D0E206;
+  --color-rn-accent: #D0E206;
+  --color-rn-blue: #5A9CB5;
+  --color-rn-orange: #FACE68;
+  --color-rn-darkorange: #FAAC68;
+  --color-rn-dark-bg: #0f0f11;
+  --color-rn-card: #18181b;
+  --color-rn-border: #27272a;
+  
+  --animate-scroll-left: scroll-left 120s linear infinite;
+  --animate-scroll-right: scroll-right 120s linear infinite;
+
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #0f0f11;
+  --foreground: #ededed;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: #D0E206;
+  color: #000;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
