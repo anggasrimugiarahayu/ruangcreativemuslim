@@ -1,6 +1,7 @@
 
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Rocket, Star, ChevronLeft, ChevronRight, Lock, Zap, Smartphone, HelpCircle, Key, Check, BookOpen, Lightbulb, Map, User, Search, PlayCircle, DollarSign, PenTool, LayoutDashboard, Copy, UserCircle, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 
@@ -168,31 +169,31 @@ export default function Page() {
           <div id="hero-slider" className="flex w-full transition-transform duration-500 ease-out" style={{transform: 'translateX(0%)'}}>
             {/* Slide 1: Hero Image */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594516/Frame_90_siuhne.png" alt="Hero Image" className="w-full h-full object-cover" />
+              <Image priority width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594516/Frame_90_siuhne.png" alt="Hero Image" className="w-full h-full object-cover" />
             </div>
             {/* Slide 2: Feb */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_87_ramlga.png" alt="Screenshot Februari" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_87_ramlga.png" alt="Screenshot Februari" className="w-full h-full object-cover" />
             </div>
             {/* Slide 3: Mar */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_86_mqz5pa.png" alt="Screenshot Maret" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_86_mqz5pa.png" alt="Screenshot Maret" className="w-full h-full object-cover" />
             </div>
             {/* Slide 4: Apr */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_85_r93b9z.png" alt="Screenshot April" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_85_r93b9z.png" alt="Screenshot April" className="w-full h-full object-cover" />
             </div>
             {/* Slide 5: Mei */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594191/Frame_84_ddf2ev.png" alt="Screenshot Mei" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594191/Frame_84_ddf2ev.png" alt="Screenshot Mei" className="w-full h-full object-cover" />
             </div>
             {/* Slide 6: Jun */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_89_zlhea8.png" alt="Screenshot Juni" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_89_zlhea8.png" alt="Screenshot Juni" className="w-full h-full object-cover" />
             </div>
             {/* Slide 7: Jul */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_88_xxwua5.png" alt="Screenshot Juli" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_88_xxwua5.png" alt="Screenshot Juli" className="w-full h-full object-cover" />
             </div>
           </div>
           {/* Navigation Buttons */}
@@ -315,7 +316,7 @@ export default function Page() {
         {/* Media Mockup Cover Ebook */}
         <div className="relative w-full rounded-[16px] overflow-hidden bg-[#18181b] flex flex-col border border-[#27272a]/50 shadow-lg text-left mb-8">
           <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center">
-            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786599040/Frame_91_sifujb.png" alt="Cover Ebook Ruang Ngonten" className="w-full h-full object-cover" />
+            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786599040/Frame_91_sifujb.png" alt="Cover Ebook Ruang Ngonten" className="w-full h-full object-cover" />
           </div>
         </div>
         {/* APA ITU RUANG NGONTEN FACELESS? */}
@@ -472,7 +473,7 @@ export default function Page() {
         {/* Media Mockup 7 Fase */}
         <div className="relative w-full rounded-[16px] overflow-hidden bg-[#18181b] flex flex-col border border-[#27272a]/50 shadow-lg text-left mb-6">
           <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center">
-            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786600798/Frame_92_asjwai.png" alt="Visual 7 Fase Ngonten" className="w-full h-full object-cover" />
+            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786600798/Frame_92_asjwai.png" alt="Visual 7 Fase Ngonten" className="w-full h-full object-cover" />
           </div>
         </div>
         <div className="space-y-2 w-full" id="features-container">

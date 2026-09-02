@@ -1,6 +1,7 @@
 
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { 
     Smartphone, Lock, Zap, CheckCircle2, Check, XCircle, X, Gift, 
     Sliders, Link as LinkIcon, Mic, Video, ChevronDown, LayoutDashboard, 
@@ -290,7 +291,7 @@ export default function ToolsPage() {
 
                 {/*  Image Mockup  */}
                 <div className="relative w-full rounded-2xl overflow-hidden bg-[#18181b]">
-                    <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786615228/Frame_163_c4qwlu.png"
+                    <Image priority width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786615228/Frame_163_c4qwlu.png"
                         alt="Mockup Ruang Ngonten" className="w-full h-auto object-cover" />
                 </div>
 
@@ -390,7 +391,7 @@ export default function ToolsPage() {
 
                 {/*  Image Mockup Dashboard  */}
                 <div className="relative w-full rounded-2xl overflow-hidden bg-[#18181b] mb-8 sm:mb-10">
-                    <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1787134538/Frame_164_fqfjrv.png"
+                    <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1787134538/Frame_164_fqfjrv.png"
                         alt="Mockup Dashboard Ruang Ngonten" className="w-full h-auto object-cover" />
                 </div>
 
@@ -600,56 +601,56 @@ export default function ToolsPage() {
                         {/*  Slides  */}
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326542/ChatGPT_Image_Aug_10_2026_at_08_43_10_AM_jsx1tb.png"
-                                className="w-full h-full object-cover" />
+                            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326542/ChatGPT_Image_Aug_10_2026_at_08_43_10_AM_jsx1tb.png"
+                                className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
                                 1/7</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326493/ChatGPT_Image_Aug_10_2026_at_08_43_18_AM_oe2wxh.png"
-                                className="w-full h-full object-cover" />
+                            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326493/ChatGPT_Image_Aug_10_2026_at_08_43_18_AM_oe2wxh.png"
+                                className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
                                 2/7</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326435/ChatGPT_Image_Aug_10_2026_at_08_43_23_AM_rv8nwb.png"
-                                className="w-full h-full object-cover" />
+                            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326435/ChatGPT_Image_Aug_10_2026_at_08_43_23_AM_rv8nwb.png"
+                                className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
                                 3/7</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326446/ChatGPT_Image_Aug_10_2026_at_08_43_27_AM_we2bnx.png"
-                                className="w-full h-full object-cover" />
+                            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326446/ChatGPT_Image_Aug_10_2026_at_08_43_27_AM_we2bnx.png"
+                                className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
                                 4/7</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326446/ChatGPT_Image_Aug_10_2026_at_08_43_33_AM_knil1z.png"
-                                className="w-full h-full object-cover" />
+                            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326446/ChatGPT_Image_Aug_10_2026_at_08_43_33_AM_knil1z.png"
+                                className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
                                 5/7</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326437/ChatGPT_Image_Aug_10_2026_at_08_43_42_AM_iu1gth.png"
-                                className="w-full h-full object-cover" />
+                            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326437/ChatGPT_Image_Aug_10_2026_at_08_43_42_AM_iu1gth.png"
+                                className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
                                 6/7</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326436/ChatGPT_Image_Aug_10_2026_at_08_43_48_AM_qomhxv.png"
-                                className="w-full h-full object-cover" />
+                            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326436/ChatGPT_Image_Aug_10_2026_at_08_43_48_AM_qomhxv.png"
+                                className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
                                 7/7</div>
@@ -674,40 +675,40 @@ export default function ToolsPage() {
                             {/*  Items  */}
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326542/ChatGPT_Image_Aug_10_2026_at_08_43_10_AM_jsx1tb.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326542/ChatGPT_Image_Aug_10_2026_at_08_43_10_AM_jsx1tb.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Watercolor Storybook</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329168/ChatGPT_Image_Aug_10_2026_at_09_27_53_AM_s4ufnb.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329168/ChatGPT_Image_Aug_10_2026_at_09_27_53_AM_s4ufnb.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Watercolor Whimsical Doodle</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329581/ChatGPT_Image_Aug_10_2026_at_09_38_39_AM_c4s6er.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329581/ChatGPT_Image_Aug_10_2026_at_09_38_39_AM_c4s6er.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     3D Textile Storybook Art</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786330912/ChatGPT_Image_Aug_10_2026_at_10_00_13_AM_trj70f.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786330912/ChatGPT_Image_Aug_10_2026_at_10_00_13_AM_trj70f.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Colored Pencil Illustration</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786331571/ChatGPT_Image_Aug_10_2026_at_10_11_07_AM_ioyf8e.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786331571/ChatGPT_Image_Aug_10_2026_at_10_11_07_AM_ioyf8e.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Children's Book Illustration</div>
@@ -717,40 +718,40 @@ export default function ToolsPage() {
                         <div className="flex shrink-0 animate-scroll-left gap-4 pr-4">
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326542/ChatGPT_Image_Aug_10_2026_at_08_43_10_AM_jsx1tb.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326542/ChatGPT_Image_Aug_10_2026_at_08_43_10_AM_jsx1tb.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Watercolor Storybook</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329168/ChatGPT_Image_Aug_10_2026_at_09_27_53_AM_s4ufnb.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329168/ChatGPT_Image_Aug_10_2026_at_09_27_53_AM_s4ufnb.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Watercolor Whimsical Doodle</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329581/ChatGPT_Image_Aug_10_2026_at_09_38_39_AM_c4s6er.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329581/ChatGPT_Image_Aug_10_2026_at_09_38_39_AM_c4s6er.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     3D Textile Storybook Art</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786330912/ChatGPT_Image_Aug_10_2026_at_10_00_13_AM_trj70f.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786330912/ChatGPT_Image_Aug_10_2026_at_10_00_13_AM_trj70f.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Colored Pencil Illustration</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786331571/ChatGPT_Image_Aug_10_2026_at_10_11_07_AM_ioyf8e.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786331571/ChatGPT_Image_Aug_10_2026_at_10_11_07_AM_ioyf8e.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Children's Book Illustration</div>
@@ -764,40 +765,40 @@ export default function ToolsPage() {
                             {/*  Items  */}
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786332342/ChatGPT_Image_Aug_10_2026_at_10_21_38_AM_vtobjp.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786332342/ChatGPT_Image_Aug_10_2026_at_10_21_38_AM_vtobjp.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Cozy Storybook</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786333623/ChatGPT_Image_Aug_10_2026_at_10_46_22_AM_bn3ds0.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786333623/ChatGPT_Image_Aug_10_2026_at_10_46_22_AM_bn3ds0.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Editorial Storybook</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334169/ChatGPT_Image_Aug_10_2026_at_10_54_37_AM_qmvoyz.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334169/ChatGPT_Image_Aug_10_2026_at_10_54_37_AM_qmvoyz.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Cottagecore Storybook</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334905/ChatGPT_Image_Aug_10_2026_at_11_07_32_AM_arst0y.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334905/ChatGPT_Image_Aug_10_2026_at_11_07_32_AM_arst0y.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     High-Fidelity Islamic Comic</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786335476/ChatGPT_Image_Aug_10_2026_at_11_17_11_AM_pyp34z.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786335476/ChatGPT_Image_Aug_10_2026_at_11_17_11_AM_pyp34z.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Vintage Chalkboard</div>
@@ -807,40 +808,40 @@ export default function ToolsPage() {
                         <div className="flex shrink-0 animate-scroll-right gap-4 pr-4">
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786332342/ChatGPT_Image_Aug_10_2026_at_10_21_38_AM_vtobjp.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786332342/ChatGPT_Image_Aug_10_2026_at_10_21_38_AM_vtobjp.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Cozy Storybook</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786333623/ChatGPT_Image_Aug_10_2026_at_10_46_22_AM_bn3ds0.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786333623/ChatGPT_Image_Aug_10_2026_at_10_46_22_AM_bn3ds0.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Editorial Storybook</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334169/ChatGPT_Image_Aug_10_2026_at_10_54_37_AM_qmvoyz.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334169/ChatGPT_Image_Aug_10_2026_at_10_54_37_AM_qmvoyz.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Cottagecore Storybook</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334905/ChatGPT_Image_Aug_10_2026_at_11_07_32_AM_arst0y.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334905/ChatGPT_Image_Aug_10_2026_at_11_07_32_AM_arst0y.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     High-Fidelity Islamic Comic</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <img src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786335476/ChatGPT_Image_Aug_10_2026_at_11_17_11_AM_pyp34z.png"
-                                    className="w-full h-full object-cover" />
+                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786335476/ChatGPT_Image_Aug_10_2026_at_11_17_11_AM_pyp34z.png"
+                                    className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
                                     Vintage Chalkboard</div>
