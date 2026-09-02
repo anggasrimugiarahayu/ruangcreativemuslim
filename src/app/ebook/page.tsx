@@ -1297,8 +1297,9 @@ export default function Page() {
           </ul>
           {/* Button & Security Badges */}
           <div className="mt-6 flex flex-col items-center text-center w-full">
-            <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-full bg-rn-accent !text-black py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:bg-black hover:!text-white hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:bg-black active:!text-white active:shadow-none active:translate-x-[3px] active:translate-y-[3px] flex items-center justify-center mb-5 select-none">
-              AMBIL HARGA PROMO
+            <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-full bg-rn-accent !text-black py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:bg-black hover:!text-white hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:bg-black active:!text-white active:shadow-none active:translate-x-[3px] active:translate-y-[3px] flex items-center justify-center mb-5 select-none animate-heartbeat relative overflow-hidden group">
+              <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
+              <span className="relative z-20">AMBIL HARGA PROMO</span>
             </a>
             <div className="flex flex-row flex-nowrap items-center justify-center w-full text-[9px] sm:text-[11px] font-bold text-gray-500 font-body px-1 gap-2.5 sm:gap-3 whitespace-nowrap overflow-hidden">
               <div className="flex items-center gap-1.5 shrink-0"><i data-lucide="lock" className="w-3 h-3 text-gray-500 shrink-0" /><span>Pembayaran aman</span></div>
@@ -1409,8 +1410,9 @@ export default function Page() {
           Kamu sudah tahu ingin mulai ngonten. Yang tersisa cuma satu langkah: berhenti mulai dari nol dan mulai pakai sistem yang membantu kamu tahu harus bikin apa.
         </p>
         <div className="flex w-full sm:w-auto px-0 sm:px-4 justify-center">
-          <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-full sm:w-auto bg-white !text-black px-8 py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-white hover:bg-rn-accent hover:border-rn-accent hover:!text-black active:bg-rn-accent active:border-rn-accent active:!text-black transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#ffffff] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:shadow-none active:translate-x-[3px] active:translate-y-[3px] whitespace-nowrap flex items-center justify-center select-none">
-            MULAI NGONTEN SEKARANG
+          <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-full sm:w-auto bg-rn-accent !text-black px-8 py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black hover:bg-black hover:border-black hover:!text-white active:bg-black active:border-black active:!text-white transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:shadow-none active:translate-x-[3px] active:translate-y-[3px] whitespace-nowrap flex items-center justify-center select-none animate-heartbeat relative overflow-hidden group">
+            <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
+            <span className="relative z-20">MULAI NGONTEN SEKARANG</span>
           </a>
         </div>
       </section>
@@ -1431,9 +1433,10 @@ export default function Page() {
       <span>PAKET BASIC</span>
       <span>RP.99K</span>
     </a>
-    <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-1/2 bg-white !text-black px-1 py-2.5 rounded-[20px] font-bold text-[9px] min-[360px]:text-[10px] font-heading uppercase tracking-widest border-2 border-white hover:bg-rn-accent hover:border-rn-accent hover:!text-black active:bg-rn-accent active:border-rn-accent active:!text-black transition-all shadow-[3px_3px_0px_0px_#ffffff] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none active:translate-x-[3px] active:translate-y-[3px] active:shadow-none flex flex-col items-center justify-center text-center leading-tight select-none">
-      <span>PAKET LENGKAP</span>
-      <span>RP.149K</span>
+    <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-1/2 bg-rn-accent !text-black px-1 py-2.5 rounded-[20px] font-bold text-[9px] min-[360px]:text-[10px] font-heading uppercase tracking-widest border-2 border-black hover:bg-black hover:border-black hover:!text-white active:bg-black active:border-black active:!text-white transition-all shadow-[3px_3px_0px_0px_#000000] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none active:translate-x-[3px] active:translate-y-[3px] active:shadow-none flex flex-col items-center justify-center text-center leading-tight select-none animate-heartbeat relative overflow-hidden group">
+      <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
+      <span className="relative z-20">PAKET LENGKAP</span>
+      <span className="relative z-20">RP.149K</span>
     </a>
   </div>
   {/* Scripts */}
