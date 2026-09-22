@@ -181,171 +181,187 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(0 0) scale(3.2)">
+                      <g transform="translate(0 0) scale(2.0)">
                         <style>{`
-                          @keyframes e-step1 { 0%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 10%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
-                          @keyframes e-step2 { 0%, 25%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 35%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
-                          @keyframes e-step3 { 0%, 50%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 60%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
-                          @keyframes e-line1 { 0%, 15%, 90%, 100% { stroke-dashoffset: 1; opacity: 0; } 25%, 80% { stroke-dashoffset: 0; opacity: 1; } }
-                          @keyframes e-line2 { 0%, 40%, 90%, 100% { stroke-dashoffset: 1; opacity: 0; } 50%, 80% { stroke-dashoffset: 0; opacity: 1; } }
+                          @keyframes e-orbit { 0% { stroke-dashoffset: 60; } 100% { stroke-dashoffset: -60; } }
+                          @keyframes e-pulse { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.1); opacity: 1; } }
+                          @keyframes e-dot1 { 0%, 10% { opacity: 0; transform: translateX(-40px); } 20%, 80% { opacity: 1; transform: translateX(0); } 90%, 100% { opacity: 0; transform: translateX(0); } }
+                          @keyframes e-dot2 { 0%, 30% { opacity: 0; transform: translateX(0); } 40%, 80% { opacity: 1; transform: translateX(40px); } 90%, 100% { opacity: 0; transform: translateX(40px); } }
+                          @keyframes e-success { 0%, 50% { opacity: 0; transform: scale(0.5) translate(40px, 0); } 60%, 80% { opacity: 1; transform: scale(1) translate(40px, 0); } 90%, 100% { opacity: 0; transform: scale(0.5) translate(40px, 0); } }
                         `}</style>
 
-                        {/* Step 1: Digital Product */}
-                        <g
-                          style={{
-                            animation: "e-step1 6s infinite",
-                            transformOrigin: "-80px 0px",
-                          }}
-                        >
+                        {/* Connecting Lines */}
+                        <path
+                          d="M-40 0 L0 0 L40 0"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1"
+                          strokeOpacity="0.15"
+                          vectorEffect="non-scaling-stroke"
+                        ></path>
+
+                        {/* Node 1: Product */}
+                        <g transform="translate(-40, 0)">
                           <rect
-                            x="-95"
-                            y="-20"
-                            width="30"
-                            height="30"
-                            rx="4"
-                            fill="currentColor"
-                            fillOpacity="0.05"
+                            x="-12"
+                            y="-14"
+                            width="24"
+                            height="28"
+                            rx="3"
+                            fill="var(--card)"
                             stroke="currentColor"
-                            strokeOpacity="0.5"
-                            strokeWidth="2"
+                            strokeWidth="1"
+                            strokeOpacity="0.4"
+                            vectorEffect="non-scaling-stroke"
                           ></rect>
-                          <path
-                            d="M-95 -5 L-80 5 L-65 -5 M-80 5 L-80 20"
-                            stroke="currentColor"
-                            strokeOpacity="0.5"
-                            strokeWidth="2"
-                            fill="none"
-                          ></path>
                           <circle
-                            cx="-80"
+                            cx="0"
                             cy="-2"
-                            r="8"
-                            fill="var(--rn-accent)"
+                            r="4"
+                            fill="currentColor"
                             fillOpacity="0.2"
                           ></circle>
+                          <line
+                            x1="-5"
+                            y1="6"
+                            x2="5"
+                            y2="6"
+                            stroke="currentColor"
+                            strokeWidth="1"
+                            strokeOpacity="0.3"
+                            vectorEffect="non-scaling-stroke"
+                          ></line>
                           <text
-                            x="-80"
-                            y="25"
-                            fontSize="11"
-                            fontWeight="600"
+                            x="0"
+                            y="24"
+                            fontSize="7"
+                            fontWeight="400"
                             fill="currentColor"
+                            opacity="0.7"
                             textAnchor="middle"
                           >
                             Produk
                           </text>
                         </g>
 
-                        {/* Line 1 */}
-                        <line
-                          x1="-55"
-                          y1="-5"
-                          x2="-25"
-                          y2="-5"
-                          stroke="var(--rn-accent)"
-                          strokeWidth="3"
-                          strokeDasharray="1 1"
-                          pathLength="1"
-                          style={{ animation: "e-line1 6s infinite" }}
-                        ></line>
-
-                        {/* Step 2: Faceless Content */}
-                        <g
-                          style={{
-                            animation: "e-step2 6s infinite",
-                            transformOrigin: "0px 0px",
-                          }}
-                        >
+                        {/* Node 2: Faceless (Phone) */}
+                        <g transform="translate(0, 0)">
                           <rect
-                            x="-15"
-                            y="-30"
-                            width="30"
-                            height="45"
+                            x="-14"
+                            y="-20"
+                            width="28"
+                            height="40"
                             rx="4"
                             fill="var(--card)"
                             stroke="currentColor"
-                            strokeOpacity="0.8"
-                            strokeWidth="2"
+                            strokeWidth="1"
+                            strokeOpacity="0.4"
+                            vectorEffect="non-scaling-stroke"
                           ></rect>
                           <circle
                             cx="0"
-                            cy="-12"
+                            cy="0"
                             r="6"
                             fill="currentColor"
-                            fillOpacity="0.2"
+                            fillOpacity="0.1"
                           ></circle>
                           <path
-                            d="M-10 10 Q0 -2 10 10 Z"
-                            fill="currentColor"
-                            fillOpacity="0.2"
+                            d="M-8 0 Q0 -5 8 0 M-8 0 Q0 5 8 0"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1"
+                            strokeOpacity="0.5"
+                            vectorEffect="non-scaling-stroke"
                           ></path>
-                          <rect
-                            x="-8"
-                            y="-14"
-                            width="16"
-                            height="5"
-                            rx="2"
-                            fill="var(--rn-accent)"
-                          ></rect>{" "}
-                          {/* Faceless bar */}
+                          <path
+                            d="M-6 12 Q0 8 6 12"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1"
+                            strokeOpacity="0.3"
+                            vectorEffect="non-scaling-stroke"
+                          ></path>
                           <text
                             x="0"
                             y="32"
-                            fontSize="11"
-                            fontWeight="600"
+                            fontSize="7"
+                            fontWeight="400"
                             fill="currentColor"
+                            opacity="0.7"
                             textAnchor="middle"
                           >
                             Faceless
                           </text>
                         </g>
 
-                        {/* Line 2 */}
-                        <path
-                          d="M 25 -5 C 45 -5, 55 -25, 75 -25"
-                          fill="none"
-                          stroke="var(--rn-accent)"
-                          strokeWidth="3"
-                          strokeDasharray="1 1"
-                          pathLength="1"
-                          style={{ animation: "e-line2 6s infinite" }}
-                        ></path>
-
-                        {/* Step 3: Cuan */}
-                        <g
-                          style={{
-                            animation: "e-step3 6s infinite",
-                            transformOrigin: "85px -25px",
-                          }}
-                        >
+                        {/* Node 3: Cuan (Empty state) */}
+                        <g transform="translate(40, 0)">
                           <circle
-                            cx="85"
-                            cy="-25"
-                            r="20"
-                            fill="#10B981"
-                            fillOpacity="0.15"
-                            stroke="#10B981"
-                            strokeWidth="2"
+                            cx="0"
+                            cy="0"
+                            r="14"
+                            fill="var(--card)"
+                            stroke="currentColor"
+                            strokeWidth="1"
+                            strokeOpacity="0.2"
+                            vectorEffect="non-scaling-stroke"
+                            strokeDasharray="2 2"
                           ></circle>
                           <text
-                            x="85"
-                            y="-23"
-                            fontSize="22"
-                            fontWeight="bold"
-                            fill="#10B981"
-                            textAnchor="middle"
-                            dominantBaseline="central"
-                          >
-                            $
-                          </text>
-                          <text
-                            x="85"
-                            y="10"
-                            fontSize="12"
-                            fontWeight="bold"
-                            fill="#10B981"
+                            x="0"
+                            y="26"
+                            fontSize="7"
+                            fontWeight="400"
+                            fill="currentColor"
+                            opacity="0.7"
                             textAnchor="middle"
                           >
                             Cuan
+                          </text>
+                        </g>
+
+                        {/* Flow Animation */}
+                        <circle
+                          cx="-40"
+                          cy="0"
+                          r="2"
+                          fill="var(--rn-accent)"
+                          style={{ animation: "e-dot1 6s infinite" }}
+                        ></circle>
+                        <circle
+                          cx="0"
+                          cy="0"
+                          r="2"
+                          fill="#10B981"
+                          style={{ animation: "e-dot2 6s infinite" }}
+                        ></circle>
+
+                        {/* Success State on Node 3 */}
+                        <g
+                          style={{
+                            animation: "e-success 6s infinite",
+                            transformOrigin: "center",
+                          }}
+                        >
+                          <circle
+                            cx="0"
+                            cy="0"
+                            r="15"
+                            fill="#10B981"
+                            fillOpacity="0.1"
+                            stroke="#10B981"
+                            strokeWidth="1"
+                            vectorEffect="non-scaling-stroke"
+                          ></circle>
+                          <text
+                            x="0"
+                            y="4"
+                            fontSize="12"
+                            fontWeight="600"
+                            fill="#10B981"
+                            textAnchor="middle"
+                          >
+                            $
                           </text>
                         </g>
                       </g>
@@ -433,306 +449,309 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(0 0) scale(3.2)">
+                      <g transform="translate(0 0) scale(2.0)">
                         <style>{`
-                          @keyframes t-path { 0%, 10% { stroke-dashoffset: 1; opacity: 0; } 15%, 85% { stroke-dashoffset: 0; opacity: 1; } 95%, 100% { stroke-dashoffset: 1; opacity: 0; } }
-@keyframes t-finish { 0%, 80% { opacity: 0; transform: scale(0.5); } 85%, 95% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.5); } }
-@keyframes t-n1 { 0%, 18% { opacity: 0.2; transform: scale(0.8); } 23%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
-@keyframes t-n2 { 0%, 26% { opacity: 0.2; transform: scale(0.8); } 31%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
-@keyframes t-n3 { 0%, 34% { opacity: 0.2; transform: scale(0.8); } 39%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
-@keyframes t-n4 { 0%, 42% { opacity: 0.2; transform: scale(0.8); } 47%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
-@keyframes t-n5 { 0%, 50% { opacity: 0.2; transform: scale(0.8); } 55%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
-@keyframes t-n6 { 0%, 58% { opacity: 0.2; transform: scale(0.8); } 63%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
-@keyframes t-n7 { 0%, 66% { opacity: 0.2; transform: scale(0.8); } 71%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
-@keyframes t-n8 { 0%, 74% { opacity: 0.2; transform: scale(0.8); } 79%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
-
+                          @keyframes t-path { 0%, 20% { stroke-dashoffset: 200; } 80%, 100% { stroke-dashoffset: 0; } }
+                          @keyframes t-dot { 0%, 10% { opacity: 0; transform: scale(0); } 15%, 85% { opacity: 1; transform: scale(1); } 90%, 100% { opacity: 0; transform: scale(0); } }
                         `}</style>
 
-                        {/* Snake Route */}
+                        {/* Background Path (Dimmed) */}
                         <path
-                          d="M-85 -20 L75 -20 C95 -20, 95 25, 75 25 L-75 25"
+                          d="M-60 -15 L60 -15 A 15 15 0 0 1 75 0 A 15 15 0 0 1 60 15 L-60 15"
                           fill="none"
                           stroke="currentColor"
+                          strokeWidth="1"
                           strokeOpacity="0.1"
-                          strokeWidth="3"
+                          vectorEffect="non-scaling-stroke"
                         ></path>
 
-                        {/* Glowing Progress Line */}
+                        {/* Active Progress Path (Green) */}
                         <path
-                          d="M-85 -20 L75 -20 C95 -20, 95 25, 75 25 L-75 25"
+                          d="M-60 -15 L60 -15 A 15 15 0 0 1 75 0 A 15 15 0 0 1 60 15 L-60 15"
                           fill="none"
-                          stroke="var(--rn-accent)"
-                          strokeWidth="3"
-                          strokeDasharray="1 1"
-                          pathLength="1"
-                          style={{ animation: "t-path 8s infinite linear" }}
+                          stroke="#10B981"
+                          strokeWidth="1.5"
+                          vectorEffect="non-scaling-stroke"
+                          strokeDasharray="200"
+                          strokeDashoffset="200"
+                          style={{ animation: "t-path 8s infinite" }}
                         ></path>
 
-                        {/* Top Row: 1 to 4 */}
+                        {/* The 8 Nodes */}
                         <g>
-                          {/* 1. Blueprint */}
-                          <g transform="translate(-75, -20)">
+                          {/* Top Row: Niche, Bio, Ide, Script */}
+                          <g transform="translate(-60, -15)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="12"
+                              r="4"
                               fill="var(--card)"
                               stroke="currentColor"
+                              strokeWidth="1"
                               strokeOpacity="0.3"
-                              strokeWidth="2"
+                              vectorEffect="non-scaling-stroke"
                             ></circle>
                             <circle
                               cx="0"
                               cy="0"
-                              r="5"
-                              fill="currentColor"
-                              opacity="0.2"
-                              style={{ animation: "t-n1 8s infinite" }}
+                              r="2"
+                              fill="#10B981"
+                              style={{
+                                animation: "t-dot 8s infinite",
+                                animationDelay: "1.2s",
+                              }}
                             ></circle>
                             <text
                               x="0"
-                              y="-20"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="-10"
+                              fontSize="6"
+                              fontWeight="400"
                               fill="currentColor"
+                              opacity="0.7"
                               textAnchor="middle"
                             >
                               Niche
                             </text>
                           </g>
-                          {/* 2. Bio */}
-                          <g transform="translate(-25, -20)">
+
+                          <g transform="translate(-20, -15)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="12"
+                              r="4"
                               fill="var(--card)"
                               stroke="currentColor"
+                              strokeWidth="1"
                               strokeOpacity="0.3"
-                              strokeWidth="2"
+                              vectorEffect="non-scaling-stroke"
                             ></circle>
-                            <rect
-                              x="-5"
-                              y="-4"
-                              width="10"
-                              height="8"
-                              rx="1"
-                              fill="currentColor"
-                              opacity="0.2"
-                              style={{ animation: "t-n2 8s infinite" }}
-                            ></rect>
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="2"
+                              fill="#10B981"
+                              style={{
+                                animation: "t-dot 8s infinite",
+                                animationDelay: "2.0s",
+                              }}
+                            ></circle>
                             <text
                               x="0"
-                              y="-20"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="-10"
+                              fontSize="6"
+                              fontWeight="400"
                               fill="currentColor"
+                              opacity="0.7"
                               textAnchor="middle"
                             >
                               Bio
                             </text>
                           </g>
-                          {/* 3. Idea */}
-                          <g transform="translate(25, -20)">
+
+                          <g transform="translate(20, -15)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="12"
+                              r="4"
                               fill="var(--card)"
                               stroke="currentColor"
+                              strokeWidth="1"
                               strokeOpacity="0.3"
-                              strokeWidth="2"
+                              vectorEffect="non-scaling-stroke"
                             ></circle>
-                            <path
-                              d="M-3 -4 L0 -8 L3 -4 Z"
-                              fill="currentColor"
-                              opacity="0.2"
-                              style={{ animation: "t-n3 8s infinite" }}
-                            ></path>
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="2"
+                              fill="#10B981"
+                              style={{
+                                animation: "t-dot 8s infinite",
+                                animationDelay: "2.8s",
+                              }}
+                            ></circle>
                             <text
                               x="0"
-                              y="-20"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="-10"
+                              fontSize="6"
+                              fontWeight="400"
                               fill="currentColor"
+                              opacity="0.7"
                               textAnchor="middle"
                             >
                               Ide
                             </text>
                           </g>
-                          {/* 4. Script */}
-                          <g transform="translate(75, -20)">
+
+                          <g transform="translate(60, -15)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="12"
+                              r="4"
                               fill="var(--card)"
                               stroke="currentColor"
+                              strokeWidth="1"
                               strokeOpacity="0.3"
-                              strokeWidth="2"
+                              vectorEffect="non-scaling-stroke"
                             ></circle>
-                            <rect
-                              x="-4"
-                              y="-5"
-                              width="8"
-                              height="10"
-                              fill="currentColor"
-                              opacity="0.2"
-                              style={{ animation: "t-n4 8s infinite" }}
-                            ></rect>
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="2"
+                              fill="#10B981"
+                              style={{
+                                animation: "t-dot 8s infinite",
+                                animationDelay: "3.6s",
+                              }}
+                            ></circle>
                             <text
                               x="0"
-                              y="-20"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="-10"
+                              fontSize="6"
+                              fontWeight="400"
                               fill="currentColor"
+                              opacity="0.7"
                               textAnchor="middle"
                             >
                               Script
                             </text>
                           </g>
-                        </g>
 
-                        {/* Bottom Row: 5 to 8 (Right to Left) */}
-                        <g>
-                          {/* 5. ATM */}
-                          <g transform="translate(75, 25)">
+                          {/* Bottom Row: Jadwal (Left) <- Buku <- Slide <- ATM (Right) */}
+                          <g transform="translate(60, 15)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="12"
+                              r="4"
                               fill="var(--card)"
                               stroke="currentColor"
+                              strokeWidth="1"
                               strokeOpacity="0.3"
-                              strokeWidth="2"
+                              vectorEffect="non-scaling-stroke"
                             ></circle>
-                            <path
-                              d="M-4 -2 L4 -2 M-4 2 L4 2"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              opacity="0.2"
-                              style={{ animation: "t-n5 8s infinite" }}
-                            ></path>
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="2"
+                              fill="#10B981"
+                              style={{
+                                animation: "t-dot 8s infinite",
+                                animationDelay: "4.8s",
+                              }}
+                            ></circle>
                             <text
                               x="0"
-                              y="24"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="12"
+                              fontSize="6"
+                              fontWeight="400"
                               fill="currentColor"
+                              opacity="0.7"
                               textAnchor="middle"
                             >
                               ATM
                             </text>
                           </g>
-                          {/* 6. Carousel */}
-                          <g transform="translate(25, 25)">
+
+                          <g transform="translate(20, 15)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="12"
+                              r="4"
                               fill="var(--card)"
                               stroke="currentColor"
+                              strokeWidth="1"
                               strokeOpacity="0.3"
-                              strokeWidth="2"
+                              vectorEffect="non-scaling-stroke"
                             ></circle>
-                            <rect
-                              x="-5"
-                              y="-4"
-                              width="6"
-                              height="8"
-                              fill="currentColor"
-                              opacity="0.2"
-                              style={{ animation: "t-n6 8s infinite" }}
-                            ></rect>
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="2"
+                              fill="#10B981"
+                              style={{
+                                animation: "t-dot 8s infinite",
+                                animationDelay: "5.6s",
+                              }}
+                            ></circle>
                             <text
                               x="0"
-                              y="24"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="12"
+                              fontSize="6"
+                              fontWeight="400"
                               fill="currentColor"
+                              opacity="0.7"
                               textAnchor="middle"
                             >
                               Slide
                             </text>
                           </g>
-                          {/* 7. Ebook */}
-                          <g transform="translate(-25, 25)">
+
+                          <g transform="translate(-20, 15)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="12"
+                              r="4"
                               fill="var(--card)"
                               stroke="currentColor"
+                              strokeWidth="1"
                               strokeOpacity="0.3"
-                              strokeWidth="2"
+                              vectorEffect="non-scaling-stroke"
                             ></circle>
-                            <path
-                              d="M-4 -4 L0 -2 L4 -4 L4 4 L0 6 L-4 4 Z"
-                              fill="currentColor"
-                              opacity="0.2"
-                              style={{ animation: "t-n7 8s infinite" }}
-                            ></path>
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="2"
+                              fill="#10B981"
+                              style={{
+                                animation: "t-dot 8s infinite",
+                                animationDelay: "6.4s",
+                              }}
+                            ></circle>
                             <text
                               x="0"
-                              y="24"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="12"
+                              fontSize="6"
+                              fontWeight="400"
                               fill="currentColor"
+                              opacity="0.7"
                               textAnchor="middle"
                             >
                               Buku
                             </text>
                           </g>
-                          {/* 8. Schedule */}
-                          <g transform="translate(-75, 25)">
+
+                          <g transform="translate(-60, 15)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="12"
+                              r="4"
                               fill="var(--card)"
                               stroke="currentColor"
+                              strokeWidth="1"
                               strokeOpacity="0.3"
-                              strokeWidth="2"
+                              vectorEffect="non-scaling-stroke"
                             ></circle>
-                            <rect
-                              x="-5"
-                              y="-4"
-                              width="10"
-                              height="8"
-                              rx="1"
-                              fill="currentColor"
-                              opacity="0.2"
-                              style={{ animation: "t-n8 8s infinite" }}
-                            ></rect>
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="2"
+                              fill="#10B981"
+                              style={{
+                                animation: "t-dot 8s infinite",
+                                animationDelay: "7.2s",
+                              }}
+                            ></circle>
                             <text
                               x="0"
-                              y="24"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="12"
+                              fontSize="6"
+                              fontWeight="400"
                               fill="currentColor"
+                              opacity="0.7"
                               textAnchor="middle"
                             >
                               Jadwal
                             </text>
                           </g>
-                        </g>
-
-                        {/* Final Checkmark popping up over Schedule */}
-                        <g
-                          transform="translate(-75, 25)"
-                          style={{
-                            animation: "t-finish 8s infinite",
-                            transformOrigin: "0px 0px",
-                          }}
-                        >
-                          <circle cx="0" cy="0" r="16" fill="#10B981"></circle>
-                          <path
-                            d="M-6 0 L-2 4 L6 -4"
-                            fill="none"
-                            stroke="#FFFFFF"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                          ></path>
                         </g>
                       </g>
                     </g>
@@ -818,37 +837,14 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(0 0) scale(3.2)">
+                      <g transform="translate(0 0) scale(2.0)">
                         <style>{`
                           @keyframes l-step1 { 0%, 90%, 100% { opacity: 0; transform: scale(0.9); } 10%, 80% { opacity: 1; transform: scale(1); } }
                           @keyframes l-step2 { 0%, 25%, 90%, 100% { stroke-dashoffset: 1; opacity: 0; } 35%, 80% { stroke-dashoffset: 0; opacity: 1; } }
                           @keyframes l-step3 { 0%, 50%, 90%, 100% { opacity: 0; transform: scale(0.5); } 60%, 80% { opacity: 1; transform: scale(1); } }
                           @keyframes l-step4 { 0%, 65%, 90%, 100% { opacity: 0; transform: scale(0.5); } 75%, 85% { opacity: 1; transform: scale(1.2); } }
-                          @keyframes l-stair { 0%, 25%, 90%, 100% { opacity: 0; transform: translateY(10px); } 35%, 80% { opacity: 1; transform: translateY(0); } }
+                          @keyframes l-stair { 0%, 25%, 90%, 100% { opacity: 0; transform: translateY(5px); } 35%, 80% { opacity: 1; transform: translateY(0); } }
                         `}</style>
-
-                        {/* Step 1: Platform/Screen (Tighter Box) */}
-                        <rect
-                          x="-110"
-                          y="-60"
-                          width="220"
-                          height="120"
-                          rx="6"
-                          fill="currentColor"
-                          fillOpacity="0.02"
-                          stroke="currentColor"
-                          strokeOpacity="0.1"
-                          strokeWidth="2"
-                        ></rect>
-                        <rect
-                          x="-110"
-                          y="-60"
-                          width="220"
-                          height="15"
-                          rx="6"
-                          fill="currentColor"
-                          fillOpacity="0.05"
-                        ></rect>
 
                         {/* Step 2: Mentor & Student */}
                         <g
@@ -858,32 +854,24 @@ export default function Home() {
                           }}
                         >
                           {/* Mentor (Left) */}
-                          <g transform="translate(-60, 20)">
+                          <g transform="translate(-40, 20)">
                             <circle
                               cx="0"
-                              cy="-15"
-                              r="8"
+                              cy="-12"
+                              r="6"
                               fill="var(--rn-accent)"
                               fillOpacity="0.8"
                             ></circle>
                             <path
-                              d="M-12 10 Q0 -5 12 10 Z"
+                              d="M-10 8 Q0 -2 10 8 Z"
                               fill="var(--rn-accent)"
                               fillOpacity="0.5"
                             ></path>
-                            <line
-                              x1="8"
-                              y1="5"
-                              x2="25"
-                              y2="-5"
-                              stroke="var(--rn-accent)"
-                              strokeWidth="2"
-                            ></line>
                             <text
                               x="0"
-                              y="22"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="18"
+                              fontSize="7"
+                              fontWeight="400"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -892,24 +880,24 @@ export default function Home() {
                           </g>
 
                           {/* Student (Right) */}
-                          <g transform="translate(60, 20)">
+                          <g transform="translate(40, 20)">
                             <circle
                               cx="0"
-                              cy="-15"
-                              r="8"
+                              cy="-12"
+                              r="6"
                               fill="currentColor"
                               fillOpacity="0.5"
                             ></circle>
                             <path
-                              d="M-12 10 Q0 -5 12 10 Z"
+                              d="M-10 8 Q0 -2 10 8 Z"
                               fill="currentColor"
                               fillOpacity="0.2"
                             ></path>
                             <text
                               x="0"
-                              y="22"
-                              fontSize="10"
-                              fontWeight="600"
+                              y="18"
+                              fontSize="7"
+                              fontWeight="400"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -919,14 +907,15 @@ export default function Home() {
 
                           {/* Guidance Line */}
                           <path
-                            d="M-30 0 Q0 -15 30 0"
+                            d="M-20 0 Q0 -10 20 0"
                             fill="none"
                             stroke="var(--rn-accent)"
-                            strokeWidth="2"
+                            strokeWidth="1"
                             strokeDasharray="3 3"
+                            vectorEffect="non-scaling-stroke"
                           ></path>
                           <polygon
-                            points="25,-5 30,0 23,2"
+                            points="16,-5 20,0 15,3"
                             fill="var(--rn-accent)"
                           ></polygon>
                         </g>
@@ -934,27 +923,28 @@ export default function Home() {
                         {/* Step 3: Learning Path (Stairs) */}
                         <g>
                           <path
-                            d="M-20 30 L-20 15 L0 15 L0 -5 L20 -5 L20 -20 L40 -20"
+                            d="M-20 20 L-20 10 L0 10 L0 0 L20 0 L20 -10 L40 -10"
                             fill="none"
                             stroke="currentColor"
-                            strokeWidth="4"
-                            strokeOpacity="0.1"
-                            strokeDasharray="1 1"
+                            strokeWidth="1"
+                            strokeOpacity="0.2"
+                            strokeDasharray="2 2"
+                            vectorEffect="non-scaling-stroke"
                             pathLength="1"
                             style={{ animation: "l-step2 8s infinite" }}
                           ></path>
 
                           <circle
                             cx="-20"
-                            cy="30"
-                            r="3"
+                            cy="20"
+                            r="2"
                             fill="var(--rn-accent)"
                             style={{ animation: "l-stair 8s infinite" }}
                           ></circle>
                           <circle
                             cx="0"
-                            cy="15"
-                            r="3"
+                            cy="10"
+                            r="2"
                             fill="var(--rn-accent)"
                             style={{
                               animation: "l-stair 8s infinite",
@@ -963,8 +953,8 @@ export default function Home() {
                           ></circle>
                           <circle
                             cx="20"
-                            cy="-5"
-                            r="3"
+                            cy="0"
+                            r="2"
                             fill="var(--rn-accent)"
                             style={{
                               animation: "l-stair 8s infinite",
@@ -977,18 +967,18 @@ export default function Home() {
                         <g
                           style={{
                             animation: "l-step3 8s infinite",
-                            transformOrigin: "40px -25px",
+                            transformOrigin: "40px -15px",
                           }}
                         >
                           <circle
                             cx="40"
-                            cy="-25"
-                            r="12"
+                            cy="-15"
+                            r="10"
                             fill="#FACE68"
                             fillOpacity="0.2"
                           ></circle>
                           <path
-                            d="M36 -30 L44 -30 L41 -18 Q40 -12 39 -18 Z"
+                            d="M37 -20 L43 -20 L41 -10 Q40 -5 39 -10 Z"
                             fill="#FACE68"
                           ></path>
                         </g>
@@ -996,37 +986,37 @@ export default function Home() {
                         <g
                           style={{
                             animation: "l-step4 8s infinite",
-                            transformOrigin: "40px -30px",
+                            transformOrigin: "40px -25px",
                           }}
                         >
                           {/* Confetti / Stars */}
                           <circle
-                            cx="30"
-                            cy="-40"
-                            r="2"
+                            cx="33"
+                            cy="-30"
+                            r="1.5"
                             fill="#10B981"
                           ></circle>
                           <circle
-                            cx="50"
-                            cy="-35"
-                            r="3"
+                            cx="47"
+                            cy="-25"
+                            r="2"
                             fill="#FACE68"
                           ></circle>
                           <circle
-                            cx="35"
-                            cy="-45"
-                            r="2"
+                            cx="36"
+                            cy="-35"
+                            r="1.5"
                             fill="var(--rn-accent)"
                           ></circle>
                           <text
                             x="40"
-                            y="-50"
-                            fontSize="12"
-                            fontWeight="bold"
+                            y="-40"
+                            fontSize="8"
+                            fontWeight="600"
                             fill="#FACE68"
                             textAnchor="middle"
                           >
-                            LEVEL UP!
+                            LEVEL UP
                           </text>
                         </g>
                       </g>
