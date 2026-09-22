@@ -14,8 +14,8 @@ export async function GET() {
       },
       // Body URLSearchParams string format
       body: 'username_or_url=ruangcreativemuslim',
-      // Menggunakan ISR: cache akan direvalidasi setiap 3600 detik (1 jam)
-      next: { revalidate: 3600 }
+      // Menggunakan ISR: cache akan direvalidasi setiap 14400 detik (4 jam)
+      next: { revalidate: 14400 }
     };
 
     const response = await fetch(url, options);
