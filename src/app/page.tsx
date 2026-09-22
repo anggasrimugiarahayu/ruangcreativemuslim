@@ -182,46 +182,49 @@ export default function Home() {
                     </g>
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
-                        <g className="sc-rise" style={{ animationDelay: "1.8s" }}>
-                          {/* Tablet/Book Background */}
-                          <rect x="-180" y="-140" width="360" height="280" rx="20" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.7" strokeWidth="5"></rect>
+                        <g className="sc-rise" style={{ animationDelay: "0.2s" }}>
+                          {/* Book/Tablet Background */}
+                          <path d="M-180 -120 L0 -100 L180 -120 L180 140 L0 160 L-180 140 Z" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeOpacity="0.2" strokeWidth="2"></path>
+                          <line x1="0" y1="-100" x2="0" y2="160" stroke="currentColor" strokeOpacity="0.2" strokeWidth="2"></line>
                           
-                          {/* Faceless Creator Silhouette */}
-                          <g className="sc-pop" style={{ animationDelay: "2.1s" }}>
-                            {/* Body */}
-                            <path d="M-130 100 Q-90 0 -50 100 Z" fill="currentColor" fillOpacity="0.3"></path>
-                            {/* Head with no face */}
-                            <circle cx="-90" cy="0" r="30" fill="currentColor" fillOpacity="0.4"></circle>
-                            {/* Mask / Sunglasses representing faceless */}
-                            <rect x="-110" y="-5" width="40" height="10" rx="5" fill="var(--card)"></rect>
-                          </g>
-
-                          {/* "No Camera" Symbol */}
-                          <g className="sc-pop" style={{ animationDelay: "2.5s" }} transform="translate(-150 -80)">
-                            <circle cx="0" cy="0" r="25" fill="none" stroke="currentColor" strokeOpacity="0.6" strokeWidth="4"></circle>
-                            <rect x="-12" y="-8" width="24" height="16" rx="3" fill="none" stroke="currentColor" strokeOpacity="0.6" strokeWidth="3"></rect>
-                            <circle cx="0" cy="0" r="4" fill="currentColor" fillOpacity="0.6"></circle>
-                            <line x1="-18" y1="-18" x2="18" y2="18" stroke="currentColor" strokeOpacity="0.6" strokeWidth="4"></line>
-                          </g>
-                          
-                          {/* Rising Cuan/Profit Chart */}
-                          <g className="sc-rise" style={{ animationDelay: "3.2s" }}>
-                            <polyline points="10,60 50,30 90,50 140,-20" fill="none" stroke="currentColor" strokeOpacity="0.8" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" className="sc-draw" style={{ animationDelay: "3.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></polyline>
-                            <circle cx="10" cy="60" r="6" fill="currentColor" className="sc-pop" style={{ animationDelay: "3.6s" }}></circle>
-                            <circle cx="50" cy="30" r="6" fill="currentColor" className="sc-pop" style={{ animationDelay: "3.7s" }}></circle>
-                            <circle cx="90" cy="50" r="6" fill="currentColor" className="sc-pop" style={{ animationDelay: "3.8s" }}></circle>
-                            <circle cx="140" cy="-20" r="8" fill="#FACE68" className="sc-pop" style={{ animationDelay: "3.9s" }}></circle>
+                          {/* Left Side: Faceless Strategy */}
+                          <g transform="translate(-90, 20)">
+                            {/* Strategy Lines connecting to right */}
+                            <path d="M40 -40 Q90 -80 180 -30 T250 -70" fill="none" stroke="var(--rn-accent)" strokeOpacity="0.6" strokeWidth="3" className="sc-draw" style={{ animationDelay: "1.5s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
+                            <path d="M40 0 Q90 20 180 50" fill="none" stroke="var(--rn-accent)" strokeOpacity="0.4" strokeWidth="2" className="sc-draw" style={{ animationDelay: "1.8s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
                             
-                            {/* Dollar/Coin icon at the peak */}
-                            <g className="sc-pop" style={{ animationDelay: "4.1s" }} transform="translate(140 -50)">
-                               <circle cx="0" cy="0" r="16" fill="#FACE68" fillOpacity="0.2" stroke="#FACE68" strokeWidth="3"></circle>
-                               <text x="0" y="0" fontSize="18" fontWeight="bold" fill="#FACE68" textAnchor="middle" dominantBaseline="central">$</text>
+                            {/* Faceless Silhouette */}
+                            <g className="sc-pop" style={{ animationDelay: "0.5s" }}>
+                              <path d="M-40 60 Q0 -20 40 60 Z" fill="currentColor" fillOpacity="0.2"></path>
+                              <circle cx="0" cy="-30" r="25" fill="currentColor" fillOpacity="0.3"></circle>
+                              {/* Mask */}
+                              <rect x="-20" y="-35" width="40" height="12" rx="4" fill="var(--card)"></rect>
+                            </g>
+
+                            {/* Crossed Camera Icon (Faceless) */}
+                            <g className="sc-pop" style={{ animationDelay: "1s" }} transform="translate(-40 -70)">
+                              <circle cx="0" cy="0" r="22" fill="var(--card)" stroke="currentColor" strokeOpacity="0.8" strokeWidth="3"></circle>
+                              <rect x="-10" y="-7" width="20" height="14" rx="2" fill="none" stroke="currentColor" strokeOpacity="0.8" strokeWidth="2"></rect>
+                              <circle cx="0" cy="0" r="4" fill="currentColor" fillOpacity="0.8"></circle>
+                              {/* Red Slash */}
+                              <line x1="-14" y1="-14" x2="14" y2="14" stroke="#ff4444" strokeWidth="3" strokeLinecap="round"></line>
                             </g>
                           </g>
-
-                          {/* Strategy / Checklist Lines */}
-                          <line x1="10" y1="90" x2="120" y2="90" strokeWidth="6" strokeOpacity="0.4" className="sc-draw" style={{ animationDelay: "2.3s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></line>
-                          <line x1="10" y1="110" x2="80" y2="110" strokeWidth="6" strokeOpacity="0.4" className="sc-draw" style={{ animationDelay: "2.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></line>
+                          
+                          {/* Right Side: Cuan (Money) Chart */}
+                          <g transform="translate(40, 60)">
+                            {/* Chart Bars */}
+                            <rect x="0" y="0" width="16" height="30" rx="4" fill="currentColor" fillOpacity="0.4" className="sc-rise" style={{ animationDelay: "2s" }}></rect>
+                            <rect x="30" y="-20" width="16" height="50" rx="4" fill="currentColor" fillOpacity="0.6" className="sc-rise" style={{ animationDelay: "2.2s" }}></rect>
+                            <rect x="60" y="-50" width="16" height="80" rx="4" fill="currentColor" fillOpacity="0.8" className="sc-rise" style={{ animationDelay: "2.4s" }}></rect>
+                            <rect x="90" y="-90" width="16" height="120" rx="4" fill="var(--rn-accent)" className="sc-rise" style={{ animationDelay: "2.6s" }}></rect>
+                            
+                            {/* Money Symbol at peak */}
+                            <g className="sc-pop" style={{ animationDelay: "3s" }} transform="translate(98 -120)">
+                               <rect x="-16" y="-12" width="32" height="24" rx="4" fill="#10B981" fillOpacity="0.2" stroke="#10B981" strokeWidth="2"></rect>
+                               <text x="0" y="1" fontSize="16" fontWeight="bold" fill="#10B981" textAnchor="middle" dominantBaseline="central">$</text>
+                            </g>
+                          </g>
                         </g>
                       </g>
 </g>
@@ -310,39 +313,88 @@ export default function Home() {
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
                         <g className="sc-rise" style={{ animationDelay: "0.1s" }}>
-                          <rect x="-240" y="-120" width="480" height="240" rx="20" fill="currentColor" fillOpacity="0.04" strokeOpacity="0.7" strokeWidth="5"></rect>
-                          
-                          {/* 8 AI Systems orbiting a central Core */}
+                          <rect x="-240" y="-120" width="480" height="240" rx="16" fill="currentColor" fillOpacity="0.03" strokeOpacity="0.2" strokeWidth="2"></rect>
                           
                           {/* Central AI Brain/Core */}
-                          <g className="sc-pop" style={{ animationDelay: "0.5s" }} transform="translate(0 0)">
-                            <rect x="-30" y="-30" width="60" height="60" rx="15" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.9" strokeWidth="4"></rect>
-                            <text x="0" y="0" fontSize="24" fontWeight="800" fill="currentColor" textAnchor="middle" dominantBaseline="central">AI</text>
-                            {/* Pulsing ring */}
-                            <circle cx="0" cy="0" r="45" fill="none" stroke="currentColor" strokeOpacity="0.3" strokeWidth="2" className="sc-ring"></circle>
+                          <g className="sc-pop" style={{ animationDelay: "0.5s" }}>
+                            <rect x="-30" y="-30" width="60" height="60" rx="12" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.8" strokeWidth="3"></rect>
+                            <text x="0" y="2" fontSize="22" fontWeight="900" fill="currentColor" textAnchor="middle" dominantBaseline="central">AI</text>
+                            <circle cx="0" cy="0" r="45" fill="none" stroke="var(--rn-accent)" strokeOpacity="0.4" strokeWidth="2" className="sc-ring"></circle>
                           </g>
 
-                          {/* Orbit paths */}
-                          <circle cx="0" cy="0" r="90" fill="none" stroke="currentColor" strokeOpacity="0.1" strokeWidth="2" strokeDasharray="10 10"></circle>
+                          {/* Orbit Path */}
+                          <circle cx="0" cy="0" r="90" fill="none" stroke="currentColor" strokeOpacity="0.1" strokeWidth="2" strokeDasharray="6 6"></circle>
                           
-                          {/* 8 System Nodes */}
-                          <g className="sc-pop" style={{ animationDelay: "0.8s" }} transform="translate(0 -90)"><circle cx="0" cy="0" r="12" fill="#D0E206" fillOpacity="0.8"></circle></g>
-                          <g className="sc-pop" style={{ animationDelay: "1.0s" }} transform="translate(63 -63)"><circle cx="0" cy="0" r="10" fill="currentColor" fillOpacity="0.4"></circle></g>
-                          <g className="sc-pop" style={{ animationDelay: "1.2s" }} transform="translate(90 0)"><circle cx="0" cy="0" r="14" fill="#FACE68" fillOpacity="0.8"></circle></g>
-                          <g className="sc-pop" style={{ animationDelay: "1.4s" }} transform="translate(63 63)"><circle cx="0" cy="0" r="8" fill="currentColor" fillOpacity="0.4"></circle></g>
-                          <g className="sc-pop" style={{ animationDelay: "1.6s" }} transform="translate(0 90)"><circle cx="0" cy="0" r="12" fill="#5A9CB5" fillOpacity="0.8"></circle></g>
-                          <g className="sc-pop" style={{ animationDelay: "1.8s" }} transform="translate(-63 63)"><circle cx="0" cy="0" r="10" fill="currentColor" fillOpacity="0.4"></circle></g>
-                          <g className="sc-pop" style={{ animationDelay: "2.0s" }} transform="translate(-90 0)"><circle cx="0" cy="0" r="14" fill="currentColor" fillOpacity="0.6"></circle></g>
-                          <g className="sc-pop" style={{ animationDelay: "2.2s" }} transform="translate(-63 -63)"><circle cx="0" cy="0" r="8" fill="currentColor" fillOpacity="0.4"></circle></g>
+                          {/* The 8 Specific AI Systems */}
+                          {/* 1. Master Blueprint (Top) */}
+                          <g className="sc-pop" style={{ animationDelay: "0.8s" }} transform="translate(0 -90)">
+                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="2"></circle>
+                            <rect x="-6" y="-6" width="5" height="5" rx="1" fill="var(--rn-accent)"></rect>
+                            <rect x="1" y="-6" width="5" height="5" rx="1" fill="var(--rn-accent)"></rect>
+                            <rect x="-6" y="1" width="12" height="5" rx="1" fill="var(--rn-accent)"></rect>
+                          </g>
 
-                          {/* "Bingung (messy)" -> "Eksekusi (structured)" Workflow Line */}
-                          {/* Messy scribble on left */}
-                          <path d="M-200,20 Q-180,60 -170,0 T-150,40 T-130,-10 T-110,20" fill="none" stroke="currentColor" strokeOpacity="0.3" strokeWidth="4" className="sc-draw" style={{ animationDelay: "2.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></path>
+                          {/* 2. Bio Builder (Top Right) */}
+                          <g className="sc-pop" style={{ animationDelay: "1.0s" }} transform="translate(63 -63)">
+                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="currentColor" strokeWidth="2"></circle>
+                            <circle cx="0" cy="-3" r="3" fill="currentColor"></circle>
+                            <path d="M-6 6 Q0 2 6 6" fill="none" stroke="currentColor" strokeWidth="2"></path>
+                          </g>
+
+                          {/* 3. Idea Rooms (Right) */}
+                          <g className="sc-pop" style={{ animationDelay: "1.2s" }} transform="translate(90 0)">
+                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="2"></circle>
+                            <path d="M-4 0 Q0 -6 4 0 L2 4 L-2 4 Z" fill="var(--rn-accent)"></path>
+                          </g>
+
+                          {/* 4. Script Builder (Bottom Right) */}
+                          <g className="sc-pop" style={{ animationDelay: "1.4s" }} transform="translate(63 63)">
+                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="currentColor" strokeWidth="2"></circle>
+                            <rect x="-5" y="-6" width="10" height="12" rx="1" fill="none" stroke="currentColor" strokeWidth="2"></rect>
+                            <line x1="-2" y1="-2" x2="2" y2="-2" stroke="currentColor" strokeWidth="2"></line>
+                          </g>
+
+                          {/* 5. ATM Content Builder (Bottom) */}
+                          <g className="sc-pop" style={{ animationDelay: "1.6s" }} transform="translate(0 90)">
+                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="2"></circle>
+                            <rect x="-6" y="-4" width="8" height="8" rx="1" fill="none" stroke="var(--rn-accent)" strokeWidth="2"></rect>
+                            <rect x="-2" y="-8" width="8" height="8" rx="1" fill="none" stroke="var(--rn-accent)" strokeWidth="2"></rect>
+                          </g>
+
+                          {/* 6. Carousel Prompt Builder (Bottom Left) */}
+                          <g className="sc-pop" style={{ animationDelay: "1.8s" }} transform="translate(-63 63)">
+                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="currentColor" strokeWidth="2"></circle>
+                            <rect x="-7" y="-5" width="14" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="2"></rect>
+                            <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
+                          </g>
+
+                          {/* 7. Ebook Prompt Builder (Left) */}
+                          <g className="sc-pop" style={{ animationDelay: "2.0s" }} transform="translate(-90 0)">
+                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="2"></circle>
+                            <path d="M-6 -6 L0 -4 L6 -6 L6 6 L0 8 L-6 6 Z" fill="none" stroke="var(--rn-accent)" strokeWidth="2"></path>
+                            <line x1="0" y1="-4" x2="0" y2="8" stroke="var(--rn-accent)" strokeWidth="2"></line>
+                          </g>
+
+                          {/* 8. Content Calendar (Top Left) */}
+                          <g className="sc-pop" style={{ animationDelay: "2.2s" }} transform="translate(-63 -63)">
+                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="currentColor" strokeWidth="2"></circle>
+                            <rect x="-6" y="-5" width="12" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="2"></rect>
+                            <line x1="-6" y1="-1" x2="6" y2="-1" stroke="currentColor" strokeWidth="2"></line>
+                          </g>
+
+                          {/* Workflow Line: Bingung -> Eksekusi */}
+                          {/* Messy Line (Bingung) */}
+                          <path d="M-220 50 Q-180 120 -150 40 T-100 80 T-50 40" fill="none" stroke="currentColor" strokeOpacity="0.4" strokeWidth="4" className="sc-draw" style={{ animationDelay: "2.5s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
+                          <circle cx="-220" cy="50" r="6" fill="currentColor" fillOpacity="0.4" className="sc-pop" style={{ animationDelay: "2.4s" }}></circle>
+
+                          {/* Structured Line (Eksekusi) */}
+                          <line x1="50" y1="40" x2="160" y2="40" stroke="var(--rn-accent)" strokeWidth="5" className="sc-draw" style={{ animationDelay: "3.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
                           
-                          {/* Straight execution line on right */}
-                          <line x1="120" y1="20" x2="210" y2="20" strokeWidth="6" strokeOpacity="0.8" className="sc-draw" style={{ animationDelay: "3.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></line>
-                          {/* Checkmark */}
-                          <path d="M190,10 L200,25 L220,-5" fill="none" stroke="#D0E206" strokeOpacity="1" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" className="sc-draw" style={{ animationDelay: "4s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></path>
+                          {/* Checkmark Icon */}
+                          <g className="sc-pop" style={{ animationDelay: "3.7s" }} transform="translate(180 40)">
+                             <circle cx="0" cy="0" r="20" fill="var(--rn-accent)" fillOpacity="0.2" stroke="var(--rn-accent)" strokeWidth="3"></circle>
+                             <path d="M-8 0 L-2 6 L10 -6" fill="none" stroke="var(--rn-accent)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"></path>
+                          </g>
                         </g>
                       </g>
 </g>
@@ -431,47 +483,54 @@ export default function Home() {
                       <g transform="translate(-12 0)">
                         <g className="sc-rise" style={{ animationDelay: "0.1s" }}>
                           {/* Platform Canvas */}
-                          <rect x="-220" y="-120" width="440" height="240" rx="16" fill="currentColor" fillOpacity="0.04" strokeOpacity="0.7" strokeWidth="5"></rect>
+                          <rect x="-220" y="-120" width="440" height="240" rx="12" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeOpacity="0.2" strokeWidth="2"></rect>
+                          {/* Browser Toolbar */}
+                          <line x1="-220" y1="-90" x2="220" y2="-90" stroke="currentColor" strokeOpacity="0.2" strokeWidth="2"></line>
+                          <circle cx="-190" cy="-105" r="4" fill="currentColor" fillOpacity="0.4"></circle>
+                          <circle cx="-175" cy="-105" r="4" fill="currentColor" fillOpacity="0.4"></circle>
+                          <circle cx="-160" cy="-105" r="4" fill="currentColor" fillOpacity="0.4"></circle>
+
+                          {/* Central Play Button */}
+                          <g className="sc-pop" style={{ animationDelay: "0.8s" }} transform="translate(0 15)">
+                            <circle cx="0" cy="0" r="40" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.8" strokeWidth="3"></circle>
+                            <path d="M-8 -12 L12 0 L-8 12 Z" fill="currentColor"></path>
+                            {/* Circular Progress Bar loading around play button */}
+                            <path d="M0 -50 A50 50 0 1 1 -50 0" fill="none" stroke="var(--rn-accent)" strokeWidth="6" strokeLinecap="round" className="sc-draw" style={{ animationDelay: "1.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
+                          </g>
+
+                          {/* Gamification Elements */}
+                          {/* Trophy/Badge (Eksklusif) */}
+                          <g className="sc-rise" style={{ animationDelay: "2s" }} transform="translate(130 -40)">
+                            <path d="M-15 -10 L15 -10 L10 10 Q0 20 -10 10 Z" fill="#FACE68"></path>
+                            <rect x="-5" y="10" width="10" height="10" fill="#FACE68"></rect>
+                            <line x1="-15" y1="20" x2="15" y2="20" stroke="#FACE68" strokeWidth="4" strokeLinecap="round"></line>
+                            {/* Trophy Handles */}
+                            <path d="M-15 -5 A10 10 0 0 0 -10 10" fill="none" stroke="#FACE68" strokeWidth="3"></path>
+                            <path d="M15 -5 A10 10 0 0 1 10 10" fill="none" stroke="#FACE68" strokeWidth="3"></path>
+                            {/* Star pop inside trophy effect */}
+                            <g className="sc-pop" style={{ animationDelay: "2.5s" }}>
+                               <path d="M0 -25 L2 -20 L7 -20 L3 -16 L5 -11 L0 -14 L-5 -11 L-3 -16 L-7 -20 L-2 -20 Z" fill="#fff"></path>
+                            </g>
+                          </g>
+
+                          {/* Graduation Cap (Belajar) */}
+                          <g className="sc-rise" style={{ animationDelay: "2.2s" }} transform="translate(-130 -10)">
+                             <path d="M-30 0 L0 -15 L30 0 L0 15 Z" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"></path>
+                             <path d="M-20 10 L-20 25 Q0 35 20 25 L20 10" fill="none" stroke="currentColor" strokeWidth="3"></path>
+                             <line x1="25" y1="5" x2="25" y2="20" stroke="currentColor" strokeWidth="3"></line>
+                             <circle cx="25" cy="23" r="4" fill="currentColor"></circle>
+                          </g>
                           
-                          {/* Fun Interactive Elements */}
-                          {/* Star 1 */}
-                          <g className="sc-pop" style={{ animationDelay: "1.5s" }} transform="translate(-180 -80)">
-                            <path d="M0 -15 L4 -4 L15 -4 L6 3 L10 14 L0 7 L-10 14 L-6 3 L-15 -4 L-4 -4 Z" fill="#FACE68"></path>
+                          {/* Joyful Stars (Asik & Menyenangkan) */}
+                          <g className="sc-pop" style={{ animationDelay: "2.6s" }} transform="translate(-160 -50) scale(1.2)">
+                            <path d="M0 -10 L2 -4 L8 -4 L3 1 L5 7 L0 4 L-5 7 L-3 1 L-8 -4 L-2 -4 Z" fill="var(--rn-accent)"></path>
                           </g>
-                          {/* Star 2 */}
-                          <g className="sc-pop" style={{ animationDelay: "2.2s" }} transform="translate(180 -60) scale(0.8)">
-                            <path d="M0 -15 L4 -4 L15 -4 L6 3 L10 14 L0 7 L-10 14 L-6 3 L-15 -4 L-4 -4 Z" fill="#D0E206"></path>
+                          <g className="sc-pop" style={{ animationDelay: "2.8s" }} transform="translate(160 50) scale(0.8)">
+                            <path d="M0 -10 L2 -4 L8 -4 L3 1 L5 7 L0 4 L-5 7 L-3 1 L-8 -4 L-2 -4 Z" fill="currentColor" fillOpacity="0.6"></path>
                           </g>
-
-                          {/* Smiling Face / Engagement Badge */}
-                          <g className="sc-ghost" style={{ animationDelay: "3s" }} transform="translate(-150 50)">
-                            <circle cx="0" cy="0" r="30" fill="var(--card)" stroke="currentColor" strokeOpacity="0.6" strokeWidth="4"></circle>
-                            <circle cx="-10" cy="-5" r="4" fill="currentColor"></circle>
-                            <circle cx="10" cy="-5" r="4" fill="currentColor"></circle>
-                            <path d="M-15 10 Q0 25 15 10" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round"></path>
+                          <g className="sc-ghost" style={{ animationDelay: "3s" }} transform="translate(-80 70) scale(0.6)">
+                            <path d="M0 -10 L2 -4 L8 -4 L3 1 L5 7 L0 4 L-5 7 L-3 1 L-8 -4 L-2 -4 Z" fill="var(--rn-accent)"></path>
                           </g>
-
-                          {/* Graduation Cap / Learning Icon */}
-                          <g className="sc-ghost" style={{ animationDelay: "2s" }} transform="translate(150 40)">
-                             <path d="M-40 0 L0 -20 L40 0 L0 20 Z" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="4"></path>
-                             <path d="M-25 12 L-25 30 Q0 45 25 30 L25 12" fill="none" stroke="currentColor" strokeWidth="4"></path>
-                             <line x1="35" y1="5" x2="35" y2="25" stroke="currentColor" strokeWidth="4"></line>
-                             <circle cx="35" cy="30" r="5" fill="currentColor"></circle>
-                          </g>
-                        </g>
-                        
-                        {/* Video Player Center Play Button (Fun & Exclusive) */}
-                        <g className="sc-pop" style={{ animationDelay: "0.8s" }}>
-                          <circle cx="0" cy="0" r="45" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.9" strokeWidth="5"></circle>
-                          <circle cx="0" cy="0" r="60" fill="none" stroke="currentColor" strokeOpacity="0.3" strokeWidth="2" className="sc-ring"></circle>
-                          <path d="M-10 -15 L15 0 L-10 15 Z" fill="currentColor" fillOpacity="1" strokeLinejoin="round" strokeWidth="3"></path>
-                        </g>
-
-                        {/* Progress Bar (Eksklusif Platform) */}
-                        <g className="sc-rise" style={{ animationDelay: "1.2s" }}>
-                          <line x1="-100" y1="80" x2="100" y2="80" strokeWidth="8" strokeOpacity="0.2" strokeLinecap="round"></line>
-                          <line x1="-100" y1="80" x2="20" y2="80" strokeWidth="8" strokeOpacity="0.9" strokeLinecap="round" className="sc-draw" style={{ animationDelay: "1.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></line>
-                          <circle cx="20" cy="80" r="8" fill="#D0E206" className="sc-pop" style={{ animationDelay: "1.8s" }}></circle>
                         </g>
                       </g>
 </g>
