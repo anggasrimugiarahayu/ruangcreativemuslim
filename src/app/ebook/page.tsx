@@ -12,7 +12,7 @@ export default function Page() {
     let currentSlide = 0;
     const totalSlides = 7; 
     
-    ;(window as any).updateSlider = function() {
+    ;window.updateSlider = function() {
         const slider = document.getElementById('hero-slider');
         const dots = document.querySelectorAll('.slide-dot');
         if(!slider) return;
@@ -30,18 +30,18 @@ export default function Page() {
         });
     }
     
-    ;(window as any).nextSlide = function() {
+    ;window.nextSlide = function() {
         currentSlide = (currentSlide + 1) % totalSlides;
-        (window as any).updateSlider();
+        window.updateSlider?.();
     }
     
-    ;(window as any).prevSlide = function() {
+    ;window.prevSlide = function() {
         currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        (window as any).updateSlider();
+        window.updateSlider?.();
     }
 
     // FEATURE ACCORDION LOGIC
-    ;(window as any).toggleFeature = function(index: any) {
+    ;window.toggleFeature = function(index: number) {
         const content = document.getElementById('feat-content-' + index);
         const icon = document.getElementById('feat-icon-' + index);
         if(!content) return;
@@ -64,7 +64,7 @@ export default function Page() {
     }
 
     // FAQ ACCORDION LOGIC
-    ;(window as any).toggleFaq = function(index: any) {
+    ;window.toggleFaq = function(index: number) {
         const content = document.getElementById('faq-content-' + index);
         const icon = document.getElementById('faq-icon-' + index);
         if(!content) return;
@@ -197,10 +197,10 @@ export default function Page() {
             </div>
           </div>
           {/* Navigation Buttons */}
-          <button onClick={(e) => { typeof window !== 'undefined' && (window as any).prevSlide && (window as any).prevSlide(); }} className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 flex items-center justify-center text-white border border-white/10 backdrop-blur-sm transition-all z-10">
+          <button onClick={() => { if (typeof window !== 'undefined' && window.prevSlide) window.prevSlide(); }} className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 flex items-center justify-center text-white border border-white/10 backdrop-blur-sm transition-all z-10">
             <i data-lucide="chevron-left" className="w-5 h-5" />
           </button>
-          <button onClick={(e) => { typeof window !== 'undefined' && (window as any).nextSlide && (window as any).nextSlide(); }} className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 flex items-center justify-center text-white border border-white/10 backdrop-blur-sm transition-all z-10">
+          <button onClick={() => { if (typeof window !== 'undefined' && window.nextSlide) window.nextSlide(); }} className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 flex items-center justify-center text-white border border-white/10 backdrop-blur-sm transition-all z-10">
             <i data-lucide="chevron-right" className="w-5 h-5" />
           </button>
           {/* Indicators (7 Dots) */}
@@ -477,7 +477,7 @@ export default function Page() {
           </div>
         </div>
         <div className="space-y-2 w-full" id="features-container">
-          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFeature && (window as any).toggleFeature(1); }}>
+          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFeature) window.toggleFeature(1); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading flex items-center justify-between text-white">
               <div className="flex items-center gap-3 sm:gap-4 text-gray-200 group-hover:text-white transition-colors">
                 <i data-lucide="lightbulb" className="w-4 h-4 text-gray-400 group-hover:text-rn-accent transition-colors shrink-0" />
@@ -489,7 +489,7 @@ export default function Page() {
               Sebelum mikirin konten, kamu perlu benahi satu hal yang lebih penting dari semua strategi niat dan kesadaran. Di fase ini kamu akan paham kenapa ngonten sebagai Muslim itu bukan sekadar cari views, tapi soal tanggung jawab yang jauh lebih besar dari angka di dashboard.
             </div>
           </div>
-          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFeature && (window as any).toggleFeature(2); }}>
+          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFeature) window.toggleFeature(2); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading flex items-center justify-between text-white">
               <div className="flex items-center gap-3 sm:gap-4 text-gray-200 group-hover:text-white transition-colors">
                 <i data-lucide="map" className="w-4 h-4 text-gray-400 group-hover:text-rn-accent transition-colors shrink-0" />
@@ -501,7 +501,7 @@ export default function Page() {
               Banyak kreator capek di tengah jalan bukan karena nggak berbakat tapi karena dari awal nggak tahu mau ke mana. Di fase ini kamu akan nemuin niche yang pas, kenali siapa audiensmu, dan pahami masalah yang bisa kamu selesaikan lewat konten. Fondasi yang kuat dimulai dari sini.
             </div>
           </div>
-          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFeature && (window as any).toggleFeature(3); }}>
+          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFeature) window.toggleFeature(3); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading flex items-center justify-between text-white">
               <div className="flex items-center gap-3 sm:gap-4 text-gray-200 group-hover:text-white transition-colors">
                 <i data-lucide="user" className="w-4 h-4 text-gray-400 group-hover:text-rn-accent transition-colors shrink-0" />
@@ -510,10 +510,10 @@ export default function Page() {
               <i data-lucide="chevron-down" id="feat-icon-3" className="w-4 h-4 text-gray-400 group-hover:text-white transition-transform duration-300 shrink-0" />
             </button>
             <div id="feat-content-3" className="hidden px-5 pb-5 text-[13px] text-gray-400 font-medium leading-[1.6] border-t border-white/5 mt-1 pt-4">
-              Profil itu kesan pertama. Sebelum kontenmu dilihat, akunmu udah dinilai duluan. Di fase ini kamu akan belajar setup akun yang bikin orang mau stay dari username, bio, foto profil, sampai cara "panasin" algoritma sebelum mulai posting.
+              Profil itu kesan pertama. Sebelum kontenmu dilihat, akunmu udah dinilai duluan. Di fase ini kamu akan belajar setup akun yang bikin orang mau stay dari username, bio, foto profil, sampai cara &quot;panasin&quot; algoritma sebelum mulai posting.
             </div>
           </div>
-          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFeature && (window as any).toggleFeature(4); }}>
+          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFeature) window.toggleFeature(4); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading flex items-center justify-between text-white">
               <div className="flex items-center gap-3 sm:gap-4 text-gray-200 group-hover:text-white transition-colors">
                 <i data-lucide="search" className="w-4 h-4 text-gray-400 group-hover:text-rn-accent transition-colors shrink-0" />
@@ -525,7 +525,7 @@ export default function Page() {
               Nggak ada kreator yang otaknya selalu penuh ide yang ada kreator yang tahu cara ngisinya. Di fase ini kamu akan belajar cara nemuin ide konten yang nggak ada habisnya, bikin sistem penyimpanan ide, dan rencanain konten biar nggak panik tiap hari mau posting apa.
             </div>
           </div>
-          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFeature && (window as any).toggleFeature(5); }}>
+          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFeature) window.toggleFeature(5); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading flex items-center justify-between text-white">
               <div className="flex items-center gap-3 sm:gap-4 text-gray-200 group-hover:text-white transition-colors">
                 <i data-lucide="play-circle" className="w-4 h-4 text-gray-400 group-hover:text-rn-accent transition-colors shrink-0" />
@@ -537,7 +537,7 @@ export default function Page() {
               Teori udah cukup sekarang waktunya eksekusi. Di fase ini kamu akan belajar struktur konten yang terbukti works, cara bikin hook yang bikin orang berhenti scroll, storytelling yang bikin orang betah, sampai teknis dasar yang bikin kontenmu layak ditonton sampai akhir.
             </div>
           </div>
-          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFeature && (window as any).toggleFeature(6); }}>
+          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFeature) window.toggleFeature(6); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading flex items-center justify-between text-white">
               <div className="flex items-center gap-3 sm:gap-4 text-gray-200 group-hover:text-white transition-colors">
                 <i data-lucide="dollar-sign" className="w-4 h-4 text-gray-400 group-hover:text-rn-accent transition-colors shrink-0" />
@@ -549,7 +549,7 @@ export default function Page() {
               Ngonten yang menghasilkan bukan keberuntungan itu sistem. Di fase ini kamu akan belajar bikin produk digital pertamamu, setup toko online, dan cara jualan yang nggak terasa maksa. Karena kontenmu bisa jadi lebih dari sekadar hiburan bisa jadi mesin penghasilan.
             </div>
           </div>
-          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFeature && (window as any).toggleFeature(7); }}>
+          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFeature) window.toggleFeature(7); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading flex items-center justify-between text-white">
               <div className="flex items-center gap-3 sm:gap-4 text-gray-200 group-hover:text-white transition-colors">
                 <i data-lucide="bar-chart-2" className="w-4 h-4 text-gray-400 group-hover:text-rn-accent transition-colors shrink-0" />
@@ -561,7 +561,7 @@ export default function Page() {
               Yang bikin kreator stuck bukan kurang konten tapi kurang tahu mana yang sebenarnya works. Di fase ini kamu akan belajar baca data yang penting, nemuin pola dari kontenmu sendiri, dan jadikan insight sebagai kompas buat tumbuh lebih terarah.
             </div>
           </div>
-          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFeature && (window as any).toggleFeature(8); }}>
+          <div className="bg-[#18181b] border border-[#27272a]/50 hover:border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFeature) window.toggleFeature(8); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading flex items-center justify-between text-white">
               <div className="flex items-center gap-3 sm:gap-4 text-gray-200 group-hover:text-white transition-colors">
                 <i data-lucide="trending-up" className="w-4 h-4 text-gray-400 group-hover:text-rn-accent transition-colors shrink-0" />
@@ -630,7 +630,7 @@ export default function Page() {
             </div>
             <div className="bg-[#18181b] rounded-xl p-4 flex items-center gap-4 border border-[#27272a]/30">
               <div className="w-6 h-6 sm:w-7 sm:h-7 shrink-0 bg-[#27272a] text-red-500 flex items-center justify-center rounded-lg"><i data-lucide="x" className="w-4 h-4" /></div>
-              <div className="leading-[1.5] text-[13px] sm:text-[14px] text-gray-300 font-medium">Mencari "cara cepat kaya" atau cuan instan dalam semalam.</div>
+              <div className="leading-[1.5] text-[13px] sm:text-[14px] text-gray-300 font-medium">Mencari &quot;cara cepat kaya&quot; atau cuan instan dalam semalam.</div>
             </div>
             <div className="bg-[#18181b] rounded-xl p-4 flex items-center gap-4 border border-[#27272a]/30">
               <div className="w-6 h-6 sm:w-7 sm:h-7 shrink-0 bg-[#27272a] text-red-500 flex items-center justify-center rounded-lg"><i data-lucide="x" className="w-4 h-4" /></div>
@@ -1297,7 +1297,7 @@ export default function Page() {
           </ul>
           {/* Button & Security Badges */}
           <div className="mt-6 flex flex-col items-center text-center w-full">
-            <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-full bg-rn-accent !text-black py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:bg-black hover:!text-white hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:bg-black active:!text-white active:shadow-none active:translate-x-[3px] active:translate-y-[3px] flex items-center justify-center mb-5 select-none animate-heartbeat relative overflow-hidden group">
+            <a href="https://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-full bg-rn-accent !text-black py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:bg-black hover:!text-white hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:bg-black active:!text-white active:shadow-none active:translate-x-[3px] active:translate-y-[3px] flex items-center justify-center mb-5 select-none animate-heartbeat relative overflow-hidden group">
               <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
               <span className="relative z-20">AMBIL HARGA PROMO</span>
             </a>
@@ -1317,7 +1317,7 @@ export default function Page() {
         </div>
         <h2 className="text-[24px] sm:text-[28px] font-black font-heading mb-5 text-white w-full">Yang Sering Ditanyain (FAQ)</h2>
         <div className="space-y-2 w-full" id="faq-container">
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(1); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(1); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Ini kelas online atau Ebook?
               <i data-lucide="chevron-down" id="faq-icon-1" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1326,7 +1326,7 @@ export default function Page() {
               Ini adalah Ebook panduan strategi komprehensif yang di dalamnya juga dilengkapi dengan link Video Tutorial untuk memudahkan kamu mempraktikkannya.
             </div>
           </div>
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(2); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(2); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Ini cocok untuk pemula?
               <i data-lucide="chevron-down" id="faq-icon-2" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1335,7 +1335,7 @@ export default function Page() {
               Cocok. RUANG NGONTEN dibuat untuk membantu kamu mulai dari nol dengan langkah yang lebih terarah.
             </div>
           </div>
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(3); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(3); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Harus tampil di depan kamera?
               <i data-lucide="chevron-down" id="faq-icon-3" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1344,7 +1344,7 @@ export default function Page() {
               Nggak harus. Kamu bisa memulai dengan konsep faceless content.
             </div>
           </div>
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(4); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(4); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Harus punya kamera atau laptop mahal?
               <i data-lucide="chevron-down" id="faq-icon-4" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1353,7 +1353,7 @@ export default function Page() {
               Nggak. HP yang kamu punya sekarang sudah cukup untuk mulai.
             </div>
           </div>
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(5); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(5); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Kalau belum tahu niche dan mau mulai dari mana?
               <i data-lucide="chevron-down" id="faq-icon-5" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1362,7 +1362,7 @@ export default function Page() {
               Tenang. Kamu akan dipandu mulai dari menentukan arah, niche, audiens, sampai mulai membuat konten.
             </div>
           </div>
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(6); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(6); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Apakah langsung bisa menghasilkan uang?
               <i data-lucide="chevron-down" id="faq-icon-6" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1371,7 +1371,7 @@ export default function Page() {
               RUANG NGONTEN bukan janji penghasilan instan. Kamu akan belajar berbagai cara monetisasi yang bisa dikembangkan sesuai kondisi dan prosesmu.
             </div>
           </div>
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(7); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(7); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Kalau masih bingung setelah belajar?
               <i data-lucide="chevron-down" id="faq-icon-7" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1380,7 +1380,7 @@ export default function Page() {
               Ada bimbingan private 1-on-1 via WhatsApp untuk membantu menjawab pertanyaan dan memberikan feedback.
             </div>
           </div>
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(8); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(8); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Apa yang saya dapatkan setelah membeli?
               <i data-lucide="chevron-down" id="faq-icon-8" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1389,7 +1389,7 @@ export default function Page() {
               Kamu mendapatkan Ebook RUANG NGONTEN + bonus lengkap, termasuk 30 Day Creator Challenge dan berbagai ebook, template, tools, serta bonus lainnya.
             </div>
           </div>
-          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={(e) => { typeof window !== 'undefined' && (window as any).toggleFaq && (window as any).toggleFaq(9); }}>
+          <div className="border border-white/5 hover:border-white/10 rounded-xl overflow-hidden bg-[#18181b] group cursor-pointer transition-colors" onClick={() => { if (typeof window !== 'undefined' && window.toggleFaq) window.toggleFaq(9); }}>
             <button className="w-full px-5 py-4 text-left font-black font-heading text-[13px] sm:text-[14px] flex items-center justify-between text-gray-200">
               Apakah materi akan diupdate?
               <i data-lucide="chevron-down" id="faq-icon-9" className="w-4 h-4 text-gray-400 group-hover:text-white transition-all duration-300 shrink-0" />
@@ -1410,7 +1410,7 @@ export default function Page() {
           Kamu sudah tahu ingin mulai ngonten. Yang tersisa cuma satu langkah: berhenti mulai dari nol dan mulai pakai sistem yang membantu kamu tahu harus bikin apa.
         </p>
         <div className="flex w-full sm:w-auto px-0 sm:px-4 justify-center">
-          <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-full sm:w-auto bg-rn-accent !text-black px-8 py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black hover:bg-black hover:border-black hover:!text-white active:bg-black active:border-black active:!text-white transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:shadow-none active:translate-x-[3px] active:translate-y-[3px] whitespace-nowrap flex items-center justify-center select-none animate-heartbeat relative overflow-hidden group">
+          <a href="https://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-full sm:w-auto bg-rn-accent !text-black px-8 py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black hover:bg-black hover:border-black hover:!text-white active:bg-black active:border-black active:!text-white transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:shadow-none active:translate-x-[3px] active:translate-y-[3px] whitespace-nowrap flex items-center justify-center select-none animate-heartbeat relative overflow-hidden group">
             <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
             <span className="relative z-20">MULAI NGONTEN SEKARANG</span>
           </a>
@@ -1433,7 +1433,7 @@ export default function Page() {
       <span>PAKET BASIC</span>
       <span>RP.99K</span>
     </a>
-    <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-1/2 bg-rn-accent !text-black px-1 py-2.5 rounded-[20px] font-bold text-[9px] min-[360px]:text-[10px] font-heading uppercase tracking-widest border-2 border-black hover:bg-black hover:border-black hover:!text-white active:bg-black active:border-black active:!text-white transition-all shadow-[3px_3px_0px_0px_#000000] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none active:translate-x-[3px] active:translate-y-[3px] active:shadow-none flex flex-col items-center justify-center text-center leading-tight select-none animate-heartbeat relative overflow-hidden group">
+    <a href="https://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" style={{textDecoration: 'none !important'}} className="w-1/2 bg-rn-accent !text-black px-1 py-2.5 rounded-[20px] font-bold text-[9px] min-[360px]:text-[10px] font-heading uppercase tracking-widest border-2 border-black hover:bg-black hover:border-black hover:!text-white active:bg-black active:border-black active:!text-white transition-all shadow-[3px_3px_0px_0px_#000000] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none active:translate-x-[3px] active:translate-y-[3px] active:shadow-none flex flex-col items-center justify-center text-center leading-tight select-none animate-heartbeat relative overflow-hidden group">
       <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
       <span className="relative z-20">PAKET LENGKAP</span>
       <span className="relative z-20">RP.149K</span>

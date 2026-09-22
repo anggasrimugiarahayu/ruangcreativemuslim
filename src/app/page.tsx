@@ -209,7 +209,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" className="mt-6 block text-center bg-rn-accent text-black font-black py-3 rounded-xl hover:bg-white transition-all shadow-[0_0_20px_rgba(208,226,6,0.2)]">
+              <a href="https://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" className="mt-6 block text-center bg-rn-accent text-black font-black py-3 rounded-xl hover:bg-white transition-all shadow-[0_0_20px_rgba(208,226,6,0.2)]">
                 Pilih Paket Lengkap
               </a>
             </div>
