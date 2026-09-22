@@ -182,189 +182,49 @@ export default function Home() {
                     </g>
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
-                        <g
-                          className="sc-rise"
-                          style={{ animationDelay: "1.8s" }}
-                        >
-                          <rect
-                            x="-120"
-                            y="-120"
-                            width="240"
-                            height="260"
-                            rx="12"
-                            fill="currentColor"
-                            fillOpacity="0.05"
-                            strokeOpacity="0.7"
-                            strokeWidth="5"
-                          ></rect>
-                          {/* Book spine / binding line */}
-                          <line
-                            x1="-90"
-                            y1="-120"
-                            x2="-90"
-                            y2="140"
-                            strokeWidth="3"
-                            strokeOpacity="0.3"
-                          ></line>
+                        <g className="sc-rise" style={{ animationDelay: "1.8s" }}>
+                          {/* Tablet/Book Background */}
+                          <rect x="-180" y="-140" width="360" height="280" rx="20" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.7" strokeWidth="5"></rect>
+                          
+                          {/* Faceless Creator Silhouette */}
+                          <g className="sc-pop" style={{ animationDelay: "2.1s" }}>
+                            {/* Body */}
+                            <path d="M-130 100 Q-90 0 -50 100 Z" fill="currentColor" fillOpacity="0.3"></path>
+                            {/* Head with no face */}
+                            <circle cx="-90" cy="0" r="30" fill="currentColor" fillOpacity="0.4"></circle>
+                            {/* Mask / Sunglasses representing faceless */}
+                            <rect x="-110" y="-5" width="40" height="10" rx="5" fill="var(--card)"></rect>
+                          </g>
 
-                          <g
-                            className="sc-pop"
-                            style={{ animationDelay: "2.1s" }}
-                          >
-                            {/* EBook Icon / Title placeholder */}
-                            <rect
-                              x="-60"
-                              y="-80"
-                              width="150"
-                              height="30"
-                              rx="5"
-                              fill="currentColor"
-                              fillOpacity="0.2"
-                              stroke="none"
-                            ></rect>
+                          {/* "No Camera" Symbol */}
+                          <g className="sc-pop" style={{ animationDelay: "2.5s" }} transform="translate(-150 -80)">
+                            <circle cx="0" cy="0" r="25" fill="none" stroke="currentColor" strokeOpacity="0.6" strokeWidth="4"></circle>
+                            <rect x="-12" y="-8" width="24" height="16" rx="3" fill="none" stroke="currentColor" strokeOpacity="0.6" strokeWidth="3"></rect>
+                            <circle cx="0" cy="0" r="4" fill="currentColor" fillOpacity="0.6"></circle>
+                            <line x1="-18" y1="-18" x2="18" y2="18" stroke="currentColor" strokeOpacity="0.6" strokeWidth="4"></line>
                           </g>
-                          <line
-                            x1="-60"
-                            y1="-25"
-                            x2="90"
-                            y2="-25"
-                            strokeWidth="8"
-                            strokeOpacity="0.5"
-                            className="sc-draw"
-                            style={{ animationDelay: "2.3s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-                          <line
-                            x1="-60"
-                            y1="0"
-                            x2="70"
-                            y2="0"
-                            strokeWidth="8"
-                            strokeOpacity="0.5"
-                            className="sc-draw"
-                            style={{ animationDelay: "2.5s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-                          <line
-                            x1="-60"
-                            y1="25"
-                            x2="100"
-                            y2="25"
-                            strokeWidth="8"
-                            strokeOpacity="0.5"
-                            className="sc-draw"
-                            style={{ animationDelay: "2.7s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-                          <line
-                            x1="-60"
-                            y1="50"
-                            x2="50"
-                            y2="50"
-                            strokeWidth="8"
-                            strokeOpacity="0.5"
-                            className="sc-draw"
-                            style={{ animationDelay: "2.9s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-                          <line
-                            x1="-60"
-                            y1="75"
-                            x2="85"
-                            y2="75"
-                            strokeWidth="8"
-                            strokeOpacity="0.5"
-                            className="sc-draw"
-                            style={{ animationDelay: "3.1s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-                        </g>
-                        <g
-                          className="sc-rise"
-                          style={{ animationDelay: "3.6s" }}
-                        >
-                          <rect
-                            x="60"
-                            y="-60"
-                            width="160"
-                            height="190"
-                            rx="8"
-                            fill="var(--card)"
-                            strokeOpacity="0.8"
-                            strokeWidth="4"
-                          ></rect>
-                          <g
-                            className="sc-pop"
-                            style={{ animationDelay: "3.9s" }}
-                          >
-                            <rect
-                              x="80"
-                              y="-30"
-                              width="120"
-                              height="80"
-                              rx="5"
-                              fill="currentColor"
-                              fillOpacity="0.1"
-                              strokeOpacity="0.5"
-                              strokeWidth="3"
-                            ></rect>
-                            {/* Image Placeholder cross */}
-                            <line
-                              x1="80"
-                              y1="-30"
-                              x2="200"
-                              y2="50"
-                              strokeWidth="2"
-                              strokeOpacity="0.2"
-                            ></line>
-                            <line
-                              x1="200"
-                              y1="-30"
-                              x2="80"
-                              y2="50"
-                              strokeWidth="2"
-                              strokeOpacity="0.2"
-                            ></line>
+                          
+                          {/* Rising Cuan/Profit Chart */}
+                          <g className="sc-rise" style={{ animationDelay: "3.2s" }}>
+                            <polyline points="10,60 50,30 90,50 140,-20" fill="none" stroke="currentColor" strokeOpacity="0.8" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" className="sc-draw" style={{ animationDelay: "3.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></polyline>
+                            <circle cx="10" cy="60" r="6" fill="currentColor" className="sc-pop" style={{ animationDelay: "3.6s" }}></circle>
+                            <circle cx="50" cy="30" r="6" fill="currentColor" className="sc-pop" style={{ animationDelay: "3.7s" }}></circle>
+                            <circle cx="90" cy="50" r="6" fill="currentColor" className="sc-pop" style={{ animationDelay: "3.8s" }}></circle>
+                            <circle cx="140" cy="-20" r="8" fill="#FACE68" className="sc-pop" style={{ animationDelay: "3.9s" }}></circle>
+                            
+                            {/* Dollar/Coin icon at the peak */}
+                            <g className="sc-pop" style={{ animationDelay: "4.1s" }} transform="translate(140 -50)">
+                               <circle cx="0" cy="0" r="16" fill="#FACE68" fillOpacity="0.2" stroke="#FACE68" strokeWidth="3"></circle>
+                               <text x="0" y="0" fontSize="18" fontWeight="bold" fill="#FACE68" textAnchor="middle" dominantBaseline="central">$</text>
+                            </g>
                           </g>
-                          <line
-                            x1="80"
-                            y1="75"
-                            x2="180"
-                            y2="75"
-                            strokeWidth="8"
-                            strokeOpacity="0.6"
-                            className="sc-draw"
-                            style={{ animationDelay: "4.1s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-                          <line
-                            x1="80"
-                            y1="105"
-                            x2="150"
-                            y2="105"
-                            strokeWidth="8"
-                            strokeOpacity="0.6"
-                            className="sc-draw"
-                            style={{ animationDelay: "4.3s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
+
+                          {/* Strategy / Checklist Lines */}
+                          <line x1="10" y1="90" x2="120" y2="90" strokeWidth="6" strokeOpacity="0.4" className="sc-draw" style={{ animationDelay: "2.3s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></line>
+                          <line x1="10" y1="110" x2="80" y2="110" strokeWidth="6" strokeOpacity="0.4" className="sc-draw" style={{ animationDelay: "2.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></line>
                         </g>
                       </g>
-                    </g>
+</g>
                   </svg>
                 </div>
               </div>
@@ -449,320 +309,43 @@ export default function Home() {
                     </g>
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
-                        <g
-                          className="sc-rise"
-                          style={{ animationDelay: "0.1s" }}
-                        >
-                          <rect
-                            x="-240"
-                            y="-120"
-                            width="480"
-                            height="240"
-                            rx="20"
-                            fill="currentColor"
-                            fillOpacity="0.04"
-                            strokeOpacity="0.7"
-                            strokeWidth="5"
-                          ></rect>
-
-                          {/* Sidebar */}
-                          <line
-                            x1="-150"
-                            y1="-120"
-                            x2="-150"
-                            y2="120"
-                            strokeWidth="3"
-                            strokeOpacity="0.28"
-                          ></line>
-
-                          {/* Dashboard Top Bar */}
-                          <line
-                            x1="-150"
-                            y1="-70"
-                            x2="240"
-                            y2="-70"
-                            strokeWidth="3"
-                            strokeOpacity="0.28"
-                          ></line>
-
-                          {/* Dashboard Icons */}
-                          <g transform="translate(-195 -95)">
-                            <g
-                              className="sc-pop"
-                              style={{ animationDelay: "0.4s" }}
-                            >
-                              <circle
-                                r="12"
-                                fill="currentColor"
-                                fillOpacity="0.1"
-                                strokeOpacity="0.8"
-                                strokeWidth="3"
-                              ></circle>
-                            </g>
-                          </g>
-                          <g transform="translate(-195 -50)">
-                            <g
-                              className="sc-pop"
-                              style={{ animationDelay: "0.6s" }}
-                            >
-                              <rect
-                                x="-10"
-                                y="-10"
-                                width="20"
-                                height="20"
-                                rx="4"
-                                fill="currentColor"
-                                fillOpacity="0.3"
-                              ></rect>
-                            </g>
-                          </g>
-                          <g transform="translate(-195 -10)">
-                            <g
-                              className="sc-pop"
-                              style={{ animationDelay: "0.8s" }}
-                            >
-                              <rect
-                                x="-10"
-                                y="-10"
-                                width="20"
-                                height="20"
-                                rx="4"
-                                fill="currentColor"
-                                fillOpacity="0.1"
-                                strokeOpacity="0.5"
-                                strokeWidth="3"
-                              ></rect>
-                            </g>
-                          </g>
-                          <g transform="translate(-195 30)">
-                            <g
-                              className="sc-pop"
-                              style={{ animationDelay: "1s" }}
-                            >
-                              <rect
-                                x="-10"
-                                y="-10"
-                                width="20"
-                                height="20"
-                                rx="4"
-                                fill="currentColor"
-                                fillOpacity="0.1"
-                                strokeOpacity="0.5"
-                                strokeWidth="3"
-                              ></rect>
-                            </g>
+                        <g className="sc-rise" style={{ animationDelay: "0.1s" }}>
+                          <rect x="-240" y="-120" width="480" height="240" rx="20" fill="currentColor" fillOpacity="0.04" strokeOpacity="0.7" strokeWidth="5"></rect>
+                          
+                          {/* 8 AI Systems orbiting a central Core */}
+                          
+                          {/* Central AI Brain/Core */}
+                          <g className="sc-pop" style={{ animationDelay: "0.5s" }} transform="translate(0 0)">
+                            <rect x="-30" y="-30" width="60" height="60" rx="15" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.9" strokeWidth="4"></rect>
+                            <text x="0" y="0" fontSize="24" fontWeight="800" fill="currentColor" textAnchor="middle" dominantBaseline="central">AI</text>
+                            {/* Pulsing ring */}
+                            <circle cx="0" cy="0" r="45" fill="none" stroke="currentColor" strokeOpacity="0.3" strokeWidth="2" className="sc-ring"></circle>
                           </g>
 
-                          {/* Header lines */}
-                          <line
-                            x1="-120"
-                            y1="-95"
-                            x2="-40"
-                            y2="-95"
-                            strokeWidth="12"
-                            strokeOpacity="0.5"
-                            className="sc-draw"
-                            style={{ animationDelay: "1s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
+                          {/* Orbit paths */}
+                          <circle cx="0" cy="0" r="90" fill="none" stroke="currentColor" strokeOpacity="0.1" strokeWidth="2" strokeDasharray="10 10"></circle>
+                          
+                          {/* 8 System Nodes */}
+                          <g className="sc-pop" style={{ animationDelay: "0.8s" }} transform="translate(0 -90)"><circle cx="0" cy="0" r="12" fill="#D0E206" fillOpacity="0.8"></circle></g>
+                          <g className="sc-pop" style={{ animationDelay: "1.0s" }} transform="translate(63 -63)"><circle cx="0" cy="0" r="10" fill="currentColor" fillOpacity="0.4"></circle></g>
+                          <g className="sc-pop" style={{ animationDelay: "1.2s" }} transform="translate(90 0)"><circle cx="0" cy="0" r="14" fill="#FACE68" fillOpacity="0.8"></circle></g>
+                          <g className="sc-pop" style={{ animationDelay: "1.4s" }} transform="translate(63 63)"><circle cx="0" cy="0" r="8" fill="currentColor" fillOpacity="0.4"></circle></g>
+                          <g className="sc-pop" style={{ animationDelay: "1.6s" }} transform="translate(0 90)"><circle cx="0" cy="0" r="12" fill="#5A9CB5" fillOpacity="0.8"></circle></g>
+                          <g className="sc-pop" style={{ animationDelay: "1.8s" }} transform="translate(-63 63)"><circle cx="0" cy="0" r="10" fill="currentColor" fillOpacity="0.4"></circle></g>
+                          <g className="sc-pop" style={{ animationDelay: "2.0s" }} transform="translate(-90 0)"><circle cx="0" cy="0" r="14" fill="currentColor" fillOpacity="0.6"></circle></g>
+                          <g className="sc-pop" style={{ animationDelay: "2.2s" }} transform="translate(-63 -63)"><circle cx="0" cy="0" r="8" fill="currentColor" fillOpacity="0.4"></circle></g>
 
-                          <g transform="translate(190 -95)">
-                            <g
-                              className="sc-pop"
-                              style={{ animationDelay: "1.2s" }}
-                            >
-                              <circle
-                                r="15"
-                                fill="currentColor"
-                                fillOpacity="0.2"
-                              ></circle>
-                            </g>
-                          </g>
-                        </g>
-
-                        {/* Settings Panel 1 */}
-                        <g
-                          className="sc-rise"
-                          style={{ animationDelay: "1.5s" }}
-                        >
-                          <rect
-                            x="-120"
-                            y="-40"
-                            width="160"
-                            height="130"
-                            rx="10"
-                            fill="currentColor"
-                            fillOpacity="0.02"
-                            strokeOpacity="0.5"
-                            strokeWidth="4"
-                          ></rect>
-                          <line
-                            x1="-90"
-                            y1="-10"
-                            x2="0"
-                            y2="-10"
-                            strokeWidth="10"
-                            strokeOpacity="0.4"
-                            className="sc-draw"
-                            style={{ animationDelay: "1.7s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-
-                          {/* Animated Toggle Switch */}
-                          <g
-                            className="sc-pop"
-                            style={{ animationDelay: "1.9s" }}
-                          >
-                            <rect
-                              x="-90"
-                              y="20"
-                              width="40"
-                              height="20"
-                              rx="10"
-                              fill="currentColor"
-                              fillOpacity="0.3"
-                            ></rect>
-                            <circle
-                              cx="-80"
-                              cy="30"
-                              r="6"
-                              fill="var(--card)"
-                            ></circle>
-                          </g>
-                          <g
-                            className="sc-pop"
-                            style={{ animationDelay: "2.1s" }}
-                          >
-                            <rect
-                              x="-90"
-                              y="55"
-                              width="40"
-                              height="20"
-                              rx="10"
-                              fill="currentColor"
-                              fillOpacity="0.8"
-                            ></rect>
-                            <circle
-                              cx="-60"
-                              cy="65"
-                              r="6"
-                              fill="var(--card)"
-                            ></circle>
-                          </g>
-                          <g
-                            className="sc-pop"
-                            style={{ animationDelay: "2.3s" }}
-                          >
-                            <rect
-                              x="-90"
-                              y="90"
-                              width="40"
-                              height="20"
-                              rx="10"
-                              fill="currentColor"
-                              fillOpacity="0.3"
-                            ></rect>
-                            <circle
-                              cx="-80"
-                              cy="100"
-                              r="6"
-                              fill="var(--card)"
-                            ></circle>
-                          </g>
-                        </g>
-
-                        {/* Settings Panel 2 - Sliders */}
-                        <g
-                          className="sc-rise"
-                          style={{ animationDelay: "2.4s" }}
-                        >
-                          <rect
-                            x="60"
-                            y="-40"
-                            width="150"
-                            height="130"
-                            rx="10"
-                            fill="currentColor"
-                            fillOpacity="0.02"
-                            strokeOpacity="0.5"
-                            strokeWidth="4"
-                          ></rect>
-
-                          {/* Slider 1 */}
-                          <line
-                            x1="80"
-                            y1="0"
-                            x2="190"
-                            y2="0"
-                            strokeWidth="6"
-                            strokeOpacity="0.3"
-                          ></line>
-                          <g
-                            className="sc-flow"
-                            style={{ animationDelay: "0s" }}
-                          >
-                            <rect
-                              x="130"
-                              y="-7"
-                              width="10"
-                              height="14"
-                              rx="2"
-                              fill="currentColor"
-                            ></rect>
-                          </g>
-
-                          {/* Slider 2 */}
-                          <line
-                            x1="80"
-                            y1="40"
-                            x2="190"
-                            y2="40"
-                            strokeWidth="6"
-                            strokeOpacity="0.3"
-                          ></line>
-                          <g
-                            className="sc-flow"
-                            style={{ animationDelay: "0.5s" }}
-                          >
-                            <rect
-                              x="100"
-                              y="33"
-                              width="10"
-                              height="14"
-                              rx="2"
-                              fill="currentColor"
-                            ></rect>
-                          </g>
-
-                          {/* Slider 3 */}
-                          <line
-                            x1="80"
-                            y1="80"
-                            x2="190"
-                            y2="80"
-                            strokeWidth="6"
-                            strokeOpacity="0.3"
-                          ></line>
-                          <g
-                            className="sc-flow"
-                            style={{ animationDelay: "1s" }}
-                          >
-                            <rect
-                              x="160"
-                              y="73"
-                              width="10"
-                              height="14"
-                              rx="2"
-                              fill="currentColor"
-                            ></rect>
-                          </g>
+                          {/* "Bingung (messy)" -> "Eksekusi (structured)" Workflow Line */}
+                          {/* Messy scribble on left */}
+                          <path d="M-200,20 Q-180,60 -170,0 T-150,40 T-130,-10 T-110,20" fill="none" stroke="currentColor" strokeOpacity="0.3" strokeWidth="4" className="sc-draw" style={{ animationDelay: "2.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></path>
+                          
+                          {/* Straight execution line on right */}
+                          <line x1="120" y1="20" x2="210" y2="20" strokeWidth="6" strokeOpacity="0.8" className="sc-draw" style={{ animationDelay: "3.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></line>
+                          {/* Checkmark */}
+                          <path d="M190,10 L200,25 L220,-5" fill="none" stroke="#D0E206" strokeOpacity="1" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" className="sc-draw" style={{ animationDelay: "4s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></path>
                         </g>
                       </g>
-                    </g>
+</g>
                   </svg>
                 </div>
               </div>
@@ -846,178 +429,52 @@ export default function Home() {
                     </g>
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
-                        <g
-                          className="sc-rise"
-                          style={{ animationDelay: "0.1s" }}
-                        >
-                          <rect
-                            x="-220"
-                            y="-110"
-                            width="440"
-                            height="220"
-                            rx="16"
-                            fill="currentColor"
-                            fillOpacity="0.04"
-                            strokeOpacity="0.7"
-                            strokeWidth="5"
-                          ></rect>
+                        <g className="sc-rise" style={{ animationDelay: "0.1s" }}>
+                          {/* Platform Canvas */}
+                          <rect x="-220" y="-120" width="440" height="240" rx="16" fill="currentColor" fillOpacity="0.04" strokeOpacity="0.7" strokeWidth="5"></rect>
+                          
+                          {/* Fun Interactive Elements */}
+                          {/* Star 1 */}
+                          <g className="sc-pop" style={{ animationDelay: "1.5s" }} transform="translate(-180 -80)">
+                            <path d="M0 -15 L4 -4 L15 -4 L6 3 L10 14 L0 7 L-10 14 L-6 3 L-15 -4 L-4 -4 Z" fill="#FACE68"></path>
+                          </g>
+                          {/* Star 2 */}
+                          <g className="sc-pop" style={{ animationDelay: "2.2s" }} transform="translate(180 -60) scale(0.8)">
+                            <path d="M0 -15 L4 -4 L15 -4 L6 3 L10 14 L0 7 L-10 14 L-6 3 L-15 -4 L-4 -4 Z" fill="#D0E206"></path>
+                          </g>
 
-                          {/* Video Player Header */}
-                          <line
-                            x1="-220"
-                            y1="-70"
-                            x2="220"
-                            y2="-70"
-                            strokeWidth="3"
-                            strokeOpacity="0.28"
-                          ></line>
-                          <circle
-                            cx="-190"
-                            cy="-90"
-                            r="5"
-                            fill="currentColor"
-                            fillOpacity="0.5"
-                          ></circle>
-                          <circle
-                            cx="-170"
-                            cy="-90"
-                            r="5"
-                            fill="currentColor"
-                            fillOpacity="0.5"
-                          ></circle>
-                          <circle
-                            cx="-150"
-                            cy="-90"
-                            r="5"
-                            fill="currentColor"
-                            fillOpacity="0.5"
-                          ></circle>
+                          {/* Smiling Face / Engagement Badge */}
+                          <g className="sc-ghost" style={{ animationDelay: "3s" }} transform="translate(-150 50)">
+                            <circle cx="0" cy="0" r="30" fill="var(--card)" stroke="currentColor" strokeOpacity="0.6" strokeWidth="4"></circle>
+                            <circle cx="-10" cy="-5" r="4" fill="currentColor"></circle>
+                            <circle cx="10" cy="-5" r="4" fill="currentColor"></circle>
+                            <path d="M-15 10 Q0 25 15 10" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round"></path>
+                          </g>
 
-                          {/* Progress Bar */}
-                          <line
-                            x1="-220"
-                            y1="80"
-                            x2="220"
-                            y2="80"
-                            strokeWidth="6"
-                            strokeOpacity="0.2"
-                          ></line>
-                          <line
-                            x1="-220"
-                            y1="80"
-                            x2="40"
-                            y2="80"
-                            strokeWidth="6"
-                            strokeOpacity="0.8"
-                            className="sc-draw"
-                            style={{ animationDelay: "1s" }}
-                            pathLength={1}
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
+                          {/* Graduation Cap / Learning Icon */}
+                          <g className="sc-ghost" style={{ animationDelay: "2s" }} transform="translate(150 40)">
+                             <path d="M-40 0 L0 -20 L40 0 L0 20 Z" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="4"></path>
+                             <path d="M-25 12 L-25 30 Q0 45 25 30 L25 12" fill="none" stroke="currentColor" strokeWidth="4"></path>
+                             <line x1="35" y1="5" x2="35" y2="25" stroke="currentColor" strokeWidth="4"></line>
+                             <circle cx="35" cy="30" r="5" fill="currentColor"></circle>
+                          </g>
+                        </g>
+                        
+                        {/* Video Player Center Play Button (Fun & Exclusive) */}
+                        <g className="sc-pop" style={{ animationDelay: "0.8s" }}>
+                          <circle cx="0" cy="0" r="45" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.9" strokeWidth="5"></circle>
+                          <circle cx="0" cy="0" r="60" fill="none" stroke="currentColor" strokeOpacity="0.3" strokeWidth="2" className="sc-ring"></circle>
+                          <path d="M-10 -15 L15 0 L-10 15 Z" fill="currentColor" fillOpacity="1" strokeLinejoin="round" strokeWidth="3"></path>
                         </g>
 
-                        {/* Video Player Center Play Button */}
-                        <g
-                          className="sc-pop"
-                          style={{ animationDelay: "0.8s" }}
-                        >
-                          <circle
-                            cx="0"
-                            cy="-5"
-                            r="35"
-                            fill="currentColor"
-                            fillOpacity="0.15"
-                            strokeOpacity="0.8"
-                            strokeWidth="4"
-                          ></circle>
-                          <path
-                            d="M-8 -20 L12 -5 L-8 10 Z"
-                            fill="currentColor"
-                            fillOpacity="0.9"
-                          ></path>
-                        </g>
-
-                        {/* Floating course modules */}
-                        <g
-                          className="sc-ghost"
-                          style={{ animationDelay: "1.5s" }}
-                        >
-                          <rect
-                            x="-260"
-                            y="30"
-                            width="120"
-                            height="50"
-                            rx="8"
-                            fill="var(--card)"
-                            strokeOpacity="0.8"
-                            strokeWidth="3"
-                          ></rect>
-                          <circle
-                            cx="-235"
-                            cy="55"
-                            r="10"
-                            fill="currentColor"
-                            fillOpacity="0.2"
-                          ></circle>
-                          <line
-                            x1="-215"
-                            y1="50"
-                            x2="-160"
-                            y2="50"
-                            strokeWidth="6"
-                            strokeOpacity="0.4"
-                          ></line>
-                          <line
-                            x1="-215"
-                            y1="60"
-                            x2="-180"
-                            y2="60"
-                            strokeWidth="6"
-                            strokeOpacity="0.4"
-                          ></line>
-                        </g>
-
-                        <g
-                          className="sc-ghost"
-                          style={{ animationDelay: "2.5s" }}
-                        >
-                          <rect
-                            x="140"
-                            y="-40"
-                            width="130"
-                            height="50"
-                            rx="8"
-                            fill="var(--card)"
-                            strokeOpacity="0.8"
-                            strokeWidth="3"
-                          ></rect>
-                          <circle
-                            cx="165"
-                            cy="-15"
-                            r="10"
-                            fill="currentColor"
-                            fillOpacity="0.2"
-                          ></circle>
-                          <line
-                            x1="185"
-                            y1="-20"
-                            x2="240"
-                            y2="-20"
-                            strokeWidth="6"
-                            strokeOpacity="0.4"
-                          ></line>
-                          <line
-                            x1="185"
-                            y1="-10"
-                            x2="220"
-                            y2="-10"
-                            strokeWidth="6"
-                            strokeOpacity="0.4"
-                          ></line>
+                        {/* Progress Bar (Eksklusif Platform) */}
+                        <g className="sc-rise" style={{ animationDelay: "1.2s" }}>
+                          <line x1="-100" y1="80" x2="100" y2="80" strokeWidth="8" strokeOpacity="0.2" strokeLinecap="round"></line>
+                          <line x1="-100" y1="80" x2="20" y2="80" strokeWidth="8" strokeOpacity="0.9" strokeLinecap="round" className="sc-draw" style={{ animationDelay: "1.5s" }} pathLength={1} strokeDasharray="1" strokeDashoffset="1"></line>
+                          <circle cx="20" cy="80" r="8" fill="#D0E206" className="sc-pop" style={{ animationDelay: "1.8s" }}></circle>
                         </g>
                       </g>
-                    </g>
+</g>
                   </svg>
                 </div>
               </div>
