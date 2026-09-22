@@ -70,7 +70,7 @@ export default function Home() {
               className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 hover:border-rn-orange/50 shadow-black/50' : 'bg-white border-gray-200 hover:border-rn-orange shadow-gray-200'}`}
             >
               {/* SVG Background */}
-              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-20 group-hover:opacity-100 z-0 flex items-start justify-center pt-4">
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-80 z-0 flex items-start justify-center pt-4">
                 <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-rn-orange" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
                     <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
@@ -114,7 +114,7 @@ export default function Home() {
               className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 hover:border-rn-accent/50 shadow-black/50' : 'bg-white border-gray-200 hover:border-rn-accent shadow-gray-200'}`}
             >
               {/* SVG Background */}
-              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-20 group-hover:opacity-100 z-0 flex items-start justify-center pt-4">
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-80 z-0 flex items-start justify-center pt-4">
                 <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-rn-accent" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
                     <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
@@ -166,7 +166,7 @@ export default function Home() {
               className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 shadow-black/50 hover:border-purple-500/50' : 'bg-white border-gray-200 shadow-gray-200 hover:border-purple-400'} cursor-default`}
             >
               {/* SVG Background */}
-              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-20 group-hover:opacity-100 z-0 flex items-start justify-center pt-4">
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-80 z-0 flex items-start justify-center pt-4">
                 <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-purple-400" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
                     <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
