@@ -1,13 +1,26 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { BookOpen, Wrench, MessageCircle, FileText, Check, Copy, Flame, User, PlayCircle, Star, Zap, Moon, Sun, ArrowLeft, GraduationCap } from "lucide-react";
 
 export default function Home() {
   const [showPricing, setShowPricing] = useState(false);
   const [isDark, setIsDark] = useState(true);
+  const [followerCount, setFollowerCount] = useState("144K");
+
+  useEffect(() => {
+    fetch('/api/instagram')
+      .then(res => res.json())
+      .then(data => {
+        if (data.followers) {
+          const formatted = (data.followers / 1000).toFixed(0) + 'K';
+          setFollowerCount(formatted);
+        }
+      })
+      .catch(err => console.error('Error loading follower count:', err));
+  }, []);
 
   return (
     <div className={`w-full min-h-screen flex flex-col relative transition-colors duration-300 ${isDark ? 'bg-[#0f0f11] text-gray-200' : 'bg-gray-50 text-gray-800'}`}>
@@ -20,7 +33,7 @@ export default function Home() {
         
         <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6 text-sm font-medium text-gray-400">
           <div className="flex items-center gap-1.5"><div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div> <span className="text-emerald-500 font-bold uppercase tracking-wide">LIVE</span></div>
-          <div className="flex items-center gap-1.5"><User className="w-4 h-4" /> <span className={`font-bold transition-colors ${isDark ? 'text-white' : 'text-gray-900'}`}>144K</span> Follower</div>
+          <div className="flex items-center gap-1.5"><User className="w-4 h-4" /> <span className={`font-bold transition-colors ${isDark ? 'text-white' : 'text-gray-900'}`}>{followerCount}</span> Follower</div>
           <div className="flex items-center gap-1.5"><BookOpen className="w-4 h-4" /> <span className={`font-bold transition-colors ${isDark ? 'text-white' : 'text-gray-900'}`}>700+</span> Member</div>
         </div>
 
