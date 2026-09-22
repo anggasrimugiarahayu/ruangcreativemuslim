@@ -129,687 +129,7 @@ export default function Home() {
                   className="iso-stage pointer-events-none absolute aspect-[1642/1200] max-w-none -translate-x-1/2 -translate-y-1/2 transition-transform duration-700 ease-out group-hover:scale-[1.05] text-rn-orange"
                   style={{ top: "50%", left: "50%", width: "290%" }}
                 >
-                  <svg
-                    viewBox="0 0 1642 1200"
-                    className="w-full h-full"
-                    aria-hidden="true"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <g
-                      strokeOpacity="0.18"
-                      strokeWidth="3"
-                      strokeDasharray="3 14"
-                    >
-                      <line x1="21" y1="0" x2="21" y2="1200"></line>
-                      <line x1="101" y1="0" x2="101" y2="1200"></line>
-                      <line x1="181" y1="0" x2="181" y2="1200"></line>
-                      <line x1="261" y1="0" x2="261" y2="1200"></line>
-                      <line x1="341" y1="0" x2="341" y2="1200"></line>
-                      <line x1="421" y1="0" x2="421" y2="1200"></line>
-                      <line x1="501" y1="0" x2="501" y2="1200"></line>
-                      <line x1="581" y1="0" x2="581" y2="1200"></line>
-                      <line x1="661" y1="0" x2="661" y2="1200"></line>
-                      <line x1="741" y1="0" x2="741" y2="1200"></line>
-                      <line x1="821" y1="0" x2="821" y2="1200"></line>
-                      <line x1="901" y1="0" x2="901" y2="1200"></line>
-                      <line x1="981" y1="0" x2="981" y2="1200"></line>
-                      <line x1="1061" y1="0" x2="1061" y2="1200"></line>
-                      <line x1="1141" y1="0" x2="1141" y2="1200"></line>
-                      <line x1="1221" y1="0" x2="1221" y2="1200"></line>
-                      <line x1="1301" y1="0" x2="1301" y2="1200"></line>
-                      <line x1="1381" y1="0" x2="1381" y2="1200"></line>
-                      <line x1="1461" y1="0" x2="1461" y2="1200"></line>
-                      <line x1="1541" y1="0" x2="1541" y2="1200"></line>
-                      <line x1="1621" y1="0" x2="1621" y2="1200"></line>
-                      <line x1="0" y1="40" x2="1642" y2="40"></line>
-                      <line x1="0" y1="120" x2="1642" y2="120"></line>
-                      <line x1="0" y1="200" x2="1642" y2="200"></line>
-                      <line x1="0" y1="280" x2="1642" y2="280"></line>
-                      <line x1="0" y1="360" x2="1642" y2="360"></line>
-                      <line x1="0" y1="440" x2="1642" y2="440"></line>
-                      <line x1="0" y1="520" x2="1642" y2="520"></line>
-                      <line x1="0" y1="600" x2="1642" y2="600"></line>
-                      <line x1="0" y1="680" x2="1642" y2="680"></line>
-                      <line x1="0" y1="760" x2="1642" y2="760"></line>
-                      <line x1="0" y1="840" x2="1642" y2="840"></line>
-                      <line x1="0" y1="920" x2="1642" y2="920"></line>
-                      <line x1="0" y1="1000" x2="1642" y2="1000"></line>
-                      <line x1="0" y1="1080" x2="1642" y2="1080"></line>
-                      <line x1="0" y1="1160" x2="1642" y2="1160"></line>
-                    </g>
-                    <g transform="translate(821 600)">
-                      <style>{`
-                          @keyframes atm-rise {
-                            0%, 10% { opacity: 0; transform: translateY(20px); }
-                            15%, 90% { opacity: 1; transform: translateY(0); }
-                            95%, 100% { opacity: 0; transform: translateY(-10px); }
-                          }
-                          @keyframes atm-pop {
-                            0%, 5% { opacity: 0; transform: scale(0.5); }
-                            10%, 90% { opacity: 1; transform: scale(1); }
-                            95%, 100% { opacity: 0; transform: scale(0.5); }
-                          }
-                          @keyframes atm-draw {
-                            0%, 10% { stroke-dashoffset: 1; opacity: 0;}
-                            20%, 90% { stroke-dashoffset: 0; opacity: 1;}
-                            95%, 100% { stroke-dashoffset: 1; opacity: 0;}
-                          }
-                          @keyframes atm-flow {
-                            0%, 10% { opacity: 0; transform: translateX(-10px); }
-                            20%, 80% { opacity: 1; transform: translateX(0); }
-                            90%, 100% { opacity: 0; transform: translateX(10px); }
-                          }
-                        `}</style>
-
-                      <g transform="translate(-12 0)">
-                        {/* 1. Left Section: Produk Digital */}
-                        <g
-                          style={{
-                            animation: "atm-rise 8s infinite both",
-                            animationDelay: "0s",
-                          }}
-                        >
-                          <circle
-                            cx="-200"
-                            cy="-22"
-                            r="30"
-                            fill="currentColor"
-                            fillOpacity="0.06"
-                            strokeOpacity="0.75"
-                            strokeWidth="5"
-                          ></circle>
-                          {/* Box / Book icon inside */}
-                          <path
-                            d="M-212 -22 L-206 -33 L-200 -19 L-194 -33 L-188 -22"
-                            strokeWidth="5"
-                            strokeOpacity="0.8"
-                            style={{
-                              animation: "atm-draw 8s infinite both",
-                              animationDelay: "0.2s",
-                            }}
-                            pathLength="1"
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></path>
-                          <rect
-                            x="-212"
-                            y="6"
-                            width="24"
-                            height="15"
-                            rx="3"
-                            fill="currentColor"
-                            fillOpacity="0.12"
-                            strokeOpacity="0.7"
-                            strokeWidth="4"
-                          ></rect>
-                          <line
-                            x1="-206"
-                            y1="25"
-                            x2="-194"
-                            y2="25"
-                            strokeWidth="5"
-                            strokeOpacity="0.6"
-                          ></line>
-
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "0.5s",
-                            }}
-                          >
-                            <path
-                              d="M-200 -60 L-200 -74"
-                              strokeWidth="6"
-                              strokeOpacity="0.7"
-                            ></path>
-                          </g>
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "0.7s",
-                            }}
-                          >
-                            <path
-                              d="M-226 -44 L-236 -54"
-                              strokeWidth="6"
-                              strokeOpacity="0.7"
-                            ></path>
-                          </g>
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "0.9s",
-                            }}
-                          >
-                            <path
-                              d="M-174 -44 L-164 -54"
-                              strokeWidth="6"
-                              strokeOpacity="0.7"
-                            ></path>
-                          </g>
-                        </g>
-
-                        {/* 2. Flow Arrows */}
-                        <g
-                          style={{
-                            animation: "atm-rise 8s infinite both",
-                            animationDelay: "1s",
-                          }}
-                        >
-                          <g transform="translate(-160 -10)">
-                            <g
-                              style={{
-                                animation: "atm-flow 8s infinite both",
-                                animationDelay: "0s",
-                              }}
-                            >
-                              <path
-                                d="M0 -12 L11 0 L0 12"
-                                strokeWidth="7"
-                                strokeOpacity="0.8"
-                                fill="none"
-                              ></path>
-                            </g>
-                          </g>
-                          <g transform="translate(-144 -10)">
-                            <g
-                              style={{
-                                animation: "atm-flow 8s infinite both",
-                                animationDelay: "0.15s",
-                              }}
-                            >
-                              <path
-                                d="M0 -12 L11 0 L0 12"
-                                strokeWidth="7"
-                                strokeOpacity="0.8"
-                                fill="none"
-                              ></path>
-                            </g>
-                          </g>
-                          <g transform="translate(-128 -10)">
-                            <g
-                              style={{
-                                animation: "atm-flow 8s infinite both",
-                                animationDelay: "0.3s",
-                              }}
-                            >
-                              <path
-                                d="M0 -12 L11 0 L0 12"
-                                strokeWidth="7"
-                                strokeOpacity="0.8"
-                                fill="none"
-                              ></path>
-                            </g>
-                          </g>
-                        </g>
-
-                        {/* 3. Middle Section: Faceless / Sosmed */}
-                        <g
-                          style={{
-                            animation: "atm-rise 8s infinite both",
-                            animationDelay: "1.5s",
-                          }}
-                        >
-                          <rect
-                            x="-95"
-                            y="-100"
-                            width="210"
-                            height="190"
-                            rx="16"
-                            fill="currentColor"
-                            fillOpacity="0.05"
-                            strokeOpacity="0.7"
-                            strokeWidth="5"
-                          ></rect>
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "1.8s",
-                            }}
-                          >
-                            <text
-                              x="-70"
-                              y="-70"
-                              fontSize="30"
-                              fontWeight="700"
-                              fill="currentColor"
-                              fillOpacity="0.85"
-                              stroke="none"
-                              dominantBaseline="central"
-                              letterSpacing="0.68"
-                            >
-                              FACELESS
-                            </text>
-                          </g>
-
-                          <line
-                            x1="100"
-                            y1="-70"
-                            x2="110"
-                            y2="-70"
-                            strokeWidth="11"
-                            strokeOpacity="0.3"
-                            style={{
-                              animation: "atm-draw 8s infinite both",
-                              animationDelay: "2s",
-                            }}
-                            pathLength="1"
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-
-                          {/* Profile UI elements */}
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "2s",
-                            }}
-                          >
-                            <circle
-                              cx="-45"
-                              cy="-25"
-                              r="22"
-                              fill="currentColor"
-                              fillOpacity="0.1"
-                              strokeOpacity="0.6"
-                              strokeWidth="4"
-                            ></circle>
-                          </g>
-
-                          <line
-                            x1="-10"
-                            y1="-38"
-                            x2="80"
-                            y2="-38"
-                            strokeWidth="8"
-                            strokeOpacity="0.6"
-                            style={{
-                              animation: "atm-draw 8s infinite both",
-                              animationDelay: "2.3s",
-                            }}
-                            pathLength="1"
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-                          <line
-                            x1="-10"
-                            y1="-12"
-                            x2="55"
-                            y2="-12"
-                            strokeWidth="8"
-                            strokeOpacity="0.6"
-                            style={{
-                              animation: "atm-draw 8s infinite both",
-                              animationDelay: "2.5s",
-                            }}
-                            pathLength="1"
-                            strokeDasharray="1"
-                            strokeDashoffset="1"
-                          ></line>
-
-                          {/* Post grid */}
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "2.8s",
-                            }}
-                          >
-                            <rect
-                              x="-70"
-                              y="20"
-                              width="40"
-                              height="40"
-                              rx="6"
-                              fill="currentColor"
-                              fillOpacity="0.08"
-                              strokeOpacity="0.6"
-                              strokeWidth="4"
-                            ></rect>
-                          </g>
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "3s",
-                            }}
-                          >
-                            <rect
-                              x="-15"
-                              y="20"
-                              width="40"
-                              height="40"
-                              rx="6"
-                              fill="currentColor"
-                              fillOpacity="0.08"
-                              strokeOpacity="0.6"
-                              strokeWidth="4"
-                            ></rect>
-                          </g>
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "3.2s",
-                            }}
-                          >
-                            <rect
-                              x="40"
-                              y="20"
-                              width="40"
-                              height="40"
-                              rx="6"
-                              fill="currentColor"
-                              fillOpacity="0.08"
-                              strokeOpacity="0.6"
-                              strokeWidth="4"
-                            ></rect>
-                          </g>
-                        </g>
-
-                        {/* 4. Right Section: Cuan */}
-                        <g
-                          style={{
-                            animation: "atm-rise 8s infinite both",
-                            animationDelay: "3.8s",
-                          }}
-                        >
-                          <rect
-                            x="75"
-                            y="-50"
-                            width="190"
-                            height="150"
-                            rx="16"
-                            fill="var(--card)"
-                            strokeOpacity="0.8"
-                            strokeWidth="5"
-                          ></rect>
-
-                          {/* Corner dots */}
-                          <rect
-                            x="69"
-                            y="-56"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            stroke="none"
-                            opacity="0.85"
-                          ></rect>
-                          <rect
-                            x="259"
-                            y="-56"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            stroke="none"
-                            opacity="0.85"
-                          ></rect>
-                          <rect
-                            x="259"
-                            y="94"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            stroke="none"
-                            opacity="0.85"
-                          ></rect>
-                          <rect
-                            x="69"
-                            y="94"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            stroke="none"
-                            opacity="0.85"
-                          ></rect>
-
-                          <g
-                            style={{
-                              animation: "atm-pop 8s infinite both",
-                              animationDelay: "4s",
-                            }}
-                          >
-                            <text
-                              x="95"
-                              y="-24"
-                              fontSize="28"
-                              fontWeight="700"
-                              fill="oklch(0.75 0.13 150)"
-                              fillOpacity="0.85"
-                              stroke="none"
-                              dominantBaseline="central"
-                              letterSpacing="0.56"
-                            >
-                              CUAN
-                            </text>
-                          </g>
-
-                          {/* Cuan rows with checkmarks */}
-                          <g>
-                            <line
-                              x1="128"
-                              y1="14"
-                              x2="210"
-                              y2="14"
-                              strokeWidth="10"
-                              strokeOpacity="0.65"
-                              style={{
-                                animation: "atm-draw 8s infinite both",
-                                animationDelay: "4.3s",
-                              }}
-                              pathLength="1"
-                              strokeDasharray="1"
-                              strokeDashoffset="1"
-                            ></line>
-                            <g transform="translate(107 14)">
-                              <g
-                                style={{
-                                  animation: "atm-pop 8s infinite both",
-                                  animationDelay: "4.4s",
-                                }}
-                              >
-                                <rect
-                                  x="-11"
-                                  y="-11"
-                                  width="22"
-                                  height="22"
-                                  rx="6"
-                                  strokeOpacity="0.55"
-                                  strokeWidth="4"
-                                ></rect>
-                              </g>
-                              <g
-                                style={{
-                                  animation: "atm-pop 8s infinite both",
-                                  animationDelay: "4.8s",
-                                }}
-                              >
-                                <rect
-                                  x="-11"
-                                  y="-11"
-                                  width="22"
-                                  height="22"
-                                  rx="6"
-                                  fill="oklch(0.75 0.13 150)"
-                                  fillOpacity="0.18"
-                                  stroke="oklch(0.75 0.13 150)"
-                                  strokeOpacity="0.95"
-                                  strokeWidth="4"
-                                ></rect>
-                                <path
-                                  d="M-6 0 L-2 4 L7 -5"
-                                  stroke="oklch(0.75 0.13 150)"
-                                  strokeWidth="5"
-                                  fill="none"
-                                ></path>
-                              </g>
-                            </g>
-                          </g>
-
-                          <g>
-                            <line
-                              x1="128"
-                              y1="44"
-                              x2="240"
-                              y2="44"
-                              strokeWidth="10"
-                              strokeOpacity="0.65"
-                              style={{
-                                animation: "atm-draw 8s infinite both",
-                                animationDelay: "5.1s",
-                              }}
-                              pathLength="1"
-                              strokeDasharray="1"
-                              strokeDashoffset="1"
-                            ></line>
-                            <g transform="translate(107 44)">
-                              <g
-                                style={{
-                                  animation: "atm-pop 8s infinite both",
-                                  animationDelay: "5.2s",
-                                }}
-                              >
-                                <rect
-                                  x="-11"
-                                  y="-11"
-                                  width="22"
-                                  height="22"
-                                  rx="6"
-                                  strokeOpacity="0.55"
-                                  strokeWidth="4"
-                                ></rect>
-                              </g>
-                              <g
-                                style={{
-                                  animation: "atm-pop 8s infinite both",
-                                  animationDelay: "5.6s",
-                                }}
-                              >
-                                <rect
-                                  x="-11"
-                                  y="-11"
-                                  width="22"
-                                  height="22"
-                                  rx="6"
-                                  fill="oklch(0.75 0.13 150)"
-                                  fillOpacity="0.18"
-                                  stroke="oklch(0.75 0.13 150)"
-                                  strokeOpacity="0.95"
-                                  strokeWidth="4"
-                                ></rect>
-                                <path
-                                  d="M-6 0 L-2 4 L7 -5"
-                                  stroke="oklch(0.75 0.13 150)"
-                                  strokeWidth="5"
-                                  fill="none"
-                                ></path>
-                              </g>
-                            </g>
-                          </g>
-
-                          <g>
-                            <line
-                              x1="128"
-                              y1="74"
-                              x2="188"
-                              y2="74"
-                              strokeWidth="10"
-                              strokeOpacity="0.65"
-                              style={{
-                                animation: "atm-draw 8s infinite both",
-                                animationDelay: "5.9s",
-                              }}
-                              pathLength="1"
-                              strokeDasharray="1"
-                              strokeDashoffset="1"
-                            ></line>
-                            <g transform="translate(107 74)">
-                              <g
-                                style={{
-                                  animation: "atm-pop 8s infinite both",
-                                  animationDelay: "6.0s",
-                                }}
-                              >
-                                <rect
-                                  x="-11"
-                                  y="-11"
-                                  width="22"
-                                  height="22"
-                                  rx="6"
-                                  strokeOpacity="0.55"
-                                  strokeWidth="4"
-                                ></rect>
-                              </g>
-                              <g
-                                style={{
-                                  animation: "atm-pop 8s infinite both",
-                                  animationDelay: "6.4s",
-                                }}
-                              >
-                                <rect
-                                  x="-11"
-                                  y="-11"
-                                  width="22"
-                                  height="22"
-                                  rx="6"
-                                  fill="oklch(0.75 0.13 150)"
-                                  fillOpacity="0.18"
-                                  stroke="oklch(0.75 0.13 150)"
-                                  strokeOpacity="0.95"
-                                  strokeWidth="4"
-                                ></rect>
-                                <path
-                                  d="M-6 0 L-2 4 L7 -5"
-                                  stroke="oklch(0.75 0.13 150)"
-                                  strokeWidth="5"
-                                  fill="none"
-                                ></path>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div className="relative mt-4 space-y-1">
-                <h2
-                  className={`font-heading text-lg font-bold leading-snug transition-colors duration-300 ${isDark ? "text-white" : "text-gray-900"}`}
-                >
-                  Ebook Ngonten
-                </h2>
-                <p
-                  className={`text-sm leading-relaxed transition-colors duration-300 ${isDark ? "text-gray-400" : "text-gray-600"}`}
-                >
-                  Panduan strategi faceless creator untuk hasilkan cuan jangka
-                  panjang tanpa harus nunjukin wajah.
-                </p>
-              </div>
-            </Link>
-
-            {/* TOOLS CARD */}
-            <Link
-              href="/tools"
-              className={`group relative flex flex-col justify-start rounded-xl border-2 p-6 text-left transition-all duration-300 hover:shadow-xl cursor-pointer z-0 overflow-hidden ${isDark ? "bg-[#18181b] border-white/5 hover:border-rn-accent/50 shadow-black/50" : "bg-white border-gray-200 hover:border-rn-accent shadow-gray-200"}`}
-            >
-              <span className="absolute top-3 right-3 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-500 shadow-sm z-10">
-                New Product
-              </span>
-              <div className="relative w-full overflow-hidden aspect-[344/145] lg:aspect-[4/3] rounded-lg">
-                <div
-                  className="iso-stage pointer-events-none absolute aspect-[1642/1200] max-w-none -translate-x-1/2 -translate-y-1/2 transition-transform duration-700 ease-out group-hover:scale-[1.05] text-rn-accent"
-                  style={{ top: "50%", left: "50%", width: "270%" }}
-                >
-                  <svg
-                    viewBox="0 0 1642 1200"
-                    className="w-full h-full"
-                    aria-hidden="true"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
+                  <svg viewBox="0 0 1642 1200" className="w-full h-full" aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
                       <style>{`
                           @keyframes atm-rise {
                               0% { opacity: 0; transform: translateY(20px); }
@@ -844,10 +164,236 @@ export default function Home() {
                               40%, 100% { opacity: 1; transform: scaleY(1); transform-origin: bottom; }
                           }
                       `}</style>
-<g transform="translate(821 600)"><g transform="translate(-138 -96)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.15s" }}><rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect><g strokeOpacity="0.8" strokeWidth="3.5" fill="none"><path d="M0 -12 L0 12"></path><path d="M-10.5 -6 L10.5 6"></path><path d="M-10.5 6 L10.5 -6"></path></g></g></g><g transform="translate(-46 -96)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.3s" }}><rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect><g strokeOpacity="0.8" strokeWidth="3.5" fill="none"><path d="M0 -12 L10.5 -6 L10.5 6 L0 12 L-10.5 6 L-10.5 -6 Z"></path><circle r="3" fill="currentColor" stroke="none"></circle></g></g></g><g transform="translate(46 -96)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.45s" }}><rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect><g strokeOpacity="0.8" strokeWidth="3.5" fill="none"><path d="M0 -12 Q0 0 12 0 Q0 0 0 12 Q0 0 -12 0 Q0 0 0 -12 Z"></path></g></g></g><g transform="translate(138 -96)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.6s" }}><rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect><g strokeOpacity="0.8" strokeWidth="3.5" fill="none"><path d="M2 -12 A 12 12 0 1 0 2 12 A 9.5 9.5 0 1 1 2 -12 Z"></path></g></g></g><g transform="translate(0 -96)"><g style={{ animation: "atm-ring 8s infinite both" }}><rect x="-29" y="-29" width="58" height="58" rx="18" fill="oklch(0.78 0.15 45)" fillOpacity="0.1" stroke="oklch(0.78 0.15 45)" strokeOpacity="0.95" strokeWidth="5"></rect></g></g><defs><clipPath id="home-v2-chat-viewport"><rect x="-272" y="-60" width="544" height="190"></rect></clipPath></defs><g clipPath="url(#home-v2-chat-viewport)"><g transform="translate(0 -60)"><g style={{ animation: "atm-scroll 8s infinite both" }}><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "2.5s" }}><path d="M 114 4 H 236 a 14 14 0 0 1 14 14 V 36 H 114 a 14 14 0 0 1 -14 -14 V 18 a 14 14 0 0 1 14 -14 Z" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.6" strokeWidth="5"></path><g><line x1="120" y1="20" x2="230" y2="20" strokeWidth="9" strokeOpacity="0.55" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.7s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g></g><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "3.0s" }}><path d="M -236 46 H 16 a 14 14 0 0 1 14 14 V 86 a 14 14 0 0 1 -14 14 H -250 V 60 a 14 14 0 0 1 14 -14 Z" fill="oklch(0.78 0.15 45)" fillOpacity="0.12" stroke="oklch(0.78 0.15 45)" strokeOpacity="0.95" strokeWidth="5"></path><g><line x1="-230" y1="64" x2="10" y2="64" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g><g><line x1="-230" y1="86" x2="-60" y2="86" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.4s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g></g><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "3.7s" }}><path d="M 164 110 H 236 a 14 14 0 0 1 14 14 V 142 H 164 a 14 14 0 0 1 -14 -14 V 124 a 14 14 0 0 1 14 -14 Z" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.6" strokeWidth="5"></path><g><line x1="170" y1="126" x2="230" y2="126" strokeWidth="9" strokeOpacity="0.55" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.9s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g></g><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "4.2s" }}><path d="M -236 152 H 36 a 14 14 0 0 1 14 14 V 278 a 14 14 0 0 1 -14 14 H -250 V 166 a 14 14 0 0 1 14 -14 Z" fill="oklch(0.78 0.15 45)" fillOpacity="0.12" stroke="oklch(0.78 0.15 45)" strokeOpacity="0.95" strokeWidth="5"></path><g><line x1="-230" y1="174" x2="-110" y2="174" strokeWidth="12" strokeOpacity="0.85" style={{ animation: "atm-draw 8s infinite both", animationDelay: "4.7s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g><g><line x1="-230" y1="190" x2="30" y2="190" strokeWidth="2" strokeOpacity="0.25" style={{ animation: "atm-draw 8s infinite both", animationDelay: "4.9s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g><g><line x1="-210" y1="208" x2="30" y2="208" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "5.1s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(-226 208)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "5.1s" }}><circle r="4.5" fill="oklch(0.78 0.15 45)" stroke="none"></circle></g></g></g><g><line x1="-210" y1="230" x2="-50" y2="230" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "5.4s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(-226 230)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "5.4s" }}><circle r="4.5" fill="oklch(0.78 0.15 45)" stroke="none"></circle></g></g></g><g><line x1="-210" y1="252" x2="10" y2="252" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "5.7s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(-226 252)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "5.7s" }}><circle r="4.5" fill="oklch(0.78 0.15 45)" stroke="none"></circle></g></g></g><g><line x1="-230" y1="274" x2="-130" y2="274" strokeWidth="7" strokeOpacity="0.45" style={{ animation: "atm-draw 8s infinite both", animationDelay: "6.0s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g></g></g></g></g>
-</g>
+    {/* Grid Background */}
+    <g strokeOpacity="0.18" strokeWidth="3" strokeDasharray="3 14">
+      {Array.from({ length: 21 }).map((_, i) => (
+        <line key={`v-${i}`} x1={21 + i * 80} y1="0" x2={21 + i * 80} y2="1200" />
+      ))}
+      {Array.from({ length: 15 }).map((_, i) => (
+        <line key={`h-${i}`} x1="0" y1={40 + i * 80} x2="1642" y2={40 + i * 80} />
+      ))}
+    </g>
+    <g transform="translate(821 600)">
+      <g transform="translate(-12 0)">
+        {/* Logo / Lightbulb */}
+        <g style={{ animation: "atm-rise 8s infinite both", animationDelay: "0.1s" }}>
+          <circle cx="-200" cy="-22" r="30" fill="currentColor" fillOpacity="0.06" strokeOpacity="0.75" strokeWidth="5"></circle>
+          {/* Lightbulb Icon */}
+          <path d="M-200 -42 C-208 -42 -212 -34 -212 -26 C-212 -20 -206 -16 -206 -10 L-194 -10 C-194 -16 -188 -20 -188 -26 C-188 -34 -192 -42 -200 -42 Z" strokeWidth="4" strokeOpacity="0.8" style={{ animation: "atm-draw 8s infinite both", animationDelay: "0.5s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
+          <line x1="-204" y1="-5" x2="-196" y2="-5" strokeWidth="4" strokeOpacity="0.8" />
+          <line x1="-202" y1="0" x2="-198" y2="0" strokeWidth="4" strokeOpacity="0.8" />
+          {/* Sparkles */}
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.9s" }}><path d="M-200 -52 L-200 -60" strokeWidth="4" strokeOpacity="0.7"></path></g>
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.05s" }}><path d="M-216 -40 L-222 -46" strokeWidth="4" strokeOpacity="0.7"></path></g>
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.2s" }}><path d="M-184 -40 L-178 -46" strokeWidth="4" strokeOpacity="0.7"></path></g>
+        </g>
+        
+        {/* Flow Arrows */}
+        <g style={{ animation: "atm-rise 8s infinite both", animationDelay: "1.5s" }}>
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.5s" }} transform="translate(-160 -10)">
+            <path d="M0 -12 L11 0 L0 12" strokeWidth="7" strokeOpacity="0.8"></path>
+          </g>
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.62s" }} transform="translate(-144 -10)">
+            <path d="M0 -12 L11 0 L0 12" strokeWidth="7" strokeOpacity="0.8"></path>
+          </g>
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.74s" }} transform="translate(-128 -10)">
+            <path d="M0 -12 L11 0 L0 12" strokeWidth="7" strokeOpacity="0.8"></path>
+          </g>
+        </g>
 
-                  </svg>
+        {/* Card 1: Faceless Strategy */}
+        <g style={{ animation: "atm-rise 8s infinite both", animationDelay: "1.8s" }}>
+          <rect x="-95" y="-100" width="210" height="190" rx="16" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.7" strokeWidth="5"></rect>
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "2.1s" }}>
+            <text x="-70" y="-70" fontSize="30" fontWeight="700" fill="currentColor" fillOpacity="0.85" stroke="none" dominantBaseline="central" letterSpacing="0.6">FACELESS</text>
+          </g>
+          <line x1="100" y1="-70" x2="150" y2="-70" strokeWidth="11" strokeOpacity="0.3" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.3s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+          
+          <line x1="-70" y1="-30" x2="60" y2="-30" strokeWidth="10" strokeOpacity="0.6" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.5s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+          <line x1="-70" y1="0" x2="80" y2="0" strokeWidth="10" strokeOpacity="0.6" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.8s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+          <line x1="-70" y1="30" x2="40" y2="30" strokeWidth="10" strokeOpacity="0.6" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.05s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+        </g>
+
+        {/* Card 2: Cuan (Results) */}
+        <g style={{ animation: "atm-rise 8s infinite both", animationDelay: "3.6s" }}>
+          <rect x="75" y="-50" width="190" height="150" rx="16" fill="var(--card)" stroke="oklch(0.75 0.13 150)" strokeOpacity="0.8" strokeWidth="5"></rect>
+          <rect x="69" y="-56" width="12" height="12" fill="oklch(0.75 0.13 150)" stroke="none" opacity="0.85"></rect>
+          <rect x="259" y="-56" width="12" height="12" fill="oklch(0.75 0.13 150)" stroke="none" opacity="0.85"></rect>
+          <rect x="259" y="94" width="12" height="12" fill="oklch(0.75 0.13 150)" stroke="none" opacity="0.85"></rect>
+          <rect x="69" y="94" width="12" height="12" fill="oklch(0.75 0.13 150)" stroke="none" opacity="0.85"></rect>
+          
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "3.9s" }}>
+            <text x="95" y="-24" fontSize="28" fontWeight="700" fill="oklch(0.75 0.13 150)" fillOpacity="0.9" stroke="none" dominantBaseline="central" letterSpacing="0.56">CUAN</text>
+          </g>
+          
+          <g>
+            <line x1="128" y1="14" x2="210" y2="14" strokeWidth="10" strokeOpacity="0.65" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.95s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+            <g transform="translate(107 14)">
+              <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.1s" }}><rect x="-11" y="-11" width="22" height="22" rx="6" strokeOpacity="0.55" strokeWidth="4"></rect></g>
+              <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.9s" }}>
+                <rect x="-11" y="-11" width="22" height="22" rx="6" fill="oklch(0.75 0.13 150)" fillOpacity="0.18" stroke="oklch(0.75 0.13 150)" strokeOpacity="0.95" strokeWidth="4"></rect>
+                <path d="M-6 0 L-2 4 L7 -5" stroke="oklch(0.75 0.13 150)" strokeWidth="5"></path>
+              </g>
+            </g>
+          </g>
+          <g>
+            <line x1="128" y1="44" x2="230" y2="44" strokeWidth="10" strokeOpacity="0.65" style={{ animation: "atm-draw 8s infinite both", animationDelay: "4.15s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+            <g transform="translate(107 44)">
+              <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.3s" }}><rect x="-11" y="-11" width="22" height="22" rx="6" strokeOpacity="0.55" strokeWidth="4"></rect></g>
+              <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "5.3s" }}>
+                <rect x="-11" y="-11" width="22" height="22" rx="6" fill="oklch(0.75 0.13 150)" fillOpacity="0.18" stroke="oklch(0.75 0.13 150)" strokeOpacity="0.95" strokeWidth="4"></rect>
+                <path d="M-6 0 L-2 4 L7 -5" stroke="oklch(0.75 0.13 150)" strokeWidth="5"></path>
+              </g>
+            </g>
+          </g>
+          <g>
+            <line x1="128" y1="74" x2="188" y2="74" strokeWidth="10" strokeOpacity="0.65" style={{ animation: "atm-draw 8s infinite both", animationDelay: "4.35s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+            <g transform="translate(107 74)">
+              <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.5s" }}><rect x="-11" y="-11" width="22" height="22" rx="6" strokeOpacity="0.55" strokeWidth="4"></rect></g>
+              <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "5.7s" }}>
+                <rect x="-11" y="-11" width="22" height="22" rx="6" fill="oklch(0.75 0.13 150)" fillOpacity="0.18" stroke="oklch(0.75 0.13 150)" strokeOpacity="0.95" strokeWidth="4"></rect>
+                <path d="M-6 0 L-2 4 L7 -5" stroke="oklch(0.75 0.13 150)" strokeWidth="5"></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+                </div>
+              </div>
+              <div className="relative mt-4 space-y-1">
+                <h2
+                  className={`font-heading text-lg font-bold leading-snug transition-colors duration-300 ${isDark ? "text-white" : "text-gray-900"}`}
+                >
+                  Ebook Ngonten
+                </h2>
+                <p
+                  className={`text-sm leading-relaxed transition-colors duration-300 ${isDark ? "text-gray-400" : "text-gray-600"}`}
+                >
+                  Panduan strategi faceless creator untuk hasilkan cuan jangka
+                  panjang tanpa harus nunjukin wajah.
+                </p>
+              </div>
+            </Link>
+
+            {/* TOOLS CARD */}
+            <Link
+              href="/tools"
+              className={`group relative flex flex-col justify-start rounded-xl border-2 p-6 text-left transition-all duration-300 hover:shadow-xl cursor-pointer z-0 overflow-hidden ${isDark ? "bg-[#18181b] border-white/5 hover:border-rn-accent/50 shadow-black/50" : "bg-white border-gray-200 hover:border-rn-accent shadow-gray-200"}`}
+            >
+              <span className="absolute top-3 right-3 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-500 shadow-sm z-10">
+                New Product
+              </span>
+              <div className="relative w-full overflow-hidden aspect-[344/145] lg:aspect-[4/3] rounded-lg">
+                <div
+                  className="iso-stage pointer-events-none absolute aspect-[1642/1200] max-w-none -translate-x-1/2 -translate-y-1/2 transition-transform duration-700 ease-out group-hover:scale-[1.05] text-rn-accent"
+                  style={{ top: "50%", left: "50%", width: "270%" }}
+                >
+                  <svg viewBox="0 0 1642 1200" className="w-full h-full" aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+    {/* Grid Background */}
+    <g strokeOpacity="0.18" strokeWidth="3" strokeDasharray="3 14">
+      {Array.from({ length: 21 }).map((_, i) => (
+        <line key={`v-${i}`} x1={21 + i * 80} y1="0" x2={21 + i * 80} y2="1200" />
+      ))}
+      {Array.from({ length: 15 }).map((_, i) => (
+        <line key={`h-${i}`} x1="0" y1={40 + i * 80} x2="1642" y2={40 + i * 80} />
+      ))}
+    </g>
+    <g transform="translate(821 600)">
+      {/* Background Central Engine Box */}
+      <g style={{ animation: "atm-rise 8s infinite both", animationDelay: "0.2s" }}>
+        <rect x="-180" y="-120" width="360" height="240" rx="24" fill="currentColor" fillOpacity="0.03" strokeOpacity="0.15" strokeWidth="4"></rect>
+      </g>
+      
+      {/* 8 AI Systems Nodes */}
+      {/* We'll arrange them in a semi-circle or a flow going into the center */}
+      {/* Nodes: Niche, Profile IG, Ide, Script, ATM, Carousel, Ebook, Penjadwalan */}
+      
+      <g className="nodes">
+        {/* Node 1: Niche */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.5s" }} transform="translate(-250 -150)">
+          <circle cx="0" cy="0" r="24" fill="var(--card)" stroke="currentColor" strokeWidth="6" strokeOpacity="0.9"></circle>
+          <path d="M-8 -4 L0 -10 L8 -4 M0 -10 L0 10" strokeWidth="4" />
+        </g>
+        {/* Node 2: Profile IG */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.8s" }} transform="translate(-100 -200)">
+          <circle cx="0" cy="0" r="24" fill="var(--card)" stroke="currentColor" strokeWidth="6" strokeOpacity="0.9"></circle>
+          <circle cx="0" cy="-4" r="6" strokeWidth="4" />
+          <path d="M-10 12 C-10 6 10 6 10 12" strokeWidth="4" />
+        </g>
+        {/* Node 3: Ide */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.1s" }} transform="translate(100 -200)">
+          <circle cx="0" cy="0" r="24" fill="var(--card)" stroke="currentColor" strokeWidth="6" strokeOpacity="0.9"></circle>
+          <path d="M-6 -2 C-6 -8 6 -8 6 -2 C6 2 0 4 0 8 M0 14 L0 14" strokeWidth="4" />
+        </g>
+        {/* Node 4: Script */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.4s" }} transform="translate(250 -150)">
+          <circle cx="0" cy="0" r="24" fill="var(--card)" stroke="currentColor" strokeWidth="6" strokeOpacity="0.9"></circle>
+          <path d="M-8 -8 L8 -8 M-8 0 L8 0 M-8 8 L0 8" strokeWidth="4" />
+        </g>
+        {/* Node 5: ATM */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.7s" }} transform="translate(250 150)">
+          <circle cx="0" cy="0" r="24" fill="var(--card)" stroke="currentColor" strokeWidth="6" strokeOpacity="0.9"></circle>
+          <rect x="-8" y="-8" width="16" height="16" rx="3" strokeWidth="4" />
+        </g>
+        {/* Node 6: Carousel */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "2.0s" }} transform="translate(100 200)">
+          <circle cx="0" cy="0" r="24" fill="var(--card)" stroke="currentColor" strokeWidth="6" strokeOpacity="0.9"></circle>
+          <rect x="-12" y="-10" width="18" height="18" rx="2" strokeWidth="4" />
+          <path d="M-8 -14 L12 -14 L12 6" strokeWidth="4" />
+        </g>
+        {/* Node 7: Ebook */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "2.3s" }} transform="translate(-100 200)">
+          <circle cx="0" cy="0" r="24" fill="var(--card)" stroke="currentColor" strokeWidth="6" strokeOpacity="0.9"></circle>
+          <path d="M-8 -10 L8 -10 L8 10 L-8 10 Z M-4 -4 L4 -4 M-4 2 L4 2" strokeWidth="4" />
+        </g>
+        {/* Node 8: Penjadwalan */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "2.6s" }} transform="translate(-250 150)">
+          <circle cx="0" cy="0" r="24" fill="var(--card)" stroke="currentColor" strokeWidth="6" strokeOpacity="0.9"></circle>
+          <circle cx="0" cy="0" r="8" strokeWidth="4" />
+          <path d="M0 -8 L0 0 L4 4" strokeWidth="4" />
+        </g>
+      </g>
+
+      {/* Connecting Flow Lines to Center */}
+      <g>
+        <line x1="-226" y1="-135" x2="-60" y2="-36" strokeWidth="6" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "0.6s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" />
+        <line x1="-100" y1="-176" x2="-40" y2="-48" strokeWidth="6" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "0.9s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" />
+        <line x1="100" y1="-176" x2="40" y2="-48" strokeWidth="6" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "1.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" />
+        <line x1="226" y1="-135" x2="60" y2="-36" strokeWidth="6" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "1.5s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" />
+        
+        <line x1="226" y1="135" x2="60" y2="36" strokeWidth="6" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "1.8s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" />
+        <line x1="100" y1="176" x2="40" y2="48" strokeWidth="6" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.1s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" />
+        <line x1="-100" y1="176" x2="-40" y2="48" strokeWidth="6" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.4s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" />
+        <line x1="-226" y1="135" x2="-60" y2="36" strokeWidth="6" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.7s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" />
+      </g>
+
+      {/* Central "8 Sistem AI" Process Box */}
+      <g style={{ animation: "atm-rise 8s infinite both", animationDelay: "3.2s" }}>
+        <rect x="-90" y="-60" width="180" height="120" rx="20" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.9" strokeWidth="6"></rect>
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "3.5s" }}>
+          <text x="0" y="-12" fontSize="36" fontWeight="800" fill="currentColor" stroke="none" textAnchor="middle" dominantBaseline="central">8 SISTEM</text>
+          <text x="0" y="24" fontSize="24" fontWeight="600" fill="currentColor" fillOpacity="0.8" stroke="none" textAnchor="middle" dominantBaseline="central">EKSEKUSI</text>
+        </g>
+      </g>
+      
+      {/* Ghost Boxes to the left and right like Andal AI */}
+      <g>
+        {/* Dashed Ghost left */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "3.8s" }}>
+          <rect x="-310" y="-40" width="80" height="80" rx="12" fill="none" strokeOpacity="0.4" strokeWidth="4" strokeDasharray="8 6"></rect>
+          <circle cx="-270" cy="0" r="12" fill="none" strokeWidth="4" strokeOpacity="0.4"></circle>
+        </g>
+        {/* Dashed Ghost right */}
+        <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.0s" }}>
+          <rect x="230" y="-40" width="80" height="80" rx="12" fill="none" strokeOpacity="0.4" strokeWidth="4" strokeDasharray="8 6"></rect>
+          <rect x="255" y="-15" width="30" height="30" rx="6" fill="none" strokeWidth="4" strokeOpacity="0.4"></rect>
+        </g>
+      </g>
+      
+    </g>
+  </svg>
                 </div>
               </div>
               <div className="relative mt-4 space-y-1">
@@ -877,207 +423,80 @@ export default function Home() {
                   className="iso-stage pointer-events-none absolute aspect-[1642/1200] max-w-none -translate-x-1/2 -translate-y-1/2 transition-transform duration-700 ease-out group-hover:scale-[1.05] text-purple-400"
                   style={{ top: "50%", left: "50%", width: "300%" }}
                 >
-                  <svg
-                    viewBox="0 0 1642 1200"
-                    className="w-full h-full"
-                    aria-hidden="true"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <g
-                      strokeOpacity="0.18"
-                      strokeWidth="3"
-                      strokeDasharray="3 14"
-                    >
-                      <line x1="21" y1="0" x2="21" y2="1200"></line>
-                      <line x1="101" y1="0" x2="101" y2="1200"></line>
-                      <line x1="181" y1="0" x2="181" y2="1200"></line>
-                      <line x1="261" y1="0" x2="261" y2="1200"></line>
-                      <line x1="341" y1="0" x2="341" y2="1200"></line>
-                      <line x1="421" y1="0" x2="421" y2="1200"></line>
-                      <line x1="501" y1="0" x2="501" y2="1200"></line>
-                      <line x1="581" y1="0" x2="581" y2="1200"></line>
-                      <line x1="661" y1="0" x2="661" y2="1200"></line>
-                      <line x1="741" y1="0" x2="741" y2="1200"></line>
-                      <line x1="821" y1="0" x2="821" y2="1200"></line>
-                      <line x1="901" y1="0" x2="901" y2="1200"></line>
-                      <line x1="981" y1="0" x2="981" y2="1200"></line>
-                      <line x1="1061" y1="0" x2="1061" y2="1200"></line>
-                      <line x1="1141" y1="0" x2="1141" y2="1200"></line>
-                      <line x1="1221" y1="0" x2="1221" y2="1200"></line>
-                      <line x1="1301" y1="0" x2="1301" y2="1200"></line>
-                      <line x1="1381" y1="0" x2="1381" y2="1200"></line>
-                      <line x1="1461" y1="0" x2="1461" y2="1200"></line>
-                      <line x1="1541" y1="0" x2="1541" y2="1200"></line>
-                      <line x1="1621" y1="0" x2="1621" y2="1200"></line>
-                      <line x1="0" y1="40" x2="1642" y2="40"></line>
-                      <line x1="0" y1="120" x2="1642" y2="120"></line>
-                      <line x1="0" y1="200" x2="1642" y2="200"></line>
-                      <line x1="0" y1="280" x2="1642" y2="280"></line>
-                      <line x1="0" y1="360" x2="1642" y2="360"></line>
-                      <line x1="0" y1="440" x2="1642" y2="440"></line>
-                      <line x1="0" y1="520" x2="1642" y2="520"></line>
-                      <line x1="0" y1="600" x2="1642" y2="600"></line>
-                      <line x1="0" y1="680" x2="1642" y2="680"></line>
-                      <line x1="0" y1="760" x2="1642" y2="760"></line>
-                      <line x1="0" y1="840" x2="1642" y2="840"></line>
-                      <line x1="0" y1="920" x2="1642" y2="920"></line>
-                      <line x1="0" y1="1000" x2="1642" y2="1000"></line>
-                      <line x1="0" y1="1080" x2="1642" y2="1080"></line>
-                      <line x1="0" y1="1160" x2="1642" y2="1160"></line>
-                    </g>
-                    <g transform="translate(821 600)">
-                      <style>{`
-                          @keyframes pop-icon { 0%, 5% { opacity: 0; transform: scale(0.5); } 15%, 85% { opacity: 1; transform: scale(1); } 95%, 100% { opacity: 0; transform: scale(0.5); } }
-                          @keyframes pop-reward { 0%, 50% { opacity: 0; transform: translateY(20px) scale(0.5); } 60%, 90% { opacity: 1; transform: translateY(0) scale(1); } 100% { opacity: 0; transform: translateY(20px) scale(0.5); } }
-                          @keyframes dash-line { 0%, 20% { stroke-dashoffset: 400; } 80%, 100% { stroke-dashoffset: 0; } }
-                        `}</style>
+                  <svg viewBox="0 0 1642 1200" className="w-full h-full" aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+    {/* Grid Background */}
+    <g strokeOpacity="0.18" strokeWidth="3" strokeDasharray="3 14">
+      {Array.from({ length: 21 }).map((_, i) => (
+        <line key={`v-${i}`} x1={21 + i * 80} y1="0" x2={21 + i * 80} y2="1200" />
+      ))}
+      {Array.from({ length: 15 }).map((_, i) => (
+        <line key={`h-${i}`} x1="0" y1={40 + i * 80} x2="1642" y2={40 + i * 80} />
+      ))}
+    </g>
+    <g transform="translate(821 600)">
+      {/* 3D Turned Elements (Konsultasi style) */}
+      
+      {/* Element A: Learning Module (left) */}
+      <g style={{ animation: "atm-rise 8s infinite both", animationDelay: "0.5s" }} transform="translate(-180, 20)">
+        <g style={{ animation: "atm-turn-a 8s infinite both", animationDelay: "1.2s", transformOrigin: "center" }}>
+          {/* Card Backing */}
+          <rect x="-100" y="-120" width="200" height="240" rx="20" fill="currentColor" fillOpacity="0.04" strokeOpacity="0.8" strokeWidth="6"></rect>
+          {/* Screen / Video Player */}
+          <rect x="-70" y="-90" width="140" height="100" rx="12" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.6" strokeWidth="4"></rect>
+          {/* Play Button */}
+          <path d="M-15 -60 L15 -40 L-15 -20 Z" fill="currentColor" fillOpacity="0.8" stroke="none"></path>
+          
+          {/* Progress Bars (atm-bar style) */}
+          <g transform="translate(-70 40)">
+            <rect x="0" y="0" width="40" height="8" rx="4" fill="currentColor" fillOpacity="0.3"></rect>
+            <rect x="0" y="0" width="140" height="8" rx="4" fill="currentColor" fillOpacity="0.8" style={{ animation: "atm-bar 8s infinite both", animationDelay: "1.5s" }}></rect>
+          </g>
+          <g transform="translate(-70 65)">
+            <rect x="0" y="0" width="40" height="8" rx="4" fill="currentColor" fillOpacity="0.3"></rect>
+            <rect x="0" y="0" width="100" height="8" rx="4" fill="currentColor" fillOpacity="0.8" style={{ animation: "atm-bar 8s infinite both", animationDelay: "1.8s" }}></rect>
+          </g>
+          <g transform="translate(-70 90)">
+            <rect x="0" y="0" width="40" height="8" rx="4" fill="currentColor" fillOpacity="0.3"></rect>
+            <rect x="0" y="0" width="120" height="8" rx="4" fill="currentColor" fillOpacity="0.8" style={{ animation: "atm-bar 8s infinite both", animationDelay: "2.1s" }}></rect>
+          </g>
+        </g>
+      </g>
 
-                      {/* Background structural lines */}
-                      <path
-                        d="M-120 70 L-120 10 L0 10 L0 -40 L120 -40 L120 -90"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        strokeOpacity="0.1"
-                        strokeDasharray="8 8"
-                      ></path>
+      {/* Connecting Flow (Center) */}
+      <g>
+        <line x1="-30" y1="0" x2="90" y2="-60" strokeWidth="8" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.5s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+        <circle cx="30" cy="-30" r="10" fill="var(--card)" strokeOpacity="0.9" strokeWidth="4" style={{ animation: "atm-pop 8s infinite both", animationDelay: "2.8s" }}></circle>
+      </g>
 
-                      {/* Animated Step Line */}
-                      <path
-                        d="M-120 70 L-120 10 L0 10 L0 -40 L120 -40 L120 -90"
-                        fill="none"
-                        stroke="var(--rn-accent)"
-                        strokeWidth="5"
-                        strokeDasharray="400"
-                        strokeDashoffset="400"
-                        style={{
-                          animation: "dash-line 8s ease-in-out infinite",
-                        }}
-                      ></path>
+      {/* Element B: Level Up (right) */}
+      <g style={{ animation: "atm-rise 8s infinite both", animationDelay: "1.5s" }} transform="translate(180, -60)">
+        <g style={{ animation: "atm-turn-b 8s infinite both", animationDelay: "2.5s", transformOrigin: "center" }}>
+          {/* Card Backing */}
+          <rect x="-110" y="-140" width="220" height="200" rx="20" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.9" strokeWidth="6"></rect>
+          
+          {/* Trophy / Star Icon */}
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "3.2s" }} transform="translate(0 -50)">
+            <path d="M0 -30 L8 -10 L30 -10 L12 5 L20 25 L0 12 L-20 25 L-12 5 L-30 -10 L-8 -10 Z" fill="currentColor" fillOpacity="0.8" stroke="none"></path>
+          </g>
+          
+          {/* LEVEL UP Text */}
+          <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "3.5s" }}>
+            <text x="0" y="20" fontSize="28" fontWeight="800" fill="currentColor" stroke="none" textAnchor="middle">LEVEL UP</text>
+          </g>
+        </g>
+      </g>
 
-                      {/* Left Side: Mentor */}
-                      <g
-                        transform="translate(-120 50)"
-                        style={{
-                          animation: "pop-icon 8s infinite",
-                          transformOrigin: "center",
-                        }}
-                      >
-                        <circle
-                          cx="0"
-                          cy="-25"
-                          r="18"
-                          fill="var(--rn-accent)"
-                          fillOpacity="0.8"
-                        ></circle>
-                        <path
-                          d="M-25 15 Q0 -10 25 15 Z"
-                          fill="var(--rn-accent)"
-                          fillOpacity="0.4"
-                        ></path>
-                        <text
-                          x="0"
-                          y="40"
-                          fontSize="20"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.9"
-                          textAnchor="middle"
-                        >
-                          Mentor
-                        </text>
-                      </g>
-
-                      {/* Middle Side: Member (Learning) */}
-                      <g
-                        transform="translate(0 0)"
-                        style={{
-                          animation: "pop-icon 8s infinite",
-                          animationDelay: "2s",
-                          transformOrigin: "center",
-                        }}
-                      >
-                        <circle
-                          cx="0"
-                          cy="-25"
-                          r="18"
-                          fill="currentColor"
-                          fillOpacity="0.5"
-                        ></circle>
-                        <path
-                          d="M-25 15 Q0 -10 25 15 Z"
-                          fill="currentColor"
-                          fillOpacity="0.2"
-                        ></path>
-                        <text
-                          x="0"
-                          y="40"
-                          fontSize="20"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.9"
-                          textAnchor="middle"
-                        >
-                          Member
-                        </text>
-                      </g>
-
-                      {/* Top Right Side: Reward / Level Up */}
-                      <g
-                        transform="translate(120 -70)"
-                        style={{
-                          animation: "pop-reward 8s infinite",
-                          transformOrigin: "center",
-                        }}
-                      >
-                        {/* Halo ring */}
-                        <circle
-                          cx="0"
-                          cy="-20"
-                          r="35"
-                          fill="var(--rn-accent)"
-                          fillOpacity="0.15"
-                          stroke="var(--rn-accent)"
-                          strokeWidth="4"
-                          strokeOpacity="0.6"
-                        ></circle>
-                        {/* Trophy/Medal icon */}
-                        <path
-                          d="M-15 -35 L15 -35 L10 -5 L0 5 L-10 -5 Z"
-                          fill="#FACE68"
-                        ></path>
-                        <circle
-                          cx="0"
-                          cy="-20"
-                          r="8"
-                          fill="var(--card)"
-                        ></circle>
-                        {/* Particles */}
-                        <circle cx="-35" cy="-45" r="4" fill="oklch(0.75 0.13 150)"></circle>
-                        <circle cx="35" cy="-10" r="5" fill="#FACE68"></circle>
-                        <circle
-                          cx="-25"
-                          cy="15"
-                          r="4"
-                          fill="var(--rn-accent)"
-                        ></circle>
-                        <text
-                          x="0"
-                          y="35"
-                          fontSize="22"
-                          fontWeight="800"
-                          fill="#FACE68"
-                          textAnchor="middle"
-                          letterSpacing="2"
-                        >
-                          LEVEL UP
-                        </text>
-                      </g>
-                    </g>
-                  </svg>
+      {/* Floating Sparkles (like in Konsultasi) */}
+      <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.0s" }} transform="translate(40 -150)">
+        <circle cx="0" cy="0" r="12" fill="currentColor" fillOpacity="0.8" stroke="none"></circle>
+        <path d="M-20 0 L20 0 M0 -20 L0 20" strokeWidth="4" strokeOpacity="0.5"></path>
+      </g>
+      <g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.3s" }} transform="translate(260 80)">
+        <circle cx="0" cy="0" r="8" fill="currentColor" fillOpacity="0.8" stroke="none"></circle>
+        <path d="M-12 0 L12 0 M0 -12 L0 12" strokeWidth="4" strokeOpacity="0.5"></path>
+      </g>
+    </g>
+  </svg>
                 </div>
               </div>
               <div className="relative mt-4 space-y-1">
