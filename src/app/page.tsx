@@ -182,142 +182,176 @@ export default function Home() {
                     </g>
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
+                        <style>{`
+                          @keyframes e-step1 { 0%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 10%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
+                          @keyframes e-step2 { 0%, 25%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 35%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
+                          @keyframes e-step3 { 0%, 50%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 60%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
+                          @keyframes e-line1 { 0%, 15%, 90%, 100% { stroke-dashoffset: 1; opacity: 0; } 25%, 80% { stroke-dashoffset: 0; opacity: 1; } }
+                          @keyframes e-line2 { 0%, 40%, 90%, 100% { stroke-dashoffset: 1; opacity: 0; } 50%, 80% { stroke-dashoffset: 0; opacity: 1; } }
+                        `}</style>
+
+                        {/* Step 1: Digital Product */}
                         <g
-                          className="sc-rise"
-                          style={{ animationDelay: "0.2s" }}
+                          style={{
+                            animation: "e-step1 6s infinite",
+                            transformOrigin: "-100px 0px",
+                          }}
                         >
-                          {/* LEFT: Book (Strategy) */}
-                          <g transform="translate(-120, 0)">
-                            <g
-                              className="sc-pop"
-                              style={{ animationDelay: "0.5s" }}
-                            >
-                              <path
-                                d="M-20 -15 C-20 -15, -10 -20, 0 -15 C10 -20, 20 -15, 20 -15 L20 15 C20 15, 10 10, 0 15 C-10 10, -20 15, -20 15 Z"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeOpacity="0.8"
-                                strokeWidth="4"
-                              ></path>
-                              <line
-                                x1="0"
-                                y1="-15"
-                                x2="0"
-                                y2="15"
-                                stroke="currentColor"
-                                strokeOpacity="0.8"
-                                strokeWidth="4"
-                              ></line>
-                              <line
-                                x1="-15"
-                                y1="-5"
-                                x2="-5"
-                                y2="0"
-                                stroke="currentColor"
-                                strokeOpacity="0.5"
-                                strokeWidth="2"
-                              ></line>
-                              <line
-                                x1="5"
-                                y1="0"
-                                x2="15"
-                                y2="-5"
-                                stroke="currentColor"
-                                strokeOpacity="0.5"
-                                strokeWidth="2"
-                              ></line>
-                            </g>
-                          </g>
-
-                          {/* Line 1 */}
-                          <line
-                            x1="-90"
-                            y1="0"
-                            x2="-45"
-                            y2="0"
-                            stroke="var(--rn-accent)"
-                            strokeWidth="3"
-                            strokeDasharray="6 6"
-                            className="sc-draw"
-                            style={{ animationDelay: "1s" }}
-                            pathLength="1"
-                          ></line>
-
-                          {/* CENTER: Faceless Creator */}
-                          <g transform="translate(0, 0)">
-                            <g
-                              className="sc-pop"
-                              style={{ animationDelay: "1.5s" }}
-                            >
-                              {/* Simple Shoulders */}
-                              <path
-                                d="M-30 30 Q0 -10 30 30 Z"
-                                fill="currentColor"
-                                fillOpacity="0.2"
-                              ></path>
-                              {/* Simple Head */}
-                              <circle
-                                cx="0"
-                                cy="-15"
-                                r="20"
-                                fill="currentColor"
-                                fillOpacity="0.3"
-                              ></circle>
-                              {/* Mask / Sunglasses */}
-                              <rect
-                                x="-16"
-                                y="-20"
-                                width="32"
-                                height="10"
-                                rx="3"
-                                fill="currentColor"
-                                stroke="var(--card)"
-                                strokeWidth="2"
-                              ></rect>
-                            </g>
-                          </g>
-
-                          {/* Line 2 (Trending Up) */}
+                          <rect
+                            x="-120"
+                            y="-20"
+                            width="40"
+                            height="40"
+                            rx="4"
+                            fill="currentColor"
+                            fillOpacity="0.05"
+                            stroke="currentColor"
+                            strokeOpacity="0.5"
+                            strokeWidth="2"
+                          ></rect>
                           <path
-                            d="M 40 10 C 60 10, 70 -20, 90 -20"
+                            d="M-120 -5 L-100 5 L-80 -5 M-100 5 L-100 20"
+                            stroke="currentColor"
+                            strokeOpacity="0.5"
+                            strokeWidth="2"
                             fill="none"
-                            stroke="var(--rn-accent)"
-                            strokeWidth="4"
-                            className="sc-draw"
-                            style={{ animationDelay: "2s" }}
-                            pathLength="1"
+                          ></path>
+                          <circle
+                            cx="-100"
+                            cy="0"
+                            r="10"
+                            fill="var(--rn-accent)"
+                            fillOpacity="0.2"
+                          ></circle>
+                          <text
+                            x="-100"
+                            y="35"
+                            fontSize="12"
+                            fill="currentColor"
+                            textAnchor="middle"
+                          >
+                            Produk Digital
+                          </text>
+                        </g>
+
+                        {/* Line 1 */}
+                        <line
+                          x1="-70"
+                          y1="0"
+                          x2="-30"
+                          y2="0"
+                          stroke="var(--rn-accent)"
+                          strokeWidth="3"
+                          strokeDasharray="1 1"
+                          pathLength="1"
+                          style={{ animation: "e-line1 6s infinite" }}
+                        ></line>
+
+                        {/* Step 2: Faceless Content */}
+                        <g
+                          style={{
+                            animation: "e-step2 6s infinite",
+                            transformOrigin: "0px 0px",
+                          }}
+                        >
+                          <rect
+                            x="-20"
+                            y="-30"
+                            width="40"
+                            height="60"
+                            rx="6"
+                            fill="var(--card)"
+                            stroke="currentColor"
+                            strokeOpacity="0.8"
+                            strokeWidth="2"
+                          ></rect>
+                          <circle
+                            cx="0"
+                            cy="-10"
+                            r="8"
+                            fill="currentColor"
+                            fillOpacity="0.2"
+                          ></circle>
+                          <path
+                            d="M-12 15 Q0 0 12 15 Z"
+                            fill="currentColor"
+                            fillOpacity="0.2"
+                          ></path>
+                          <rect
+                            x="-10"
+                            y="-12"
+                            width="20"
+                            height="6"
+                            rx="2"
+                            fill="var(--rn-accent)"
+                          ></rect>{" "}
+                          {/* Faceless bar */}
+                          <text
+                            x="0"
+                            y="45"
+                            fontSize="12"
+                            fill="currentColor"
+                            textAnchor="middle"
+                          >
+                            Faceless
+                          </text>
+                        </g>
+
+                        {/* Line 2 */}
+                        <path
+                          d="M 30 0 C 60 0, 70 -20, 90 -20"
+                          fill="none"
+                          stroke="var(--rn-accent)"
+                          strokeWidth="3"
+                          strokeDasharray="1 1"
+                          pathLength="1"
+                          style={{ animation: "e-line2 6s infinite" }}
+                        ></path>
+
+                        {/* Step 3: Cuan */}
+                        <g
+                          style={{
+                            animation: "e-step3 6s infinite",
+                            transformOrigin: "110px -20px",
+                          }}
+                        >
+                          <circle
+                            cx="110"
+                            cy="-20"
+                            r="25"
+                            fill="#10B981"
+                            fillOpacity="0.15"
+                            stroke="#10B981"
+                            strokeWidth="2"
+                          ></circle>
+                          <path
+                            d="M100 -30 L110 -40 L120 -30"
+                            stroke="#10B981"
+                            strokeWidth="3"
+                            fill="none"
                             strokeLinecap="round"
                           ></path>
-
-                          {/* RIGHT: Cuan / Dollar */}
-                          <g transform="translate(120, -20)">
-                            <g
-                              className="sc-rise"
-                              style={{ animationDelay: "2.5s" }}
-                            >
-                              {/* Big Money Icon */}
-                              <circle
-                                cx="0"
-                                cy="0"
-                                r="25"
-                                fill="#10B981"
-                                fillOpacity="0.15"
-                                stroke="#10B981"
-                                strokeWidth="3"
-                              ></circle>
-                              <text
-                                x="0"
-                                y="2"
-                                fontSize="26"
-                                fontWeight="900"
-                                fill="#10B981"
-                                textAnchor="middle"
-                                dominantBaseline="central"
-                              >
-                                $
-                              </text>
-                            </g>
-                          </g>
+                          <text
+                            x="110"
+                            y="-18"
+                            fontSize="24"
+                            fontWeight="bold"
+                            fill="#10B981"
+                            textAnchor="middle"
+                            dominantBaseline="central"
+                          >
+                            $
+                          </text>
+                          <text
+                            x="110"
+                            y="20"
+                            fontSize="12"
+                            fill="#10B981"
+                            textAnchor="middle"
+                            fontWeight="bold"
+                          >
+                            Cuan
+                          </text>
                         </g>
                       </g>
                     </g>
@@ -405,180 +439,331 @@ export default function Home() {
                     </g>
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
-                        <g
-                          className="sc-rise"
-                          style={{ animationDelay: "0.1s" }}
-                        >
-                          {/* LEFT: Confused (Question mark & Squiggle) */}
-                          <g transform="translate(-130, 0)">
-                            <g
-                              className="sc-pop"
-                              style={{ animationDelay: "0.3s" }}
+                        <style>{`
+                          @keyframes t-path { 0%, 10% { stroke-dashoffset: 1; opacity: 0; } 15%, 85% { stroke-dashoffset: 0; opacity: 1; } 95%, 100% { stroke-dashoffset: 1; opacity: 0; } }
+@keyframes t-finish { 0%, 80% { opacity: 0; transform: scale(0.5); } 85%, 95% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.5); } }
+@keyframes t-n1 { 0%, 18% { opacity: 0.2; transform: scale(0.8); } 23%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
+@keyframes t-n2 { 0%, 26% { opacity: 0.2; transform: scale(0.8); } 31%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
+@keyframes t-n3 { 0%, 34% { opacity: 0.2; transform: scale(0.8); } 39%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
+@keyframes t-n4 { 0%, 42% { opacity: 0.2; transform: scale(0.8); } 47%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
+@keyframes t-n5 { 0%, 50% { opacity: 0.2; transform: scale(0.8); } 55%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
+@keyframes t-n6 { 0%, 58% { opacity: 0.2; transform: scale(0.8); } 63%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
+@keyframes t-n7 { 0%, 66% { opacity: 0.2; transform: scale(0.8); } 71%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
+@keyframes t-n8 { 0%, 74% { opacity: 0.2; transform: scale(0.8); } 79%, 95% { opacity: 1; transform: scale(1.2); fill: var(--rn-accent); } 100% { opacity: 0.2; transform: scale(0.8); } }
+
+                        `}</style>
+
+                        {/* The Main Route (S shape) */}
+                        <path
+                          d="M-140 20 L-60 20 C-30 20, -30 -20, 0 -20 L80 -20 C110 -20, 110 20, 140 20"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeOpacity="0.1"
+                          strokeWidth="3"
+                        ></path>
+
+                        {/* The Glowing Progress Line */}
+                        <path
+                          d="M-140 20 L-60 20 C-30 20, -30 -20, 0 -20 L80 -20 C110 -20, 110 20, 140 20"
+                          fill="none"
+                          stroke="var(--rn-accent)"
+                          strokeWidth="3"
+                          strokeDasharray="1 1"
+                          pathLength="1"
+                          style={{ animation: "t-path 8s infinite linear" }}
+                        ></path>
+
+                        {/* 8 Nodes (Blueprint -> Schedule) */}
+                        <g>
+                          {/* 1. Blueprint */}
+                          <g transform="translate(-120, 20)">
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="14"
+                              fill="var(--card)"
+                              stroke="currentColor"
+                              strokeOpacity="0.3"
+                              strokeWidth="2"
+                            ></circle>
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="6"
+                              fill="currentColor"
+                              opacity="0.2"
+                              style={{ animation: "t-n1 8s infinite" }}
+                            ></circle>
+                            <text
+                              x="0"
+                              y="25"
+                              fontSize="10"
+                              fill="currentColor"
+                              textAnchor="middle"
                             >
-                              {/* Squiggle bubble */}
-                              <path
-                                d="M-15 -10 Q-5 -30 10 -20 T20 -5 T5 15 T-15 5 Z"
-                                fill="currentColor"
-                                fillOpacity="0.1"
-                              ></path>
-                              <text
-                                x="2"
-                                y="-1"
-                                fontSize="24"
-                                fontWeight="bold"
-                                fill="currentColor"
-                                textAnchor="middle"
-                                dominantBaseline="central"
-                              >
-                                ?
-                              </text>
-                            </g>
+                              Niche
+                            </text>
                           </g>
-
-                          {/* Line In */}
-                          <line
-                            x1="-105"
-                            y1="0"
-                            x2="-65"
-                            y2="0"
-                            stroke="currentColor"
-                            strokeOpacity="0.5"
-                            strokeWidth="3"
-                            strokeDasharray="4 4"
-                            className="sc-draw"
-                            style={{ animationDelay: "0.6s" }}
-                            pathLength="1"
-                          ></line>
-
-                          {/* CENTER: AI Engine Processing */}
-                          <g transform="translate(0, 0)">
-                            {/* Central Brain */}
+                          {/* 2. Bio */}
+                          <g transform="translate(-80, 20)">
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="14"
+                              fill="var(--card)"
+                              stroke="currentColor"
+                              strokeOpacity="0.3"
+                              strokeWidth="2"
+                            ></circle>
                             <rect
-                              x="-30"
-                              y="-30"
-                              width="60"
-                              height="60"
-                              rx="12"
-                              fill="var(--rn-accent)"
-                              fillOpacity="0.1"
-                              stroke="var(--rn-accent)"
-                              strokeWidth="3"
+                              x="-6"
+                              y="-4"
+                              width="12"
+                              height="8"
+                              rx="1"
+                              fill="currentColor"
+                              opacity="0.2"
+                              style={{ animation: "t-n2 8s infinite" }}
                             ></rect>
                             <text
                               x="0"
-                              y="2"
-                              fontSize="22"
-                              fontWeight="900"
-                              fill="var(--rn-accent)"
+                              y="25"
+                              fontSize="10"
+                              fill="currentColor"
                               textAnchor="middle"
-                              dominantBaseline="central"
                             >
-                              AI
+                              Bio
                             </text>
-
-                            {/* 8 Nodes Lighting up sequentially */}
-                            <circle
-                              cx="0"
-                              cy="-45"
-                              r="4"
-                              fill="var(--rn-accent)"
-                              className="sc-pop"
-                              style={{ animationDelay: "0.9s" }}
-                            ></circle>
-                            <circle
-                              cx="32"
-                              cy="-32"
-                              r="4"
-                              fill="var(--rn-accent)"
-                              className="sc-pop"
-                              style={{ animationDelay: "1.1s" }}
-                            ></circle>
-                            <circle
-                              cx="45"
-                              cy="0"
-                              r="4"
-                              fill="var(--rn-accent)"
-                              className="sc-pop"
-                              style={{ animationDelay: "1.3s" }}
-                            ></circle>
-                            <circle
-                              cx="32"
-                              cy="32"
-                              r="4"
-                              fill="var(--rn-accent)"
-                              className="sc-pop"
-                              style={{ animationDelay: "1.5s" }}
-                            ></circle>
-                            <circle
-                              cx="0"
-                              cy="45"
-                              r="4"
-                              fill="var(--rn-accent)"
-                              className="sc-pop"
-                              style={{ animationDelay: "1.7s" }}
-                            ></circle>
-                            <circle
-                              cx="-32"
-                              cy="32"
-                              r="4"
-                              fill="var(--rn-accent)"
-                              className="sc-pop"
-                              style={{ animationDelay: "1.9s" }}
-                            ></circle>
-                            <circle
-                              cx="-45"
-                              cy="0"
-                              r="4"
-                              fill="var(--rn-accent)"
-                              className="sc-pop"
-                              style={{ animationDelay: "2.1s" }}
-                            ></circle>
-                            <circle
-                              cx="-32"
-                              cy="-32"
-                              r="4"
-                              fill="var(--rn-accent)"
-                              className="sc-pop"
-                              style={{ animationDelay: "2.3s" }}
-                            ></circle>
                           </g>
-
-                          {/* Line Out */}
-                          <line
-                            x1="65"
-                            y1="0"
-                            x2="105"
-                            y2="0"
-                            stroke="var(--rn-accent)"
-                            strokeWidth="4"
-                            className="sc-draw"
-                            style={{ animationDelay: "2.6s" }}
-                            pathLength="1"
-                          ></line>
-
-                          {/* RIGHT: Checkmark / Execution */}
-                          <g transform="translate(130, 0)">
-                            <g
-                              className="sc-rise"
-                              style={{ animationDelay: "3s" }}
+                          {/* 3. Idea */}
+                          <g transform="translate(-45, 0)">
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="14"
+                              fill="var(--card)"
+                              stroke="currentColor"
+                              strokeOpacity="0.3"
+                              strokeWidth="2"
+                            ></circle>
+                            <path
+                              d="M-3 -4 L0 -8 L3 -4 Z"
+                              fill="currentColor"
+                              opacity="0.2"
+                              style={{ animation: "t-n3 8s infinite" }}
+                            ></path>
+                            <circle
+                              cx="0"
+                              cy="-1"
+                              r="3"
+                              fill="currentColor"
+                              opacity="0.2"
+                              style={{ animation: "t-n3 8s infinite" }}
+                            ></circle>
+                            <text
+                              x="-15"
+                              y="-15"
+                              fontSize="10"
+                              fill="currentColor"
+                              textAnchor="middle"
                             >
-                              <circle
-                                cx="0"
-                                cy="0"
-                                r="25"
-                                fill="var(--rn-accent)"
-                                fillOpacity="0.2"
-                              ></circle>
-                              <path
-                                d="M-10 0 L-2 8 L12 -6"
-                                fill="none"
-                                stroke="var(--rn-accent)"
-                                strokeWidth="5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              ></path>
-                            </g>
+                              Ide
+                            </text>
                           </g>
+                          {/* 4. Script */}
+                          <g transform="translate(-15, -20)">
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="14"
+                              fill="var(--card)"
+                              stroke="currentColor"
+                              strokeOpacity="0.3"
+                              strokeWidth="2"
+                            ></circle>
+                            <rect
+                              x="-5"
+                              y="-6"
+                              width="10"
+                              height="12"
+                              fill="currentColor"
+                              opacity="0.2"
+                              style={{ animation: "t-n4 8s infinite" }}
+                            ></rect>
+                            <text
+                              x="0"
+                              y="-22"
+                              fontSize="10"
+                              fill="currentColor"
+                              textAnchor="middle"
+                            >
+                              Script
+                            </text>
+                          </g>
+                          {/* 5. ATM */}
+                          <g transform="translate(25, -20)">
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="14"
+                              fill="var(--card)"
+                              stroke="currentColor"
+                              strokeOpacity="0.3"
+                              strokeWidth="2"
+                            ></circle>
+                            <path
+                              d="M-4 -2 L4 -2 M-4 2 L4 2"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              opacity="0.2"
+                              style={{ animation: "t-n5 8s infinite" }}
+                            ></path>
+                            <text
+                              x="0"
+                              y="-22"
+                              fontSize="10"
+                              fill="currentColor"
+                              textAnchor="middle"
+                            >
+                              ATM
+                            </text>
+                          </g>
+                          {/* 6. Carousel */}
+                          <g transform="translate(65, -20)">
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="14"
+                              fill="var(--card)"
+                              stroke="currentColor"
+                              strokeOpacity="0.3"
+                              strokeWidth="2"
+                            ></circle>
+                            <rect
+                              x="-6"
+                              y="-5"
+                              width="8"
+                              height="10"
+                              fill="currentColor"
+                              opacity="0.2"
+                              style={{ animation: "t-n6 8s infinite" }}
+                            ></rect>
+                            <rect
+                              x="2"
+                              y="-3"
+                              width="4"
+                              height="8"
+                              fill="currentColor"
+                              opacity="0.1"
+                              style={{ animation: "t-n6 8s infinite" }}
+                            ></rect>
+                            <text
+                              x="0"
+                              y="-22"
+                              fontSize="10"
+                              fill="currentColor"
+                              textAnchor="middle"
+                            >
+                              Slide
+                            </text>
+                          </g>
+                          {/* 7. Ebook */}
+                          <g transform="translate(95, 0)">
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="14"
+                              fill="var(--card)"
+                              stroke="currentColor"
+                              strokeOpacity="0.3"
+                              strokeWidth="2"
+                            ></circle>
+                            <path
+                              d="M-5 -5 L0 -3 L5 -5 L5 5 L0 7 L-5 5 Z"
+                              fill="currentColor"
+                              opacity="0.2"
+                              style={{ animation: "t-n7 8s infinite" }}
+                            ></path>
+                            <text
+                              x="18"
+                              y="-15"
+                              fontSize="10"
+                              fill="currentColor"
+                              textAnchor="middle"
+                            >
+                              Buku
+                            </text>
+                          </g>
+                          {/* 8. Schedule */}
+                          <g transform="translate(125, 20)">
+                            <circle
+                              cx="0"
+                              cy="0"
+                              r="14"
+                              fill="var(--card)"
+                              stroke="currentColor"
+                              strokeOpacity="0.3"
+                              strokeWidth="2"
+                            ></circle>
+                            <rect
+                              x="-6"
+                              y="-5"
+                              width="12"
+                              height="10"
+                              rx="1"
+                              fill="currentColor"
+                              opacity="0.2"
+                              style={{ animation: "t-n8 8s infinite" }}
+                            ></rect>
+                            <line
+                              x1="-6"
+                              y1="-1"
+                              x2="6"
+                              y2="-1"
+                              stroke="var(--card)"
+                              strokeWidth="2"
+                            ></line>
+                            <text
+                              x="0"
+                              y="25"
+                              fontSize="10"
+                              fill="currentColor"
+                              textAnchor="middle"
+                            >
+                              Jadwal
+                            </text>
+                          </g>
+                        </g>
+
+                        {/* Final Checkmark */}
+                        <g
+                          transform="translate(165, 20)"
+                          style={{ animation: "t-finish 8s infinite" }}
+                        >
+                          <circle
+                            cx="0"
+                            cy="0"
+                            r="16"
+                            fill="#10B981"
+                            fillOpacity="0.2"
+                          ></circle>
+                          <path
+                            d="M-6 0 L-2 4 L6 -4"
+                            fill="none"
+                            stroke="#10B981"
+                            strokeWidth="3"
+                            strokeLinecap="round"
+                          ></path>
+                          <text
+                            x="0"
+                            y="25"
+                            fontSize="10"
+                            fontWeight="bold"
+                            fill="#10B981"
+                            textAnchor="middle"
+                          >
+                            Done!
+                          </text>
                         </g>
                       </g>
                     </g>
@@ -665,142 +850,214 @@ export default function Home() {
                     </g>
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
-                        <g
-                          className="sc-rise"
-                          style={{ animationDelay: "0.1s" }}
-                        >
-                          {/* Video Player Frame */}
-                          <rect
-                            x="-160"
-                            y="-100"
-                            width="320"
-                            height="200"
-                            rx="12"
-                            fill="currentColor"
-                            fillOpacity="0.03"
-                            stroke="currentColor"
-                            strokeOpacity="0.2"
-                            strokeWidth="3"
-                          ></rect>
-                          {/* Player Top Bar */}
-                          <rect
-                            x="-160"
-                            y="-100"
-                            width="320"
-                            height="24"
-                            rx="12"
-                            fill="currentColor"
-                            fillOpacity="0.1"
-                          ></rect>
-                          <circle
-                            cx="-140"
-                            cy="-88"
-                            r="4"
-                            fill="currentColor"
-                            fillOpacity="0.4"
-                          ></circle>
-                          <circle
-                            cx="-125"
-                            cy="-88"
-                            r="4"
-                            fill="currentColor"
-                            fillOpacity="0.4"
-                          ></circle>
+                        <style>{`
+                          @keyframes l-step1 { 0%, 90%, 100% { opacity: 0; transform: scale(0.9); } 10%, 80% { opacity: 1; transform: scale(1); } }
+                          @keyframes l-step2 { 0%, 25%, 90%, 100% { stroke-dashoffset: 1; opacity: 0; } 35%, 80% { stroke-dashoffset: 0; opacity: 1; } }
+                          @keyframes l-step3 { 0%, 50%, 90%, 100% { opacity: 0; transform: scale(0.5); } 60%, 80% { opacity: 1; transform: scale(1); } }
+                          @keyframes l-step4 { 0%, 65%, 90%, 100% { opacity: 0; transform: scale(0.5); } 75%, 85% { opacity: 1; transform: scale(1.2); } }
+                          @keyframes l-stair { 0%, 25%, 90%, 100% { opacity: 0; transform: translateY(10px); } 35%, 80% { opacity: 1; transform: translateY(0); } }
+                        `}</style>
 
-                          {/* CENTER/BOTTOM: Play Button */}
-                          <g
-                            className="sc-pop"
-                            style={{ animationDelay: "0.5s" }}
-                            transform="translate(0, 30)"
-                          >
+                        {/* Step 1: Platform/Screen */}
+                        <rect
+                          x="-140"
+                          y="-80"
+                          width="280"
+                          height="160"
+                          rx="8"
+                          fill="currentColor"
+                          fillOpacity="0.02"
+                          stroke="currentColor"
+                          strokeOpacity="0.1"
+                          strokeWidth="2"
+                        ></rect>
+                        <rect
+                          x="-140"
+                          y="-80"
+                          width="280"
+                          height="20"
+                          rx="8"
+                          fill="currentColor"
+                          fillOpacity="0.05"
+                        ></rect>
+
+                        {/* Step 2: Mentor & Student */}
+                        <g
+                          style={{
+                            animation: "l-step1 8s infinite",
+                            transformOrigin: "center",
+                          }}
+                        >
+                          {/* Mentor (Left) */}
+                          <g transform="translate(-80, 20)">
                             <circle
                               cx="0"
-                              cy="0"
-                              r="30"
+                              cy="-20"
+                              r="10"
                               fill="var(--rn-accent)"
-                              fillOpacity="0.2"
-                              stroke="var(--rn-accent)"
-                              strokeWidth="3"
+                              fillOpacity="0.8"
                             ></circle>
                             <path
-                              d="M-5 -10 L10 0 L-5 10 Z"
+                              d="M-15 15 Q0 -5 15 15 Z"
                               fill="var(--rn-accent)"
+                              fillOpacity="0.5"
                             ></path>
+                            {/* Pointer stick */}
+                            <line
+                              x1="10"
+                              y1="5"
+                              x2="30"
+                              y2="-10"
+                              stroke="var(--rn-accent)"
+                              strokeWidth="2"
+                            ></line>
+                            <text
+                              x="0"
+                              y="30"
+                              fontSize="12"
+                              fill="currentColor"
+                              textAnchor="middle"
+                            >
+                              Mentor
+                            </text>
                           </g>
 
-                          {/* ROADMAP LINE */}
+                          {/* Student (Right) */}
+                          <g transform="translate(80, 20)">
+                            <circle
+                              cx="0"
+                              cy="-20"
+                              r="10"
+                              fill="currentColor"
+                              fillOpacity="0.5"
+                            ></circle>
+                            <path
+                              d="M-15 15 Q0 -5 15 15 Z"
+                              fill="currentColor"
+                              fillOpacity="0.2"
+                            ></path>
+                            <text
+                              x="0"
+                              y="30"
+                              fontSize="12"
+                              fill="currentColor"
+                              textAnchor="middle"
+                            >
+                              Member
+                            </text>
+                          </g>
+
+                          {/* Guidance Line */}
                           <path
-                            d="M0 0 C-40 -20, 40 -40, 0 -70"
+                            d="M-40 0 Q0 -20 40 0"
+                            fill="none"
+                            stroke="var(--rn-accent)"
+                            strokeWidth="2"
+                            strokeDasharray="4 4"
+                          ></path>
+                          <polygon
+                            points="35,-5 40,0 32,2"
+                            fill="var(--rn-accent)"
+                          ></polygon>
+                        </g>
+
+                        {/* Step 3: Learning Path (Stairs) */}
+                        <g>
+                          <path
+                            d="M-20 40 L-20 20 L0 20 L0 0 L20 0 L20 -20 L40 -20"
                             fill="none"
                             stroke="currentColor"
-                            strokeOpacity="0.5"
-                            strokeWidth="3"
-                            strokeDasharray="6 6"
-                            className="sc-draw"
-                            style={{ animationDelay: "1s" }}
+                            strokeWidth="4"
+                            strokeOpacity="0.1"
+                            strokeDasharray="1 1"
                             pathLength="1"
+                            style={{ animation: "l-step2 8s infinite" }}
                           ></path>
 
-                          {/* TOP: Trophy (Goal) */}
-                          <g
-                            className="sc-rise"
-                            style={{ animationDelay: "2s" }}
-                            transform="translate(0, -55)"
-                          >
-                            <path
-                              d="M-16 -12 L16 -12 L12 8 Q0 20 -12 8 Z"
-                              fill="#FACE68"
-                            ></path>
-                            <rect
-                              x="-5"
-                              y="8"
-                              width="10"
-                              height="10"
-                              fill="#FACE68"
-                            ></rect>
-                            <line
-                              x1="-16"
-                              y1="18"
-                              x2="16"
-                              y2="18"
-                              stroke="#FACE68"
-                              strokeWidth="4"
-                              strokeLinecap="round"
-                            ></line>
-                            {/* Handles */}
-                            <path
-                              d="M-16 -4 A10 10 0 0 0 -12 8"
-                              fill="none"
-                              stroke="#FACE68"
-                              strokeWidth="3"
-                            ></path>
-                            <path
-                              d="M16 -4 A10 10 0 0 1 12 8"
-                              fill="none"
-                              stroke="#FACE68"
-                              strokeWidth="3"
-                            ></path>
+                          <circle
+                            cx="-20"
+                            cy="40"
+                            r="4"
+                            fill="var(--rn-accent)"
+                            style={{ animation: "l-stair 8s infinite" }}
+                          ></circle>
+                          <circle
+                            cx="0"
+                            cy="20"
+                            r="4"
+                            fill="var(--rn-accent)"
+                            style={{
+                              animation: "l-stair 8s infinite",
+                              animationDelay: "0.2s",
+                            }}
+                          ></circle>
+                          <circle
+                            cx="20"
+                            cy="0"
+                            r="4"
+                            fill="var(--rn-accent)"
+                            style={{
+                              animation: "l-stair 8s infinite",
+                              animationDelay: "0.4s",
+                            }}
+                          ></circle>
+                        </g>
 
-                            {/* Popping Stars */}
-                            <path
-                              d="M-25 -25 L-22 -15 L-15 -12 L-22 -9 L-25 0 L-28 -9 L-35 -12 L-28 -15 Z"
-                              fill="#FACE68"
-                              className="sc-pop"
-                              style={{ animationDelay: "2.3s" }}
-                            ></path>
-                            <path
-                              d="M25 -10 L27 -4 L32 -2 L27 0 L25 5 L23 0 L18 -2 L23 -4 Z"
-                              fill="#FACE68"
-                              className="sc-pop"
-                              style={{ animationDelay: "2.5s" }}
-                            ></path>
-                            <path
-                              d="M0 -35 L2 -28 L8 -26 L2 -24 L0 -18 L-2 -24 L-8 -26 L-2 -28 Z"
-                              fill="#FACE68"
-                              className="sc-pop"
-                              style={{ animationDelay: "2.7s" }}
-                            ></path>
-                          </g>
+                        {/* Step 4: Gamification / Reward */}
+                        <g
+                          style={{
+                            animation: "l-step3 8s infinite",
+                            transformOrigin: "40px -20px",
+                          }}
+                        >
+                          <circle
+                            cx="40"
+                            cy="-20"
+                            r="15"
+                            fill="#FACE68"
+                            fillOpacity="0.2"
+                          ></circle>
+                          <path
+                            d="M35 -25 L45 -25 L42 -12 Q40 -5 38 -12 Z"
+                            fill="#FACE68"
+                          ></path>
+                        </g>
+
+                        <g
+                          style={{
+                            animation: "l-step4 8s infinite",
+                            transformOrigin: "40px -30px",
+                          }}
+                        >
+                          {/* Confetti / Stars */}
+                          <circle
+                            cx="25"
+                            cy="-35"
+                            r="3"
+                            fill="#10B981"
+                          ></circle>
+                          <circle
+                            cx="55"
+                            cy="-35"
+                            r="4"
+                            fill="#FACE68"
+                          ></circle>
+                          <circle
+                            cx="40"
+                            cy="-45"
+                            r="3"
+                            fill="var(--rn-accent)"
+                          ></circle>
+                          <text
+                            x="40"
+                            y="-60"
+                            fontSize="14"
+                            fontWeight="bold"
+                            fill="#FACE68"
+                            textAnchor="middle"
+                          >
+                            LEVEL UP!
+                          </text>
                         </g>
                       </g>
                     </g>
