@@ -183,46 +183,33 @@ export default function Home() {
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
                         <g className="sc-rise" style={{ animationDelay: "0.2s" }}>
-                          {/* Book/Tablet Background */}
-                          <path d="M-180 -120 L0 -100 L180 -120 L180 140 L0 160 L-180 140 Z" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeOpacity="0.2" strokeWidth="2"></path>
-                          <line x1="0" y1="-100" x2="0" y2="160" stroke="currentColor" strokeOpacity="0.2" strokeWidth="2"></line>
+                          {/* Clean Minimalist Tablet Frame */}
+                          <rect x="-220" y="-120" width="440" height="240" rx="16" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeOpacity="0.2" strokeWidth="3"></rect>
                           
-                          {/* Left Side: Faceless Strategy */}
-                          <g transform="translate(-90, 20)">
-                            {/* Strategy Lines connecting to right */}
-                            <path d="M40 -40 Q90 -80 180 -30 T250 -70" fill="none" stroke="var(--rn-accent)" strokeOpacity="0.6" strokeWidth="3" className="sc-draw" style={{ animationDelay: "1.5s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
-                            <path d="M40 0 Q90 20 180 50" fill="none" stroke="var(--rn-accent)" strokeOpacity="0.4" strokeWidth="2" className="sc-draw" style={{ animationDelay: "1.8s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
-                            
-                            {/* Faceless Silhouette */}
+                          {/* LEFT: Faceless Creator */}
+                          <g transform="translate(-120, 20)">
                             <g className="sc-pop" style={{ animationDelay: "0.5s" }}>
+                              {/* Simple Shoulders */}
                               <path d="M-40 60 Q0 -20 40 60 Z" fill="currentColor" fillOpacity="0.2"></path>
+                              {/* Simple Head */}
                               <circle cx="0" cy="-30" r="25" fill="currentColor" fillOpacity="0.3"></circle>
-                              {/* Mask */}
+                              {/* Mask / Sunglasses */}
                               <rect x="-20" y="-35" width="40" height="12" rx="4" fill="var(--card)"></rect>
                             </g>
+                          </g>
 
-                            {/* Crossed Camera Icon (Faceless) */}
-                            <g className="sc-pop" style={{ animationDelay: "1s" }} transform="translate(-40 -70)">
-                              <circle cx="0" cy="0" r="22" fill="var(--card)" stroke="currentColor" strokeOpacity="0.8" strokeWidth="3"></circle>
-                              <rect x="-10" y="-7" width="20" height="14" rx="2" fill="none" stroke="currentColor" strokeOpacity="0.8" strokeWidth="2"></rect>
-                              <circle cx="0" cy="0" r="4" fill="currentColor" fillOpacity="0.8"></circle>
-                              {/* Red Slash */}
-                              <line x1="-14" y1="-14" x2="14" y2="14" stroke="#ff4444" strokeWidth="3" strokeLinecap="round"></line>
-                            </g>
+                          {/* MIDDLE: Flowing Strategy Arrow */}
+                          <g transform="translate(0, 0)">
+                            <path d="M-70,0 Q0,40 60,0" fill="none" stroke="var(--rn-accent)" strokeOpacity="0.8" strokeWidth="4" className="sc-draw" style={{ animationDelay: "1.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" strokeLinecap="round"></path>
+                            <path d="M50,-10 L65,0 L50,10" fill="none" stroke="var(--rn-accent)" strokeOpacity="0.8" strokeWidth="4" className="sc-draw" style={{ animationDelay: "1.8s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1" strokeLinecap="round"></path>
                           </g>
                           
-                          {/* Right Side: Cuan (Money) Chart */}
-                          <g transform="translate(40, 60)">
-                            {/* Chart Bars */}
-                            <rect x="0" y="0" width="16" height="30" rx="4" fill="currentColor" fillOpacity="0.4" className="sc-rise" style={{ animationDelay: "2s" }}></rect>
-                            <rect x="30" y="-20" width="16" height="50" rx="4" fill="currentColor" fillOpacity="0.6" className="sc-rise" style={{ animationDelay: "2.2s" }}></rect>
-                            <rect x="60" y="-50" width="16" height="80" rx="4" fill="currentColor" fillOpacity="0.8" className="sc-rise" style={{ animationDelay: "2.4s" }}></rect>
-                            <rect x="90" y="-90" width="16" height="120" rx="4" fill="var(--rn-accent)" className="sc-rise" style={{ animationDelay: "2.6s" }}></rect>
-                            
-                            {/* Money Symbol at peak */}
-                            <g className="sc-pop" style={{ animationDelay: "3s" }} transform="translate(98 -120)">
-                               <rect x="-16" y="-12" width="32" height="24" rx="4" fill="#10B981" fillOpacity="0.2" stroke="#10B981" strokeWidth="2"></rect>
-                               <text x="0" y="1" fontSize="16" fontWeight="bold" fill="#10B981" textAnchor="middle" dominantBaseline="central">$</text>
+                          {/* RIGHT: Long-term Cuan (Money) */}
+                          <g transform="translate(120, 0)">
+                            <g className="sc-pop" style={{ animationDelay: "2.5s" }}>
+                               {/* Big Money Icon */}
+                               <rect x="-40" y="-30" width="80" height="60" rx="8" fill="#10B981" fillOpacity="0.1" stroke="#10B981" strokeWidth="4"></rect>
+                               <text x="0" y="2" fontSize="40" fontWeight="900" fill="#10B981" textAnchor="middle" dominantBaseline="central">$</text>
                             </g>
                           </g>
                         </g>
@@ -313,87 +300,84 @@ export default function Home() {
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
                         <g className="sc-rise" style={{ animationDelay: "0.1s" }}>
+                          {/* Clean Background Frame */}
                           <rect x="-240" y="-120" width="480" height="240" rx="16" fill="currentColor" fillOpacity="0.03" strokeOpacity="0.2" strokeWidth="2"></rect>
+
+                          {/* LEFT: Messy / Confused Idea */}
+                          <g transform="translate(-170, 0)">
+                             <path d="M-30,-20 Q-10,-50 10,-20 T-10,20 T20,0" fill="none" stroke="currentColor" strokeOpacity="0.4" strokeWidth="4" strokeLinecap="round" className="sc-draw" style={{ animationDelay: "0.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
+                             {/* Line connecting to grid */}
+                             <line x1="20" y1="0" x2="60" y2="0" stroke="currentColor" strokeOpacity="0.4" strokeWidth="4" className="sc-draw" style={{ animationDelay: "0.6s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+                          </g>
                           
-                          {/* Central AI Brain/Core */}
-                          <g className="sc-pop" style={{ animationDelay: "0.5s" }}>
-                            <rect x="-30" y="-30" width="60" height="60" rx="12" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.8" strokeWidth="3"></rect>
-                            <text x="0" y="2" fontSize="22" fontWeight="900" fill="currentColor" textAnchor="middle" dominantBaseline="central">AI</text>
-                            <circle cx="0" cy="0" r="45" fill="none" stroke="var(--rn-accent)" strokeOpacity="0.4" strokeWidth="2" className="sc-ring"></circle>
+                          {/* CENTER: 3x3 Neat Grid of 8 AI Systems */}
+                          <g transform="translate(0, 0)">
+                            {/* Central AI Brain/Core */}
+                            <g className="sc-pop" style={{ animationDelay: "0.8s" }}>
+                              <rect x="-25" y="-25" width="50" height="50" rx="10" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.8" strokeWidth="3"></rect>
+                              <text x="0" y="2" fontSize="20" fontWeight="900" fill="currentColor" textAnchor="middle" dominantBaseline="central">AI</text>
+                            </g>
+
+                            {/* 1. Blueprint (Top Left) */}
+                            <g className="sc-pop" style={{ animationDelay: "1.0s" }} transform="translate(-60, -60)">
+                              <rect x="-12" y="-12" width="24" height="24" rx="4" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="3"></rect>
+                              <rect x="-6" y="-6" width="4" height="4" rx="1" fill="var(--rn-accent)"></rect>
+                            </g>
+
+                            {/* 2. Bio Builder (Top) */}
+                            <g className="sc-pop" style={{ animationDelay: "1.2s" }} transform="translate(0, -60)">
+                              <rect x="-12" y="-12" width="24" height="24" rx="4" fill="var(--card)" stroke="currentColor" strokeWidth="3"></rect>
+                              <circle cx="0" cy="-2" r="3" fill="currentColor"></circle>
+                            </g>
+
+                            {/* 3. Idea Rooms (Top Right) */}
+                            <g className="sc-pop" style={{ animationDelay: "1.4s" }} transform="translate(60, -60)">
+                              <rect x="-12" y="-12" width="24" height="24" rx="4" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="3"></rect>
+                              <path d="M-3 -2 Q0 -6 3 -2 L1 4 L-1 4 Z" fill="var(--rn-accent)"></path>
+                            </g>
+
+                            {/* 4. Script Builder (Right) */}
+                            <g className="sc-pop" style={{ animationDelay: "1.6s" }} transform="translate(60, 0)">
+                              <rect x="-12" y="-12" width="24" height="24" rx="4" fill="var(--card)" stroke="currentColor" strokeWidth="3"></rect>
+                              <line x1="-5" y1="-3" x2="5" y2="-3" stroke="currentColor" strokeWidth="2"></line>
+                              <line x1="-5" y1="3" x2="2" y2="3" stroke="currentColor" strokeWidth="2"></line>
+                            </g>
+
+                            {/* 5. ATM Content (Bottom Right) */}
+                            <g className="sc-pop" style={{ animationDelay: "1.8s" }} transform="translate(60, 60)">
+                              <rect x="-12" y="-12" width="24" height="24" rx="4" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="3"></rect>
+                              <rect x="-4" y="-4" width="8" height="8" rx="1" fill="none" stroke="var(--rn-accent)" strokeWidth="2"></rect>
+                            </g>
+
+                            {/* 6. Carousel (Bottom) */}
+                            <g className="sc-pop" style={{ animationDelay: "2.0s" }} transform="translate(0, 60)">
+                              <rect x="-12" y="-12" width="24" height="24" rx="4" fill="var(--card)" stroke="currentColor" strokeWidth="3"></rect>
+                              <circle cx="0" cy="0" r="3" fill="currentColor"></circle>
+                            </g>
+
+                            {/* 7. Ebook (Bottom Left) */}
+                            <g className="sc-pop" style={{ animationDelay: "2.2s" }} transform="translate(-60, 60)">
+                              <rect x="-12" y="-12" width="24" height="24" rx="4" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="3"></rect>
+                              <path d="M-5 -5 L0 -3 L5 -5 L5 5 L0 7 L-5 5 Z" fill="none" stroke="var(--rn-accent)" strokeWidth="2"></path>
+                            </g>
+
+                            {/* 8. Calendar (Left) */}
+                            <g className="sc-pop" style={{ animationDelay: "2.4s" }} transform="translate(-60, 0)">
+                              <rect x="-12" y="-12" width="24" height="24" rx="4" fill="var(--card)" stroke="currentColor" strokeWidth="3"></rect>
+                              <line x1="-12" y1="-3" x2="12" y2="-3" stroke="currentColor" strokeWidth="2"></line>
+                            </g>
                           </g>
 
-                          {/* Orbit Path */}
-                          <circle cx="0" cy="0" r="90" fill="none" stroke="currentColor" strokeOpacity="0.1" strokeWidth="2" strokeDasharray="6 6"></circle>
-                          
-                          {/* The 8 Specific AI Systems */}
-                          {/* 1. Master Blueprint (Top) */}
-                          <g className="sc-pop" style={{ animationDelay: "0.8s" }} transform="translate(0 -90)">
-                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="2"></circle>
-                            <rect x="-6" y="-6" width="5" height="5" rx="1" fill="var(--rn-accent)"></rect>
-                            <rect x="1" y="-6" width="5" height="5" rx="1" fill="var(--rn-accent)"></rect>
-                            <rect x="-6" y="1" width="12" height="5" rx="1" fill="var(--rn-accent)"></rect>
-                          </g>
-
-                          {/* 2. Bio Builder (Top Right) */}
-                          <g className="sc-pop" style={{ animationDelay: "1.0s" }} transform="translate(63 -63)">
-                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="currentColor" strokeWidth="2"></circle>
-                            <circle cx="0" cy="-3" r="3" fill="currentColor"></circle>
-                            <path d="M-6 6 Q0 2 6 6" fill="none" stroke="currentColor" strokeWidth="2"></path>
-                          </g>
-
-                          {/* 3. Idea Rooms (Right) */}
-                          <g className="sc-pop" style={{ animationDelay: "1.2s" }} transform="translate(90 0)">
-                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="2"></circle>
-                            <path d="M-4 0 Q0 -6 4 0 L2 4 L-2 4 Z" fill="var(--rn-accent)"></path>
-                          </g>
-
-                          {/* 4. Script Builder (Bottom Right) */}
-                          <g className="sc-pop" style={{ animationDelay: "1.4s" }} transform="translate(63 63)">
-                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="currentColor" strokeWidth="2"></circle>
-                            <rect x="-5" y="-6" width="10" height="12" rx="1" fill="none" stroke="currentColor" strokeWidth="2"></rect>
-                            <line x1="-2" y1="-2" x2="2" y2="-2" stroke="currentColor" strokeWidth="2"></line>
-                          </g>
-
-                          {/* 5. ATM Content Builder (Bottom) */}
-                          <g className="sc-pop" style={{ animationDelay: "1.6s" }} transform="translate(0 90)">
-                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="2"></circle>
-                            <rect x="-6" y="-4" width="8" height="8" rx="1" fill="none" stroke="var(--rn-accent)" strokeWidth="2"></rect>
-                            <rect x="-2" y="-8" width="8" height="8" rx="1" fill="none" stroke="var(--rn-accent)" strokeWidth="2"></rect>
-                          </g>
-
-                          {/* 6. Carousel Prompt Builder (Bottom Left) */}
-                          <g className="sc-pop" style={{ animationDelay: "1.8s" }} transform="translate(-63 63)">
-                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="currentColor" strokeWidth="2"></circle>
-                            <rect x="-7" y="-5" width="14" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="2"></rect>
-                            <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
-                          </g>
-
-                          {/* 7. Ebook Prompt Builder (Left) */}
-                          <g className="sc-pop" style={{ animationDelay: "2.0s" }} transform="translate(-90 0)">
-                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="var(--rn-accent)" strokeWidth="2"></circle>
-                            <path d="M-6 -6 L0 -4 L6 -6 L6 6 L0 8 L-6 6 Z" fill="none" stroke="var(--rn-accent)" strokeWidth="2"></path>
-                            <line x1="0" y1="-4" x2="0" y2="8" stroke="var(--rn-accent)" strokeWidth="2"></line>
-                          </g>
-
-                          {/* 8. Content Calendar (Top Left) */}
-                          <g className="sc-pop" style={{ animationDelay: "2.2s" }} transform="translate(-63 -63)">
-                            <circle cx="0" cy="0" r="14" fill="var(--card)" stroke="currentColor" strokeWidth="2"></circle>
-                            <rect x="-6" y="-5" width="12" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="2"></rect>
-                            <line x1="-6" y1="-1" x2="6" y2="-1" stroke="currentColor" strokeWidth="2"></line>
-                          </g>
-
-                          {/* Workflow Line: Bingung -> Eksekusi */}
-                          {/* Messy Line (Bingung) */}
-                          <path d="M-220 50 Q-180 120 -150 40 T-100 80 T-50 40" fill="none" stroke="currentColor" strokeOpacity="0.4" strokeWidth="4" className="sc-draw" style={{ animationDelay: "2.5s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
-                          <circle cx="-220" cy="50" r="6" fill="currentColor" fillOpacity="0.4" className="sc-pop" style={{ animationDelay: "2.4s" }}></circle>
-
-                          {/* Structured Line (Eksekusi) */}
-                          <line x1="50" y1="40" x2="160" y2="40" stroke="var(--rn-accent)" strokeWidth="5" className="sc-draw" style={{ animationDelay: "3.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
-                          
-                          {/* Checkmark Icon */}
-                          <g className="sc-pop" style={{ animationDelay: "3.7s" }} transform="translate(180 40)">
-                             <circle cx="0" cy="0" r="20" fill="var(--rn-accent)" fillOpacity="0.2" stroke="var(--rn-accent)" strokeWidth="3"></circle>
-                             <path d="M-8 0 L-2 6 L10 -6" fill="none" stroke="var(--rn-accent)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"></path>
+                          {/* RIGHT: Clear Execution / Checkmark */}
+                          <g transform="translate(170, 0)">
+                             {/* Line connecting out of grid */}
+                             <line x1="-60" y1="0" x2="-20" y2="0" stroke="var(--rn-accent)" strokeWidth="4" className="sc-draw" style={{ animationDelay: "2.8s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+                             
+                             {/* Huge Checkmark */}
+                             <g className="sc-pop" style={{ animationDelay: "3.2s" }} transform="translate(10, 0)">
+                               <circle cx="0" cy="0" r="30" fill="var(--rn-accent)" fillOpacity="0.1" stroke="var(--rn-accent)" strokeWidth="4"></circle>
+                               <path d="M-10 0 L-2 8 L14 -8" fill="none" stroke="var(--rn-accent)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"></path>
+                             </g>
                           </g>
                         </g>
                       </g>
@@ -482,54 +466,31 @@ export default function Home() {
                     <g transform="translate(821 600)">
                       <g transform="translate(-12 0)">
                         <g className="sc-rise" style={{ animationDelay: "0.1s" }}>
-                          {/* Platform Canvas */}
-                          <rect x="-220" y="-120" width="440" height="240" rx="12" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeOpacity="0.2" strokeWidth="2"></rect>
-                          {/* Browser Toolbar */}
-                          <line x1="-220" y1="-90" x2="220" y2="-90" stroke="currentColor" strokeOpacity="0.2" strokeWidth="2"></line>
-                          <circle cx="-190" cy="-105" r="4" fill="currentColor" fillOpacity="0.4"></circle>
-                          <circle cx="-175" cy="-105" r="4" fill="currentColor" fillOpacity="0.4"></circle>
-                          <circle cx="-160" cy="-105" r="4" fill="currentColor" fillOpacity="0.4"></circle>
-
-                          {/* Central Play Button */}
-                          <g className="sc-pop" style={{ animationDelay: "0.8s" }} transform="translate(0 15)">
-                            <circle cx="0" cy="0" r="40" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.8" strokeWidth="3"></circle>
-                            <path d="M-8 -12 L12 0 L-8 12 Z" fill="currentColor"></path>
-                            {/* Circular Progress Bar loading around play button */}
-                            <path d="M0 -50 A50 50 0 1 1 -50 0" fill="none" stroke="var(--rn-accent)" strokeWidth="6" strokeLinecap="round" className="sc-draw" style={{ animationDelay: "1.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></path>
-                          </g>
-
-                          {/* Gamification Elements */}
-                          {/* Trophy/Badge (Eksklusif) */}
-                          <g className="sc-rise" style={{ animationDelay: "2s" }} transform="translate(130 -40)">
-                            <path d="M-15 -10 L15 -10 L10 10 Q0 20 -10 10 Z" fill="#FACE68"></path>
-                            <rect x="-5" y="10" width="10" height="10" fill="#FACE68"></rect>
-                            <line x1="-15" y1="20" x2="15" y2="20" stroke="#FACE68" strokeWidth="4" strokeLinecap="round"></line>
-                            {/* Trophy Handles */}
-                            <path d="M-15 -5 A10 10 0 0 0 -10 10" fill="none" stroke="#FACE68" strokeWidth="3"></path>
-                            <path d="M15 -5 A10 10 0 0 1 10 10" fill="none" stroke="#FACE68" strokeWidth="3"></path>
-                            {/* Star pop inside trophy effect */}
-                            <g className="sc-pop" style={{ animationDelay: "2.5s" }}>
-                               <path d="M0 -25 L2 -20 L7 -20 L3 -16 L5 -11 L0 -14 L-5 -11 L-3 -16 L-7 -20 L-2 -20 Z" fill="#fff"></path>
-                            </g>
-                          </g>
-
-                          {/* Graduation Cap (Belajar) */}
-                          <g className="sc-rise" style={{ animationDelay: "2.2s" }} transform="translate(-130 -10)">
-                             <path d="M-30 0 L0 -15 L30 0 L0 15 Z" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"></path>
-                             <path d="M-20 10 L-20 25 Q0 35 20 25 L20 10" fill="none" stroke="currentColor" strokeWidth="3"></path>
-                             <line x1="25" y1="5" x2="25" y2="20" stroke="currentColor" strokeWidth="3"></line>
-                             <circle cx="25" cy="23" r="4" fill="currentColor"></circle>
-                          </g>
+                          {/* Minimal Video Platform Frame */}
+                          <rect x="-200" y="-130" width="400" height="260" rx="16" fill="currentColor" fillOpacity="0.03" stroke="currentColor" strokeOpacity="0.2" strokeWidth="3"></rect>
                           
-                          {/* Joyful Stars (Asik & Menyenangkan) */}
-                          <g className="sc-pop" style={{ animationDelay: "2.6s" }} transform="translate(-160 -50) scale(1.2)">
-                            <path d="M0 -10 L2 -4 L8 -4 L3 1 L5 7 L0 4 L-5 7 L-3 1 L-8 -4 L-2 -4 Z" fill="var(--rn-accent)"></path>
+                          {/* TOP: Trophy (Exclusive) */}
+                          <g className="sc-rise" style={{ animationDelay: "1.5s" }} transform="translate(0, -60)">
+                            <path d="M-20 -15 L20 -15 L15 10 Q0 25 -15 10 Z" fill="#FACE68"></path>
+                            <rect x="-6" y="10" width="12" height="12" fill="#FACE68"></rect>
+                            <line x1="-20" y1="22" x2="20" y2="22" stroke="#FACE68" strokeWidth="5" strokeLinecap="round"></line>
+                            {/* Trophy Handles */}
+                            <path d="M-20 -5 A12 12 0 0 0 -15 10" fill="none" stroke="#FACE68" strokeWidth="4"></path>
+                            <path d="M20 -5 A12 12 0 0 1 15 10" fill="none" stroke="#FACE68" strokeWidth="4"></path>
                           </g>
-                          <g className="sc-pop" style={{ animationDelay: "2.8s" }} transform="translate(160 50) scale(0.8)">
-                            <path d="M0 -10 L2 -4 L8 -4 L3 1 L5 7 L0 4 L-5 7 L-3 1 L-8 -4 L-2 -4 Z" fill="currentColor" fillOpacity="0.6"></path>
+
+                          {/* CENTER: Play Button (Platform) */}
+                          <g className="sc-pop" style={{ animationDelay: "0.5s" }} transform="translate(0, 10)">
+                            <circle cx="0" cy="0" r="45" fill="currentColor" fillOpacity="0.1" strokeOpacity="0.8" strokeWidth="4"></circle>
+                            <path d="M-10 -15 L15 0 L-10 15 Z" fill="currentColor"></path>
                           </g>
-                          <g className="sc-ghost" style={{ animationDelay: "3s" }} transform="translate(-80 70) scale(0.6)">
-                            <path d="M0 -10 L2 -4 L8 -4 L3 1 L5 7 L0 4 L-5 7 L-3 1 L-8 -4 L-2 -4 Z" fill="var(--rn-accent)"></path>
+
+                          {/* BOTTOM: Graduation Cap (Learning) */}
+                          <g className="sc-rise" style={{ animationDelay: "2s" }} transform="translate(0, 85)">
+                             <path d="M-40 0 L0 -20 L40 0 L0 20 Z" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="4" strokeLinejoin="round"></path>
+                             <path d="M-25 12 L-25 30 Q0 45 25 30 L25 12" fill="none" stroke="currentColor" strokeWidth="4"></path>
+                             <line x1="30" y1="5" x2="30" y2="25" stroke="currentColor" strokeWidth="4"></line>
+                             <circle cx="30" cy="28" r="5" fill="currentColor"></circle>
                           </g>
                         </g>
                       </g>
