@@ -107,3 +107,63 @@ body {
   opacity: 1;
   animation: scFlow 3s ease-in-out infinite;
 }
+
+/* Additional animations for interactive cards */
+@keyframes scGhost {
+  0%, 100% { opacity: 0.3; transform: translateY(0); }
+  50% { opacity: 0.7; transform: translateY(-5px); }
+}
+
+@keyframes scRing {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+@keyframes scBar {
+  0%, 100% { transform: scaleY(0.7); }
+  50% { transform: scaleY(1.1); }
+}
+
+@keyframes scTurnA {
+  0%, 100% { transform: perspective(400px) rotateY(0deg); }
+  50% { transform: perspective(400px) rotateY(15deg); }
+}
+
+@keyframes scTurnB {
+  0%, 100% { transform: perspective(400px) rotateY(0deg); }
+  50% { transform: perspective(400px) rotateY(-15deg); }
+}
+
+@keyframes scScroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-30px); }
+}
+
+.sc-ghost {
+  animation: scGhost 4s ease-in-out infinite;
+}
+
+.sc-ring {
+  animation: scRing 3s ease-out infinite;
+  transform-origin: center;
+}
+
+.sc-bar {
+  animation: scBar 2s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+.sc-turn-a {
+  animation: scTurnA 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.sc-turn-b {
+  animation: scTurnB 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.sc-scroll {
+  animation: scScroll 10s linear infinite alternate;
+}
