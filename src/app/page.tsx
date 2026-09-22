@@ -181,7 +181,7 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(0 0) scale(2.8)">
+                      <g transform="translate(0 0) scale(1.6)">
                         <style>{`
                           @keyframes e-step1 { 0%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 10%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
                           @keyframes e-step2 { 0%, 25%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 35%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
@@ -194,14 +194,14 @@ export default function Home() {
                         <g
                           style={{
                             animation: "e-step1 6s infinite",
-                            transformOrigin: "-100px 0px",
+                            transformOrigin: "-80px 0px",
                           }}
                         >
                           <rect
-                            x="-120"
+                            x="-95"
                             y="-20"
-                            width="40"
-                            height="40"
+                            width="30"
+                            height="30"
                             rx="4"
                             fill="currentColor"
                             fillOpacity="0.05"
@@ -210,36 +210,37 @@ export default function Home() {
                             strokeWidth="2"
                           ></rect>
                           <path
-                            d="M-120 -5 L-100 5 L-80 -5 M-100 5 L-100 20"
+                            d="M-95 -5 L-80 5 L-65 -5 M-80 5 L-80 20"
                             stroke="currentColor"
                             strokeOpacity="0.5"
                             strokeWidth="2"
                             fill="none"
                           ></path>
                           <circle
-                            cx="-100"
-                            cy="0"
-                            r="10"
+                            cx="-80"
+                            cy="-2"
+                            r="8"
                             fill="var(--rn-accent)"
                             fillOpacity="0.2"
                           ></circle>
                           <text
-                            x="-100"
-                            y="35"
-                            fontSize="12"
+                            x="-80"
+                            y="25"
+                            fontSize="11"
+                            fontWeight="600"
                             fill="currentColor"
                             textAnchor="middle"
                           >
-                            Produk Digital
+                            Produk
                           </text>
                         </g>
 
                         {/* Line 1 */}
                         <line
-                          x1="-70"
-                          y1="0"
-                          x2="-30"
-                          y2="0"
+                          x1="-55"
+                          y1="-5"
+                          x2="-25"
+                          y2="-5"
                           stroke="var(--rn-accent)"
                           strokeWidth="3"
                           strokeDasharray="1 1"
@@ -255,11 +256,11 @@ export default function Home() {
                           }}
                         >
                           <rect
-                            x="-20"
+                            x="-15"
                             y="-30"
-                            width="40"
-                            height="60"
-                            rx="6"
+                            width="30"
+                            height="45"
+                            rx="4"
                             fill="var(--card)"
                             stroke="currentColor"
                             strokeOpacity="0.8"
@@ -267,29 +268,30 @@ export default function Home() {
                           ></rect>
                           <circle
                             cx="0"
-                            cy="-10"
-                            r="8"
+                            cy="-12"
+                            r="6"
                             fill="currentColor"
                             fillOpacity="0.2"
                           ></circle>
                           <path
-                            d="M-12 15 Q0 0 12 15 Z"
+                            d="M-10 10 Q0 -2 10 10 Z"
                             fill="currentColor"
                             fillOpacity="0.2"
                           ></path>
                           <rect
-                            x="-10"
-                            y="-12"
-                            width="20"
-                            height="6"
+                            x="-8"
+                            y="-14"
+                            width="16"
+                            height="5"
                             rx="2"
                             fill="var(--rn-accent)"
                           ></rect>{" "}
                           {/* Faceless bar */}
                           <text
                             x="0"
-                            y="45"
-                            fontSize="12"
+                            y="32"
+                            fontSize="11"
+                            fontWeight="600"
                             fill="currentColor"
                             textAnchor="middle"
                           >
@@ -299,7 +301,7 @@ export default function Home() {
 
                         {/* Line 2 */}
                         <path
-                          d="M 30 0 C 60 0, 70 -20, 90 -20"
+                          d="M 25 -5 C 45 -5, 55 -25, 75 -25"
                           fill="none"
                           stroke="var(--rn-accent)"
                           strokeWidth="3"
@@ -312,29 +314,22 @@ export default function Home() {
                         <g
                           style={{
                             animation: "e-step3 6s infinite",
-                            transformOrigin: "110px -20px",
+                            transformOrigin: "85px -25px",
                           }}
                         >
                           <circle
-                            cx="110"
-                            cy="-20"
-                            r="25"
+                            cx="85"
+                            cy="-25"
+                            r="20"
                             fill="#10B981"
                             fillOpacity="0.15"
                             stroke="#10B981"
                             strokeWidth="2"
                           ></circle>
-                          <path
-                            d="M100 -30 L110 -40 L120 -30"
-                            stroke="#10B981"
-                            strokeWidth="3"
-                            fill="none"
-                            strokeLinecap="round"
-                          ></path>
                           <text
-                            x="110"
-                            y="-18"
-                            fontSize="24"
+                            x="85"
+                            y="-23"
+                            fontSize="22"
                             fontWeight="bold"
                             fill="#10B981"
                             textAnchor="middle"
@@ -343,12 +338,12 @@ export default function Home() {
                             $
                           </text>
                           <text
-                            x="110"
-                            y="20"
+                            x="85"
+                            y="10"
                             fontSize="12"
+                            fontWeight="bold"
                             fill="#10B981"
                             textAnchor="middle"
-                            fontWeight="bold"
                           >
                             Cuan
                           </text>
@@ -438,7 +433,7 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(0 0) scale(2.8)">
+                      <g transform="translate(0 0) scale(1.5)">
                         <style>{`
                           @keyframes t-path { 0%, 10% { stroke-dashoffset: 1; opacity: 0; } 15%, 85% { stroke-dashoffset: 0; opacity: 1; } 95%, 100% { stroke-dashoffset: 1; opacity: 0; } }
 @keyframes t-finish { 0%, 80% { opacity: 0; transform: scale(0.5); } 85%, 95% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.5); } }
@@ -453,18 +448,18 @@ export default function Home() {
 
                         `}</style>
 
-                        {/* The Main Route (S shape) */}
+                        {/* Snake Route */}
                         <path
-                          d="M-140 20 L-60 20 C-30 20, -30 -20, 0 -20 L80 -20 C110 -20, 110 20, 140 20"
+                          d="M-85 -20 L75 -20 C95 -20, 95 25, 75 25 L-75 25"
                           fill="none"
                           stroke="currentColor"
                           strokeOpacity="0.1"
                           strokeWidth="3"
                         ></path>
 
-                        {/* The Glowing Progress Line */}
+                        {/* Glowing Progress Line */}
                         <path
-                          d="M-140 20 L-60 20 C-30 20, -30 -20, 0 -20 L80 -20 C110 -20, 110 20, 140 20"
+                          d="M-85 -20 L75 -20 C95 -20, 95 25, 75 25 L-75 25"
                           fill="none"
                           stroke="var(--rn-accent)"
                           strokeWidth="3"
@@ -473,14 +468,14 @@ export default function Home() {
                           style={{ animation: "t-path 8s infinite linear" }}
                         ></path>
 
-                        {/* 8 Nodes (Blueprint -> Schedule) */}
+                        {/* Top Row: 1 to 4 */}
                         <g>
                           {/* 1. Blueprint */}
-                          <g transform="translate(-120, 20)">
+                          <g transform="translate(-75, -20)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="14"
+                              r="12"
                               fill="var(--card)"
                               stroke="currentColor"
                               strokeOpacity="0.3"
@@ -489,15 +484,16 @@ export default function Home() {
                             <circle
                               cx="0"
                               cy="0"
-                              r="6"
+                              r="5"
                               fill="currentColor"
                               opacity="0.2"
                               style={{ animation: "t-n1 8s infinite" }}
                             ></circle>
                             <text
                               x="0"
-                              y="25"
+                              y="-20"
                               fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -505,20 +501,20 @@ export default function Home() {
                             </text>
                           </g>
                           {/* 2. Bio */}
-                          <g transform="translate(-80, 20)">
+                          <g transform="translate(-25, -20)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="14"
+                              r="12"
                               fill="var(--card)"
                               stroke="currentColor"
                               strokeOpacity="0.3"
                               strokeWidth="2"
                             ></circle>
                             <rect
-                              x="-6"
+                              x="-5"
                               y="-4"
-                              width="12"
+                              width="10"
                               height="8"
                               rx="1"
                               fill="currentColor"
@@ -527,8 +523,9 @@ export default function Home() {
                             ></rect>
                             <text
                               x="0"
-                              y="25"
+                              y="-20"
                               fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -536,11 +533,11 @@ export default function Home() {
                             </text>
                           </g>
                           {/* 3. Idea */}
-                          <g transform="translate(-45, 0)">
+                          <g transform="translate(25, -20)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="14"
+                              r="12"
                               fill="var(--card)"
                               stroke="currentColor"
                               strokeOpacity="0.3"
@@ -552,18 +549,11 @@ export default function Home() {
                               opacity="0.2"
                               style={{ animation: "t-n3 8s infinite" }}
                             ></path>
-                            <circle
-                              cx="0"
-                              cy="-1"
-                              r="3"
-                              fill="currentColor"
-                              opacity="0.2"
-                              style={{ animation: "t-n3 8s infinite" }}
-                            ></circle>
                             <text
-                              x="-15"
-                              y="-15"
+                              x="0"
+                              y="-20"
                               fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -571,41 +561,46 @@ export default function Home() {
                             </text>
                           </g>
                           {/* 4. Script */}
-                          <g transform="translate(-15, -20)">
+                          <g transform="translate(75, -20)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="14"
+                              r="12"
                               fill="var(--card)"
                               stroke="currentColor"
                               strokeOpacity="0.3"
                               strokeWidth="2"
                             ></circle>
                             <rect
-                              x="-5"
-                              y="-6"
-                              width="10"
-                              height="12"
+                              x="-4"
+                              y="-5"
+                              width="8"
+                              height="10"
                               fill="currentColor"
                               opacity="0.2"
                               style={{ animation: "t-n4 8s infinite" }}
                             ></rect>
                             <text
                               x="0"
-                              y="-22"
+                              y="-20"
                               fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
                               Script
                             </text>
                           </g>
+                        </g>
+
+                        {/* Bottom Row: 5 to 8 (Right to Left) */}
+                        <g>
                           {/* 5. ATM */}
-                          <g transform="translate(25, -20)">
+                          <g transform="translate(75, 25)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="14"
+                              r="12"
                               fill="var(--card)"
                               stroke="currentColor"
                               strokeOpacity="0.3"
@@ -620,8 +615,9 @@ export default function Home() {
                             ></path>
                             <text
                               x="0"
-                              y="-22"
+                              y="24"
                               fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -629,38 +625,30 @@ export default function Home() {
                             </text>
                           </g>
                           {/* 6. Carousel */}
-                          <g transform="translate(65, -20)">
+                          <g transform="translate(25, 25)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="14"
+                              r="12"
                               fill="var(--card)"
                               stroke="currentColor"
                               strokeOpacity="0.3"
                               strokeWidth="2"
                             ></circle>
                             <rect
-                              x="-6"
-                              y="-5"
-                              width="8"
-                              height="10"
+                              x="-5"
+                              y="-4"
+                              width="6"
+                              height="8"
                               fill="currentColor"
                               opacity="0.2"
                               style={{ animation: "t-n6 8s infinite" }}
                             ></rect>
-                            <rect
-                              x="2"
-                              y="-3"
-                              width="4"
-                              height="8"
-                              fill="currentColor"
-                              opacity="0.1"
-                              style={{ animation: "t-n6 8s infinite" }}
-                            ></rect>
                             <text
                               x="0"
-                              y="-22"
+                              y="24"
                               fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -668,26 +656,27 @@ export default function Home() {
                             </text>
                           </g>
                           {/* 7. Ebook */}
-                          <g transform="translate(95, 0)">
+                          <g transform="translate(-25, 25)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="14"
+                              r="12"
                               fill="var(--card)"
                               stroke="currentColor"
                               strokeOpacity="0.3"
                               strokeWidth="2"
                             ></circle>
                             <path
-                              d="M-5 -5 L0 -3 L5 -5 L5 5 L0 7 L-5 5 Z"
+                              d="M-4 -4 L0 -2 L4 -4 L4 4 L0 6 L-4 4 Z"
                               fill="currentColor"
                               opacity="0.2"
                               style={{ animation: "t-n7 8s infinite" }}
                             ></path>
                             <text
-                              x="18"
-                              y="-15"
+                              x="0"
+                              y="24"
                               fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -695,38 +684,31 @@ export default function Home() {
                             </text>
                           </g>
                           {/* 8. Schedule */}
-                          <g transform="translate(125, 20)">
+                          <g transform="translate(-75, 25)">
                             <circle
                               cx="0"
                               cy="0"
-                              r="14"
+                              r="12"
                               fill="var(--card)"
                               stroke="currentColor"
                               strokeOpacity="0.3"
                               strokeWidth="2"
                             ></circle>
                             <rect
-                              x="-6"
-                              y="-5"
-                              width="12"
-                              height="10"
+                              x="-5"
+                              y="-4"
+                              width="10"
+                              height="8"
                               rx="1"
                               fill="currentColor"
                               opacity="0.2"
                               style={{ animation: "t-n8 8s infinite" }}
                             ></rect>
-                            <line
-                              x1="-6"
-                              y1="-1"
-                              x2="6"
-                              y2="-1"
-                              stroke="var(--card)"
-                              strokeWidth="2"
-                            ></line>
                             <text
                               x="0"
-                              y="25"
+                              y="24"
                               fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -735,35 +717,22 @@ export default function Home() {
                           </g>
                         </g>
 
-                        {/* Final Checkmark */}
+                        {/* Final Checkmark popping up over Schedule */}
                         <g
-                          transform="translate(165, 20)"
-                          style={{ animation: "t-finish 8s infinite" }}
+                          transform="translate(-75, 25)"
+                          style={{
+                            animation: "t-finish 8s infinite",
+                            transformOrigin: "0px 0px",
+                          }}
                         >
-                          <circle
-                            cx="0"
-                            cy="0"
-                            r="16"
-                            fill="#10B981"
-                            fillOpacity="0.2"
-                          ></circle>
+                          <circle cx="0" cy="0" r="16" fill="#10B981"></circle>
                           <path
                             d="M-6 0 L-2 4 L6 -4"
                             fill="none"
-                            stroke="#10B981"
+                            stroke="#FFFFFF"
                             strokeWidth="3"
                             strokeLinecap="round"
                           ></path>
-                          <text
-                            x="0"
-                            y="25"
-                            fontSize="10"
-                            fontWeight="bold"
-                            fill="#10B981"
-                            textAnchor="middle"
-                          >
-                            Done!
-                          </text>
                         </g>
                       </g>
                     </g>
@@ -849,7 +818,7 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(0 0) scale(2.8)">
+                      <g transform="translate(0 0) scale(1.6)">
                         <style>{`
                           @keyframes l-step1 { 0%, 90%, 100% { opacity: 0; transform: scale(0.9); } 10%, 80% { opacity: 1; transform: scale(1); } }
                           @keyframes l-step2 { 0%, 25%, 90%, 100% { stroke-dashoffset: 1; opacity: 0; } 35%, 80% { stroke-dashoffset: 0; opacity: 1; } }
@@ -858,13 +827,13 @@ export default function Home() {
                           @keyframes l-stair { 0%, 25%, 90%, 100% { opacity: 0; transform: translateY(10px); } 35%, 80% { opacity: 1; transform: translateY(0); } }
                         `}</style>
 
-                        {/* Step 1: Platform/Screen */}
+                        {/* Step 1: Platform/Screen (Tighter Box) */}
                         <rect
-                          x="-140"
-                          y="-80"
-                          width="280"
-                          height="160"
-                          rx="8"
+                          x="-110"
+                          y="-60"
+                          width="220"
+                          height="120"
+                          rx="6"
                           fill="currentColor"
                           fillOpacity="0.02"
                           stroke="currentColor"
@@ -872,11 +841,11 @@ export default function Home() {
                           strokeWidth="2"
                         ></rect>
                         <rect
-                          x="-140"
-                          y="-80"
-                          width="280"
-                          height="20"
-                          rx="8"
+                          x="-110"
+                          y="-60"
+                          width="220"
+                          height="15"
+                          rx="6"
                           fill="currentColor"
                           fillOpacity="0.05"
                         ></rect>
@@ -889,32 +858,32 @@ export default function Home() {
                           }}
                         >
                           {/* Mentor (Left) */}
-                          <g transform="translate(-80, 20)">
+                          <g transform="translate(-60, 20)">
                             <circle
                               cx="0"
-                              cy="-20"
-                              r="10"
+                              cy="-15"
+                              r="8"
                               fill="var(--rn-accent)"
                               fillOpacity="0.8"
                             ></circle>
                             <path
-                              d="M-15 15 Q0 -5 15 15 Z"
+                              d="M-12 10 Q0 -5 12 10 Z"
                               fill="var(--rn-accent)"
                               fillOpacity="0.5"
                             ></path>
-                            {/* Pointer stick */}
                             <line
-                              x1="10"
+                              x1="8"
                               y1="5"
-                              x2="30"
-                              y2="-10"
+                              x2="25"
+                              y2="-5"
                               stroke="var(--rn-accent)"
                               strokeWidth="2"
                             ></line>
                             <text
                               x="0"
-                              y="30"
-                              fontSize="12"
+                              y="22"
+                              fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -923,23 +892,24 @@ export default function Home() {
                           </g>
 
                           {/* Student (Right) */}
-                          <g transform="translate(80, 20)">
+                          <g transform="translate(60, 20)">
                             <circle
                               cx="0"
-                              cy="-20"
-                              r="10"
+                              cy="-15"
+                              r="8"
                               fill="currentColor"
                               fillOpacity="0.5"
                             ></circle>
                             <path
-                              d="M-15 15 Q0 -5 15 15 Z"
+                              d="M-12 10 Q0 -5 12 10 Z"
                               fill="currentColor"
                               fillOpacity="0.2"
                             ></path>
                             <text
                               x="0"
-                              y="30"
-                              fontSize="12"
+                              y="22"
+                              fontSize="10"
+                              fontWeight="600"
                               fill="currentColor"
                               textAnchor="middle"
                             >
@@ -949,14 +919,14 @@ export default function Home() {
 
                           {/* Guidance Line */}
                           <path
-                            d="M-40 0 Q0 -20 40 0"
+                            d="M-30 0 Q0 -15 30 0"
                             fill="none"
                             stroke="var(--rn-accent)"
                             strokeWidth="2"
-                            strokeDasharray="4 4"
+                            strokeDasharray="3 3"
                           ></path>
                           <polygon
-                            points="35,-5 40,0 32,2"
+                            points="25,-5 30,0 23,2"
                             fill="var(--rn-accent)"
                           ></polygon>
                         </g>
@@ -964,7 +934,7 @@ export default function Home() {
                         {/* Step 3: Learning Path (Stairs) */}
                         <g>
                           <path
-                            d="M-20 40 L-20 20 L0 20 L0 0 L20 0 L20 -20 L40 -20"
+                            d="M-20 30 L-20 15 L0 15 L0 -5 L20 -5 L20 -20 L40 -20"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="4"
@@ -976,15 +946,15 @@ export default function Home() {
 
                           <circle
                             cx="-20"
-                            cy="40"
-                            r="4"
+                            cy="30"
+                            r="3"
                             fill="var(--rn-accent)"
                             style={{ animation: "l-stair 8s infinite" }}
                           ></circle>
                           <circle
                             cx="0"
-                            cy="20"
-                            r="4"
+                            cy="15"
+                            r="3"
                             fill="var(--rn-accent)"
                             style={{
                               animation: "l-stair 8s infinite",
@@ -993,8 +963,8 @@ export default function Home() {
                           ></circle>
                           <circle
                             cx="20"
-                            cy="0"
-                            r="4"
+                            cy="-5"
+                            r="3"
                             fill="var(--rn-accent)"
                             style={{
                               animation: "l-stair 8s infinite",
@@ -1007,18 +977,18 @@ export default function Home() {
                         <g
                           style={{
                             animation: "l-step3 8s infinite",
-                            transformOrigin: "40px -20px",
+                            transformOrigin: "40px -25px",
                           }}
                         >
                           <circle
                             cx="40"
-                            cy="-20"
-                            r="15"
+                            cy="-25"
+                            r="12"
                             fill="#FACE68"
                             fillOpacity="0.2"
                           ></circle>
                           <path
-                            d="M35 -25 L45 -25 L42 -12 Q40 -5 38 -12 Z"
+                            d="M36 -30 L44 -30 L41 -18 Q40 -12 39 -18 Z"
                             fill="#FACE68"
                           ></path>
                         </g>
@@ -1031,27 +1001,27 @@ export default function Home() {
                         >
                           {/* Confetti / Stars */}
                           <circle
-                            cx="25"
-                            cy="-35"
-                            r="3"
+                            cx="30"
+                            cy="-40"
+                            r="2"
                             fill="#10B981"
                           ></circle>
                           <circle
-                            cx="55"
+                            cx="50"
                             cy="-35"
-                            r="4"
+                            r="3"
                             fill="#FACE68"
                           ></circle>
                           <circle
-                            cx="40"
+                            cx="35"
                             cy="-45"
-                            r="3"
+                            r="2"
                             fill="var(--rn-accent)"
                           ></circle>
                           <text
                             x="40"
-                            y="-60"
-                            fontSize="14"
+                            y="-50"
+                            fontSize="12"
                             fontWeight="bold"
                             fill="#FACE68"
                             textAnchor="middle"
