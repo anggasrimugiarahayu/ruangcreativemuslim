@@ -69,27 +69,27 @@ export default function Home() {
               href="/ebook"
               className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 hover:border-rn-orange/50 shadow-black/50' : 'bg-white border-gray-200 hover:border-rn-orange shadow-gray-200'}`}
             >
-              {/* SVG Background */}
-              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-80 z-0 flex items-start justify-center pt-4">
-                <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-rn-orange" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
-                    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
-                    <line x1="100" y1="0" x2="100" y2="300" /><line x1="200" y1="0" x2="200" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
-                  </g>
-                  <g className="sc-pop" transform="translate(200, 90)">
-                    <path d="M-50,60 L-50,10 L-10,0 L50,10 L50,60 L-10,50 Z" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
-                    <path d="M-10,50 L-10,0" strokeWidth="3" />
-                    <g className="sc-rise" style={{ animationDelay: '0.1s' }}>
-                      <rect x="-40" y="20" width="20" height="4" rx="2" fill="currentColor" />
-                    </g>
-                    <g className="sc-rise" style={{ animationDelay: '0.2s' }}>
-                      <rect x="0" y="20" width="30" height="4" rx="2" fill="currentColor" />
-                      <rect x="0" y="30" width="20" height="4" rx="2" fill="currentColor" />
-                    </g>
-                  </g>
-                  <g className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" strokeWidth="4" strokeOpacity="0.8">
-                    <path d="M100,200 L160,140 L200,160 L290,70" />
-                    <polyline points="260,70 290,70 290,100" />
+              {/* Animated SVG & Grid */}
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] z-0 overflow-hidden rounded-2xl">
+                {/* Grid Pattern */}
+                <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="grid-pattern-1" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid-pattern-1)" />
+                </svg>
+                {/* Graphics */}
+                <svg className="absolute inset-0 w-full h-full opacity-80 text-rn-orange" viewBox="0 0 300 300" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <g className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" strokeWidth="2.5">
+                    {/* Upward chart arrow */}
+                    <path d="M100,200 L200,120 L240,120" />
+                    <polyline points="220,100 240,120 220,140" />
+                    {/* Subtle line decorations on the left */}
+                    <path d="M-10,120 L40,125" strokeOpacity="0.7" />
+                    <path d="M-10,135 L20,138" strokeOpacity="0.7" />
+                    <path d="M-10,155 L50,145" strokeOpacity="0.7" />
                   </g>
                 </svg>
               </div>
@@ -113,36 +113,37 @@ export default function Home() {
               href="/tools"
               className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 hover:border-rn-accent/50 shadow-black/50' : 'bg-white border-gray-200 hover:border-rn-accent shadow-gray-200'}`}
             >
-              {/* SVG Background */}
-              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-80 z-0 flex items-start justify-center pt-4">
-                <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-rn-accent" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
-                    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
-                    <line x1="100" y1="0" x2="100" y2="300" /><line x1="200" y1="0" x2="200" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
+              {/* Animated SVG & Grid */}
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] z-0 overflow-hidden rounded-2xl">
+                {/* Grid Pattern */}
+                <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="grid-pattern-2" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid-pattern-2)" />
+                </svg>
+                {/* Graphics */}
+                <svg className="absolute inset-0 w-full h-full opacity-80 text-rn-accent" viewBox="0 0 300 300" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  {/* Radar circles on left edge */}
+                  <g className="sc-flow" transform="translate(0, 130)">
+                    <circle cx="0" cy="0" r="30" strokeWidth="2" strokeOpacity="0.4" />
+                    <circle cx="0" cy="0" r="20" strokeWidth="2" strokeOpacity="0.7" />
+                    <circle cx="0" cy="0" r="10" strokeOpacity="1" />
                   </g>
-                  <g className="sc-flow" style={{ animationDelay: '0s' }} transform="translate(130, 110)">
-                    <circle cx="0" cy="0" r="20" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
-                    <circle cx="0" cy="0" r="6" fill="currentColor" />
+                  {/* Isometric/house shape */}
+                  <g className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" strokeWidth="2" transform="translate(180, 200)">
+                    <path d="M-50,20 L-50,-20 L0,-50 L50,-20 L50,30" />
+                    <path d="M-50,-20 L0,0 L50,-20" strokeOpacity="0.5" />
+                    <path d="M0,-50 L0,0" strokeOpacity="0.5" />
                   </g>
-                  <g className="sc-flow" style={{ animationDelay: '0.3s' }} transform="translate(230, 60)">
-                    <circle cx="0" cy="0" r="25" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
-                    <circle cx="0" cy="0" r="8" fill="currentColor" />
-                    <path d="M-12,-12 L12,12 M-12,12 L12,-12" strokeWidth="2" opacity="0.5" />
+                  {/* Floating blocks */}
+                  <g className="sc-rise" style={{ animationDelay: '0.2s' }}>
+                    <rect x="176" y="146" width="8" height="8" fill="currentColor" />
                   </g>
-                  <g className="sc-flow" style={{ animationDelay: '0.6s' }} transform="translate(300, 150)">
-                    <circle cx="0" cy="0" r="15" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
-                    <circle cx="0" cy="0" r="5" fill="currentColor" />
-                  </g>
-                  <g className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" strokeWidth="3" strokeOpacity="0.7">
-                    <path d="M145,100 L210,70" />
-                    <path d="M250,75 L290,140" />
-                    <path d="M120,130 L120,190 L290,190 L290,165" />
-                  </g>
-                  <g className="sc-rise" style={{ animationDelay: '0.4s' }}>
-                    <rect x="170" y="70" width="8" height="8" rx="2" fill="currentColor" />
-                  </g>
-                  <g className="sc-rise" style={{ animationDelay: '0.8s' }}>
-                    <rect x="260" y="100" width="8" height="8" rx="2" fill="currentColor" />
+                  <g className="sc-rise" style={{ animationDelay: '0.6s' }}>
+                    <rect x="226" y="226" width="8" height="8" fill="currentColor" />
                   </g>
                 </svg>
               </div>
@@ -165,30 +166,40 @@ export default function Home() {
             <div 
               className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 shadow-black/50 hover:border-purple-500/50' : 'bg-white border-gray-200 shadow-gray-200 hover:border-purple-400'} cursor-default`}
             >
-              {/* SVG Background */}
-              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-80 z-0 flex items-start justify-center pt-4">
-                <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-purple-400" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
-                    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
-                    <line x1="100" y1="0" x2="100" y2="300" /><line x1="200" y1="0" x2="200" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
+              {/* Animated SVG & Grid */}
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] z-0 overflow-hidden rounded-2xl">
+                {/* Grid Pattern */}
+                <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="grid-pattern-3" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid-pattern-3)" />
+                </svg>
+                {/* Graphics */}
+                <svg className="absolute inset-0 w-full h-full opacity-80 text-purple-400" viewBox="0 0 300 300" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  {/* Play button on left edge */}
+                  <g className="sc-flow" transform="translate(10, 140)">
+                    <rect x="-25" y="-20" width="40" height="40" rx="8" strokeWidth="2" strokeOpacity="0.6" />
+                    <polygon points="-10,-8 5,0 -10,8" fill="currentColor" stroke="none" />
+                    <line x1="25" y1="0" x2="60" y2="0" strokeOpacity="0.4" />
                   </g>
-                  <g transform="translate(200, 100)">
-                    <circle cx="0" cy="0" r="60" strokeWidth="6" strokeOpacity="0.1" />
-                    <circle cx="0" cy="0" r="60" strokeWidth="6" stroke="currentColor" strokeDasharray="1" strokeDashoffset="1" pathLength="1" className="sc-draw" />
+                  
+                  {/* Large circle */}
+                  <g transform="translate(220, 180)">
+                    <circle cx="0" cy="0" r="50" strokeWidth="2" strokeOpacity="0.3" />
+                    <circle cx="0" cy="0" r="50" strokeWidth="3" className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" />
+                    <rect x="-3" y="-53" width="6" height="10" fill="currentColor" className="sc-rise" />
+                    <rect x="-3" y="43" width="6" height="10" fill="currentColor" className="sc-rise" style={{animationDelay: "0.5s"}} />
                   </g>
-                  <g className="sc-pop" transform="translate(200, 100)">
-                    <rect x="-35" y="-25" width="70" height="50" rx="8" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
-                    <polygon points="-5,-10 15,0 -5,10" fill="currentColor" />
+
+                  {/* Sparkles/Stars */}
+                  <g className="sc-pop" style={{ animationDelay: '0s' }}>
+                    <path d="M140,150 Q150,150 150,140 Q150,150 160,150 Q150,150 150,160 Q150,150 140,150 Z" fill="currentColor" stroke="none" />
                   </g>
-                  <g className="sc-rise" style={{ animationDelay: '0.2s' }}>
-                    <path d="M120,40 L125,55 L140,60 L125,65 L120,80 L115,65 L100,60 L115,55 Z" fill="currentColor" fillOpacity="0.5" stroke="none" />
-                  </g>
-                  <g className="sc-rise" style={{ animationDelay: '0.5s' }}>
-                    <path d="M280,30 L283,40 L293,43 L283,46 L280,56 L277,46 L267,43 L277,40 Z" fill="currentColor" fillOpacity="0.5" stroke="none" />
-                  </g>
-                  <g className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" strokeWidth="2" strokeOpacity="0.5">
-                    <path d="M140,60 L155,75" />
-                    <path d="M260,140 L280,160 L320,160" />
+                  <g className="sc-pop" style={{ animationDelay: '0.4s' }}>
+                    <path d="M250,100 Q255,100 255,95 Q255,100 260,100 Q255,100 255,105 Q255,100 250,100 Z" fill="currentColor" stroke="none" />
                   </g>
                 </svg>
               </div>
