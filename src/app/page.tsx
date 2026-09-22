@@ -181,7 +181,7 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(-12 0)">
+                      <g transform="translate(0 -50) scale(4.5)">
                         <style>{`
                           @keyframes e-step1 { 0%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 10%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
                           @keyframes e-step2 { 0%, 25%, 90%, 100% { opacity: 0; transform: translateY(10px) scale(0.8); } 35%, 80% { opacity: 1; transform: translateY(0) scale(1); } }
@@ -438,7 +438,7 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(-12 0)">
+                      <g transform="translate(0 -50) scale(4.5)">
                         <style>{`
                           @keyframes t-path { 0%, 10% { stroke-dashoffset: 1; opacity: 0; } 15%, 85% { stroke-dashoffset: 0; opacity: 1; } 95%, 100% { stroke-dashoffset: 1; opacity: 0; } }
 @keyframes t-finish { 0%, 80% { opacity: 0; transform: scale(0.5); } 85%, 95% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.5); } }
@@ -849,7 +849,7 @@ export default function Home() {
                       <line x1="0" y1="1160" x2="1642" y2="1160"></line>
                     </g>
                     <g transform="translate(821 600)">
-                      <g transform="translate(-12 0)">
+                      <g transform="translate(0 -50) scale(4.5)">
                         <style>{`
                           @keyframes l-step1 { 0%, 90%, 100% { opacity: 0; transform: scale(0.9); } 10%, 80% { opacity: 1; transform: scale(1); } }
                           @keyframes l-step2 { 0%, 25%, 90%, 100% { stroke-dashoffset: 1; opacity: 0; } 35%, 80% { stroke-dashoffset: 0; opacity: 1; } }
