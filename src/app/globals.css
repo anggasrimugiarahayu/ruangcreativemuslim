@@ -62,3 +62,55 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* SVG Animations for Interactive Cards */
+@keyframes scDraw {
+  0% { stroke-dashoffset: 1; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes scPop {
+  0% { transform: scale(0.5); opacity: 0; }
+  70% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes scRise {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scFlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Initial state (hidden before hover) */
+.sc-draw, .sc-pop, .sc-rise {
+  opacity: 0;
+}
+
+.sc-flow {
+  opacity: 1;
+}
+
+/* Hover state triggered by parent .group */
+.group:hover .sc-draw {
+  opacity: 1;
+  animation: scDraw 1.2s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+}
+
+.group:hover .sc-pop {
+  opacity: 1;
+  animation: scPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  transform-origin: center;
+}
+
+.group:hover .sc-rise {
+  opacity: 1;
+  animation: scRise 0.6s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+}
+
+.group:hover .sc-flow {
+  animation: scFlow 3s ease-in-out infinite forwards;
+}

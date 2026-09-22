@@ -67,51 +67,144 @@ export default function Home() {
             {/* EBOOK CARD */}
             <Link 
               href="/ebook"
-              className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${isDark ? 'bg-[#18181b] border-white/5 hover:border-rn-accent/50 shadow-black/50' : 'bg-white border-gray-200 hover:border-rn-accent shadow-gray-200'}`}
+              className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 hover:border-rn-orange/50 shadow-black/50' : 'bg-white border-gray-200 hover:border-rn-orange shadow-gray-200'}`}
             >
-              <div className="absolute top-4 right-4 bg-orange-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider">
+              {/* SVG Background */}
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-20 group-hover:opacity-100 z-0 flex items-start justify-center pt-4">
+                <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-rn-orange" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
+                    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
+                    <line x1="100" y1="0" x2="100" y2="300" /><line x1="200" y1="0" x2="200" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
+                  </g>
+                  <g className="sc-pop" transform="translate(200, 90)">
+                    <path d="M-50,60 L-50,10 L-10,0 L50,10 L50,60 L-10,50 Z" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
+                    <path d="M-10,50 L-10,0" strokeWidth="3" />
+                    <g className="sc-rise" style={{ animationDelay: '0.1s' }}>
+                      <rect x="-40" y="20" width="20" height="4" rx="2" fill="currentColor" />
+                    </g>
+                    <g className="sc-rise" style={{ animationDelay: '0.2s' }}>
+                      <rect x="0" y="20" width="30" height="4" rx="2" fill="currentColor" />
+                      <rect x="0" y="30" width="20" height="4" rx="2" fill="currentColor" />
+                    </g>
+                  </g>
+                  <g className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" strokeWidth="4" strokeOpacity="0.8">
+                    <path d="M100,200 L160,140 L200,160 L290,70" />
+                    <polyline points="260,70 290,70 290,100" />
+                  </g>
+                </svg>
+              </div>
+
+              <div className="absolute top-4 right-4 bg-orange-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider z-10 shadow-sm">
                 Terlaris
               </div>
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors ${isDark ? 'bg-zinc-800 group-hover:bg-rn-accent/20' : 'bg-gray-100 group-hover:bg-rn-accent/20'}`}>
-                <BookOpen className="w-6 h-6 text-green-400 group-hover:text-rn-accent transition-colors" />
+              <div className="relative z-10 mt-auto pt-24">
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors ${isDark ? 'bg-zinc-800/80 backdrop-blur-md group-hover:bg-rn-orange/20' : 'bg-white/80 backdrop-blur-md group-hover:bg-rn-orange/20 shadow-sm'}`}>
+                  <BookOpen className="w-6 h-6 text-rn-orange group-hover:text-rn-darkorange transition-colors" />
+                </div>
+                <h2 className={`text-xl font-bold mb-2 font-heading transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}>Ebook Ngonten</h2>
+                <p className={`text-sm leading-relaxed transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                  Panduan strategi faceless creator untuk hasilkan cuan jangka panjang tanpa harus nunjukin wajah.
+                </p>
               </div>
-              <h2 className={`text-xl font-bold mb-2 font-heading transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}>Ebook Ngonten</h2>
-              <p className={`text-sm leading-relaxed transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Panduan strategi faceless creator untuk hasilkan cuan jangka panjang tanpa harus nunjukin wajah.
-              </p>
             </Link>
 
             {/* TOOLS CARD */}
             <Link 
               href="/tools"
-              className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${isDark ? 'bg-[#18181b] border-white/5 hover:border-rn-accent/50 shadow-black/50' : 'bg-white border-gray-200 hover:border-rn-accent shadow-gray-200'}`}
+              className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 hover:border-rn-accent/50 shadow-black/50' : 'bg-white border-gray-200 hover:border-rn-accent shadow-gray-200'}`}
             >
-              <div className="absolute top-4 right-4 bg-blue-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider">
+              {/* SVG Background */}
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-20 group-hover:opacity-100 z-0 flex items-start justify-center pt-4">
+                <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-rn-accent" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
+                    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
+                    <line x1="100" y1="0" x2="100" y2="300" /><line x1="200" y1="0" x2="200" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
+                  </g>
+                  <g className="sc-flow" style={{ animationDelay: '0s' }} transform="translate(130, 110)">
+                    <circle cx="0" cy="0" r="20" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
+                    <circle cx="0" cy="0" r="6" fill="currentColor" />
+                  </g>
+                  <g className="sc-flow" style={{ animationDelay: '0.3s' }} transform="translate(230, 60)">
+                    <circle cx="0" cy="0" r="25" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
+                    <circle cx="0" cy="0" r="8" fill="currentColor" />
+                    <path d="M-12,-12 L12,12 M-12,12 L12,-12" strokeWidth="2" opacity="0.5" />
+                  </g>
+                  <g className="sc-flow" style={{ animationDelay: '0.6s' }} transform="translate(300, 150)">
+                    <circle cx="0" cy="0" r="15" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
+                    <circle cx="0" cy="0" r="5" fill="currentColor" />
+                  </g>
+                  <g className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" strokeWidth="3" strokeOpacity="0.7">
+                    <path d="M145,100 L210,70" />
+                    <path d="M250,75 L290,140" />
+                    <path d="M120,130 L120,190 L290,190 L290,165" />
+                  </g>
+                  <g className="sc-rise" style={{ animationDelay: '0.4s' }}>
+                    <rect x="170" y="70" width="8" height="8" rx="2" fill="currentColor" />
+                  </g>
+                  <g className="sc-rise" style={{ animationDelay: '0.8s' }}>
+                    <rect x="260" y="100" width="8" height="8" rx="2" fill="currentColor" />
+                  </g>
+                </svg>
+              </div>
+
+              <div className="absolute top-4 right-4 bg-blue-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider z-10 shadow-sm">
                 New Product
               </div>
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors ${isDark ? 'bg-zinc-800 group-hover:bg-rn-accent/20' : 'bg-gray-100 group-hover:bg-rn-accent/20'}`}>
-                <Wrench className="w-6 h-6 text-blue-400 group-hover:text-rn-accent transition-colors" />
+              <div className="relative z-10 mt-auto pt-24">
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors ${isDark ? 'bg-zinc-800/80 backdrop-blur-md group-hover:bg-rn-accent/20' : 'bg-white/80 backdrop-blur-md group-hover:bg-rn-accent/20 shadow-sm'}`}>
+                  <Wrench className="w-6 h-6 text-rn-accent group-hover:text-rn-yellow transition-colors" />
+                </div>
+                <h2 className={`text-xl font-bold mb-2 font-heading transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}>Sistem Tools</h2>
+                <p className={`text-sm leading-relaxed transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                  8 sistem AI untuk bantu kamu mulai ngonten dari bingung cari ide sampai eksekusi jadi lebih mudah.
+                </p>
               </div>
-              <h2 className={`text-xl font-bold mb-2 font-heading transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}>Sistem Tools</h2>
-              <p className={`text-sm leading-relaxed transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                8 sistem AI untuk bantu kamu mulai ngonten dari bingung cari ide sampai eksekusi jadi lebih mudah.
-              </p>
             </Link>
 
             {/* E-LEARNING CARD */}
             <div 
-              className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${isDark ? 'bg-[#18181b] border-white/5 shadow-black/50' : 'bg-white border-gray-200 shadow-gray-200'} cursor-default`}
+              className={`border p-6 rounded-2xl text-left group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-end min-h-[300px] ${isDark ? 'bg-[#18181b] border-white/5 shadow-black/50 hover:border-purple-500/50' : 'bg-white border-gray-200 shadow-gray-200 hover:border-purple-400'} cursor-default`}
             >
-              <div className="absolute top-4 right-4 bg-gray-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider">
+              {/* SVG Background */}
+              <div className="absolute inset-0 pointer-events-none transition-transform duration-700 ease-out group-hover:scale-[1.05] opacity-20 group-hover:opacity-100 z-0 flex items-start justify-center pt-4">
+                <svg viewBox="0 0 400 300" className="w-[150%] h-[150%] max-w-none text-purple-400" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <g strokeOpacity="0.1" strokeWidth="1" strokeDasharray="4 4">
+                    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="250" x2="400" y2="250" />
+                    <line x1="100" y1="0" x2="100" y2="300" /><line x1="200" y1="0" x2="200" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
+                  </g>
+                  <g transform="translate(200, 100)">
+                    <circle cx="0" cy="0" r="60" strokeWidth="6" strokeOpacity="0.1" />
+                    <circle cx="0" cy="0" r="60" strokeWidth="6" stroke="currentColor" strokeDasharray="1" strokeDashoffset="1" pathLength="1" className="sc-draw" />
+                  </g>
+                  <g className="sc-pop" transform="translate(200, 100)">
+                    <rect x="-35" y="-25" width="70" height="50" rx="8" fill="currentColor" fillOpacity="0.1" strokeWidth="3" />
+                    <polygon points="-5,-10 15,0 -5,10" fill="currentColor" />
+                  </g>
+                  <g className="sc-rise" style={{ animationDelay: '0.2s' }}>
+                    <path d="M120,40 L125,55 L140,60 L125,65 L120,80 L115,65 L100,60 L115,55 Z" fill="currentColor" fillOpacity="0.5" stroke="none" />
+                  </g>
+                  <g className="sc-rise" style={{ animationDelay: '0.5s' }}>
+                    <path d="M280,30 L283,40 L293,43 L283,46 L280,56 L277,46 L267,43 L277,40 Z" fill="currentColor" fillOpacity="0.5" stroke="none" />
+                  </g>
+                  <g className="sc-draw" strokeDasharray="1" strokeDashoffset="1" pathLength="1" strokeWidth="2" strokeOpacity="0.5">
+                    <path d="M140,60 L155,75" />
+                    <path d="M260,140 L280,160 L320,160" />
+                  </g>
+                </svg>
+              </div>
+
+              <div className="absolute top-4 right-4 bg-gray-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider z-10 shadow-sm">
                 Coming Soon
               </div>
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors ${isDark ? 'bg-zinc-800' : 'bg-gray-100'}`}>
-                <GraduationCap className="w-6 h-6 text-purple-400" />
+              <div className="relative z-10 mt-auto pt-24">
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors ${isDark ? 'bg-zinc-800/80 backdrop-blur-md group-hover:bg-purple-500/20' : 'bg-gray-100/80 backdrop-blur-md group-hover:bg-purple-400/20 shadow-sm'}`}>
+                  <GraduationCap className="w-6 h-6 text-purple-400 group-hover:text-purple-500 transition-colors" />
+                </div>
+                <h2 className={`text-xl font-bold mb-2 font-heading transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}>E-Learning</h2>
+                <p className={`text-sm leading-relaxed transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                  Platform belajar eksklusif dari Ruang Ngonten yang asik dan menyenangkan hanya dalam 1 platform.
+                </p>
               </div>
-              <h2 className={`text-xl font-bold mb-2 font-heading transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}>E-Learning</h2>
-              <p className={`text-sm leading-relaxed transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Platform belajar eksklusif dari Ruang Ngonten yang asik dan menyenangkan hanya dalam 1 platform.
-              </p>
             </div>
           </div>
         </main>
