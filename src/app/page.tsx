@@ -146,7 +146,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <a href="https://lynk.id/ruangcreativemuslim/2124pkdew4ee/checkout" target="_blank" className={`mt-6 block text-center font-bold py-3 rounded-xl transition-all ${isDark ? 'bg-[#27272a] hover:bg-rn-accent hover:text-black text-white' : 'bg-gray-900 hover:bg-rn-accent hover:text-black text-white'}`}>
+              <a href="http://lynk.id/ruangcreativemuslim/2124pkdew4ee/checkout" target="_blank" className={`mt-6 block text-center font-bold py-3 rounded-xl transition-all ${isDark ? 'bg-[#27272a] hover:bg-rn-accent hover:text-black text-white' : 'bg-gray-900 hover:bg-rn-accent hover:text-black text-white'}`}>
                 Pilih Paket Basic
               </a>
             </div>
@@ -175,7 +175,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <a href="https://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank" className={`mt-6 block text-center font-bold py-3 rounded-xl transition-all ${isDark ? 'bg-[#27272a] hover:bg-rn-accent hover:text-black text-white' : 'bg-gray-900 hover:bg-rn-accent hover:text-black text-white'}`}>
+              <a href="http://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank" className={`mt-6 block text-center font-bold py-3 rounded-xl transition-all ${isDark ? 'bg-[#27272a] hover:bg-rn-accent hover:text-black text-white' : 'bg-gray-900 hover:bg-rn-accent hover:text-black text-white'}`}>
                 Pilih Sistem Tools
               </a>
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <a href="https://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" className="mt-6 block text-center bg-rn-accent text-black font-black py-3 rounded-xl hover:bg-white transition-all shadow-[0_0_20px_rgba(208,226,6,0.2)]">
+              <a href="http://lynk.id/ruangcreativemuslim/w3pwykdq8j60/checkout" target="_blank" className="mt-6 block text-center bg-rn-accent text-black font-black py-3 rounded-xl hover:bg-white transition-all shadow-[0_0_20px_rgba(208,226,6,0.2)]">
                 Pilih Paket Lengkap
               </a>
             </div>

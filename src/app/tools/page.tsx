@@ -93,7 +93,7 @@ export default function ToolsPage() {
                 <span className="font-black font-heading text-[16px] sm:text-[22px] tracking-tight text-white">Ruang
                     Ngonten</span>
             </div>
-            <a href="https://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank"
+            <a href="http://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank"
                 
                 className="inline-flex items-center justify-center bg-white px-4 py-2 sm:px-6 sm:py-2.5 rounded-full font-semibold text-[10px] sm:text-[13px] border-2 border-white hover:bg-rn-yellow hover:border-rn-yellow transition-all duration-300 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#ffffff] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] whitespace-nowrap !text-black !no-underline">
                 DAPATKAN AKSES
@@ -1240,7 +1240,7 @@ export default function ToolsPage() {
 
                     {/* Button & Security Badges */}
                     <div className="mt-6 flex flex-col items-center text-center w-full">
-                        <a href="https://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank" className="w-full bg-rn-accent !text-black py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:bg-black hover:!text-white hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:bg-black active:!text-white active:shadow-none active:translate-x-[3px] active:translate-y-[3px] flex items-center justify-center mb-5 select-none animate-heartbeat relative overflow-hidden group" style={{ textDecoration: 'none' }}>
+                        <a href="http://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank" className="w-full bg-rn-accent !text-black py-3.5 sm:py-4 rounded-full font-bold text-[13px] sm:text-[15px] border-2 border-black transition-all duration-200 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:bg-black hover:!text-white hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:bg-black active:!text-white active:shadow-none active:translate-x-[3px] active:translate-y-[3px] flex items-center justify-center mb-5 select-none animate-heartbeat relative overflow-hidden group" style={{ textDecoration: 'none' }}>
                             <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
                             <span className="relative z-20">AMBIL HARGA PROMO</span>
                         </a>
@@ -1439,7 +1439,7 @@ export default function ToolsPage() {
                 </p>
 
                 {/*  Final Button  */}
-                <a href="https://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank"
+                <a href="http://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank"
                     className="w-[90%] sm:w-auto inline-flex items-center justify-center bg-rn-accent px-10 py-4 rounded-full font-semibold text-[13px] sm:text-[14px] border-2 border-black hover:bg-black hover:!text-white hover:border-black active:bg-black active:!text-white active:border-black transition-all duration-300 font-heading uppercase tracking-widest shadow-[3px_3px_0px_0px_#000000] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] active:shadow-none active:translate-x-[3px] active:translate-y-[3px] whitespace-nowrap !text-black !no-underline animate-heartbeat relative overflow-hidden group select-none">
                     <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
                     <span className="relative z-20">DAPATKAN AKSES SEKARANG</span>
@@ -1466,7 +1466,7 @@ export default function ToolsPage() {
     {/*  FLOATING MOBILE CTA  */}
     <div
         className="sm:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[720px] p-4 bg-rn-dark-bg/90 backdrop-blur-md border-t border-white/10 z-50 animate-in slide-in-from-bottom-full duration-300">
-        <a href="https://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank"
+        <a href="http://lynk.id/ruangcreativemuslim/0elxm3wy387w/checkout" target="_blank"
             className="w-full bg-rn-accent border-2 border-black py-3.5 rounded-full font-semibold text-sm font-heading uppercase tracking-widest hover:bg-black hover:border-black hover:!text-white active:bg-black active:border-black active:!text-white transition-all shadow-[3px_3px_0px_0px_#000000] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none active:translate-x-[3px] active:translate-y-[3px] active:shadow-none flex items-center justify-center gap-2 !text-black !no-underline animate-heartbeat relative overflow-hidden group select-none">
             <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/60 to-transparent w-full h-full z-10 animate-shimmer pointer-events-none" />
             <span className="relative z-20">Akses Rp 99.000</span>
