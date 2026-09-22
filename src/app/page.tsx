@@ -182,233 +182,592 @@ export default function Home() {
                     </g>
                     <g transform="translate(821 600)">
                       <style>{`
-                          @keyframes draw-line { 0%, 20% { stroke-dashoffset: 300; } 80%, 100% { stroke-dashoffset: 0; } }
-                          @keyframes pop-in { 0%, 10% { opacity: 0; transform: scale(0.5); } 20%, 90% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.5); } }
-                          @keyframes slide-dot1 { 0%, 10% { opacity: 0; transform: translateX(-150px); } 25%, 85% { opacity: 1; transform: translateX(0px); } 100% { opacity: 0; transform: translateX(0px); } }
-                          @keyframes slide-dot2 { 0%, 40% { opacity: 0; transform: translateX(0px); } 55%, 85% { opacity: 1; transform: translateX(150px); } 100% { opacity: 0; transform: translateX(150px); } }
-                          @keyframes float-up { 0% { opacity: 0; transform: translateY(10px); } 50% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(-10px); } }
+                          @keyframes atm-rise {
+                            0%, 10% { opacity: 0; transform: translateY(20px); }
+                            15%, 90% { opacity: 1; transform: translateY(0); }
+                            95%, 100% { opacity: 0; transform: translateY(-10px); }
+                          }
+                          @keyframes atm-pop {
+                            0%, 5% { opacity: 0; transform: scale(0.5); }
+                            10%, 90% { opacity: 1; transform: scale(1); }
+                            95%, 100% { opacity: 0; transform: scale(0.5); }
+                          }
+                          @keyframes atm-draw {
+                            0%, 10% { stroke-dashoffset: 1; opacity: 0;}
+                            20%, 90% { stroke-dashoffset: 0; opacity: 1;}
+                            95%, 100% { stroke-dashoffset: 1; opacity: 0;}
+                          }
+                          @keyframes atm-flow {
+                            0%, 10% { opacity: 0; transform: translateX(-10px); }
+                            20%, 80% { opacity: 1; transform: translateX(0); }
+                            90%, 100% { opacity: 0; transform: translateX(10px); }
+                          }
                         `}</style>
 
-                      {/* Background subtle lines */}
-                      <line
-                        x1="-150"
-                        y1="0"
-                        x2="150"
-                        y2="0"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        strokeOpacity="0.1"
-                      ></line>
-
-                      {/* Animated Flow Dots */}
-                      <circle
-                        cx="0"
-                        cy="0"
-                        r="6"
-                        fill="var(--rn-accent)"
-                        style={{
-                          animation:
-                            "slide-dot1 6s cubic-bezier(0.4, 0, 0.2, 1) infinite",
-                        }}
-                      ></circle>
-                      <circle
-                        cx="0"
-                        cy="0"
-                        r="6"
-                        fill="#10B981"
-                        style={{
-                          animation:
-                            "slide-dot2 6s cubic-bezier(0.4, 0, 0.2, 1) infinite",
-                        }}
-                      ></circle>
-
-                      {/* Node 1: Produk */}
-                      <g transform="translate(-150 0)">
-                        <rect
-                          x="-40"
-                          y="-45"
-                          width="80"
-                          height="90"
-                          rx="16"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="5"
-                          strokeOpacity="0.5"
-                        ></rect>
-                        {/* Inner box icon */}
-                        <rect
-                          x="-18"
-                          y="-20"
-                          width="36"
-                          height="30"
-                          rx="6"
-                          fill="currentColor"
-                          fillOpacity="0.1"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.6"
-                        ></rect>
-                        <line
-                          x1="-10"
-                          y1="20"
-                          x2="10"
-                          y2="20"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                          strokeLinecap="round"
-                        ></line>
-                        <text
-                          x="0"
-                          y="70"
-                          fontSize="20"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Produk
-                        </text>
-                      </g>
-
-                      {/* Node 2: Faceless */}
-                      <g transform="translate(0 0)">
-                        <rect
-                          x="-45"
-                          y="-60"
-                          width="90"
-                          height="120"
-                          rx="18"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="5"
-                          strokeOpacity="0.6"
-                        ></rect>
-                        {/* Inner phone elements */}
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="20"
-                          fill="currentColor"
-                          fillOpacity="0.05"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <path
-                          d="M-20 0 Q0 -15 20 0 M-20 0 Q0 15 20 0"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></path>
-                        <line
-                          x1="-15"
-                          y1="-40"
-                          x2="15"
-                          y2="-40"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.3"
-                          strokeLinecap="round"
-                        ></line>
-                        <line
-                          x1="-12"
-                          y1="40"
-                          x2="12"
-                          y2="40"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.3"
-                          strokeLinecap="round"
-                        ></line>
-                        <text
-                          x="0"
-                          y="90"
-                          fontSize="20"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Faceless
-                        </text>
-                      </g>
-
-                      {/* Node 3: Cuan */}
-                      <g transform="translate(150 0)">
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="45"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="5"
-                          strokeOpacity="0.3"
-                          strokeDasharray="10 10"
-                        ></circle>
+                      <g transform="translate(-12 0)">
+                        {/* 1. Left Section: Produk Digital */}
                         <g
                           style={{
-                            animation: "pop-in 6s infinite",
-                            transformOrigin: "center",
+                            animation: "atm-rise 8s infinite both",
+                            animationDelay: "0s",
                           }}
                         >
                           <circle
-                            cx="0"
-                            cy="0"
-                            r="45"
-                            fill="#10B981"
-                            fillOpacity="0.1"
-                            stroke="#10B981"
+                            cx="-200"
+                            cy="-22"
+                            r="30"
+                            fill="currentColor"
+                            fillOpacity="0.06"
+                            strokeOpacity="0.75"
                             strokeWidth="5"
                           ></circle>
-                          <text
-                            x="0"
-                            y="2"
-                            fontSize="42"
-                            fontWeight="800"
-                            fill="#10B981"
-                            textAnchor="middle"
-                            dominantBaseline="central"
-                          >
-                            $
-                          </text>
-                          {/* Floating mini dollars */}
-                          <text
-                            x="-30"
-                            y="-30"
-                            fontSize="18"
-                            fontWeight="700"
-                            fill="#10B981"
-                            style={{ animation: "float-up 2s infinite" }}
-                          >
-                            $
-                          </text>
-                          <text
-                            x="30"
-                            y="-20"
-                            fontSize="14"
-                            fontWeight="700"
-                            fill="#10B981"
+                          {/* Box / Book icon inside */}
+                          <path
+                            d="M-212 -22 L-206 -33 L-200 -19 L-194 -33 L-188 -22"
+                            strokeWidth="5"
+                            strokeOpacity="0.8"
                             style={{
-                              animation: "float-up 2s infinite",
+                              animation: "atm-draw 8s infinite both",
+                              animationDelay: "0.2s",
+                            }}
+                            pathLength="1"
+                            strokeDasharray="1"
+                            strokeDashoffset="1"
+                          ></path>
+                          <rect
+                            x="-212"
+                            y="6"
+                            width="24"
+                            height="15"
+                            rx="3"
+                            fill="currentColor"
+                            fillOpacity="0.12"
+                            strokeOpacity="0.7"
+                            strokeWidth="4"
+                          ></rect>
+                          <line
+                            x1="-206"
+                            y1="25"
+                            x2="-194"
+                            y2="25"
+                            strokeWidth="5"
+                            strokeOpacity="0.6"
+                          ></line>
+
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
                               animationDelay: "0.5s",
                             }}
                           >
-                            $
-                          </text>
+                            <path
+                              d="M-200 -60 L-200 -74"
+                              strokeWidth="6"
+                              strokeOpacity="0.7"
+                            ></path>
+                          </g>
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
+                              animationDelay: "0.7s",
+                            }}
+                          >
+                            <path
+                              d="M-226 -44 L-236 -54"
+                              strokeWidth="6"
+                              strokeOpacity="0.7"
+                            ></path>
+                          </g>
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
+                              animationDelay: "0.9s",
+                            }}
+                          >
+                            <path
+                              d="M-174 -44 L-164 -54"
+                              strokeWidth="6"
+                              strokeOpacity="0.7"
+                            ></path>
+                          </g>
                         </g>
-                        <text
-                          x="0"
-                          y="75"
-                          fontSize="20"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
+
+                        {/* 2. Flow Arrows */}
+                        <g
+                          style={{
+                            animation: "atm-rise 8s infinite both",
+                            animationDelay: "1s",
+                          }}
                         >
-                          Cuan
-                        </text>
+                          <g transform="translate(-160 -10)">
+                            <g
+                              style={{
+                                animation: "atm-flow 8s infinite both",
+                                animationDelay: "0s",
+                              }}
+                            >
+                              <path
+                                d="M0 -12 L11 0 L0 12"
+                                strokeWidth="7"
+                                strokeOpacity="0.8"
+                                fill="none"
+                              ></path>
+                            </g>
+                          </g>
+                          <g transform="translate(-144 -10)">
+                            <g
+                              style={{
+                                animation: "atm-flow 8s infinite both",
+                                animationDelay: "0.15s",
+                              }}
+                            >
+                              <path
+                                d="M0 -12 L11 0 L0 12"
+                                strokeWidth="7"
+                                strokeOpacity="0.8"
+                                fill="none"
+                              ></path>
+                            </g>
+                          </g>
+                          <g transform="translate(-128 -10)">
+                            <g
+                              style={{
+                                animation: "atm-flow 8s infinite both",
+                                animationDelay: "0.3s",
+                              }}
+                            >
+                              <path
+                                d="M0 -12 L11 0 L0 12"
+                                strokeWidth="7"
+                                strokeOpacity="0.8"
+                                fill="none"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+
+                        {/* 3. Middle Section: Faceless / Sosmed */}
+                        <g
+                          style={{
+                            animation: "atm-rise 8s infinite both",
+                            animationDelay: "1.5s",
+                          }}
+                        >
+                          <rect
+                            x="-95"
+                            y="-100"
+                            width="210"
+                            height="190"
+                            rx="16"
+                            fill="currentColor"
+                            fillOpacity="0.05"
+                            strokeOpacity="0.7"
+                            strokeWidth="5"
+                          ></rect>
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
+                              animationDelay: "1.8s",
+                            }}
+                          >
+                            <text
+                              x="-70"
+                              y="-70"
+                              fontSize="30"
+                              fontWeight="700"
+                              fill="currentColor"
+                              fillOpacity="0.85"
+                              stroke="none"
+                              dominantBaseline="central"
+                              letterSpacing="0.68"
+                            >
+                              FACELESS
+                            </text>
+                          </g>
+
+                          <line
+                            x1="100"
+                            y1="-70"
+                            x2="110"
+                            y2="-70"
+                            strokeWidth="11"
+                            strokeOpacity="0.3"
+                            style={{
+                              animation: "atm-draw 8s infinite both",
+                              animationDelay: "2s",
+                            }}
+                            pathLength="1"
+                            strokeDasharray="1"
+                            strokeDashoffset="1"
+                          ></line>
+
+                          {/* Profile UI elements */}
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
+                              animationDelay: "2s",
+                            }}
+                          >
+                            <circle
+                              cx="-45"
+                              cy="-25"
+                              r="22"
+                              fill="currentColor"
+                              fillOpacity="0.1"
+                              strokeOpacity="0.6"
+                              strokeWidth="4"
+                            ></circle>
+                          </g>
+
+                          <line
+                            x1="-10"
+                            y1="-38"
+                            x2="80"
+                            y2="-38"
+                            strokeWidth="8"
+                            strokeOpacity="0.6"
+                            style={{
+                              animation: "atm-draw 8s infinite both",
+                              animationDelay: "2.3s",
+                            }}
+                            pathLength="1"
+                            strokeDasharray="1"
+                            strokeDashoffset="1"
+                          ></line>
+                          <line
+                            x1="-10"
+                            y1="-12"
+                            x2="55"
+                            y2="-12"
+                            strokeWidth="8"
+                            strokeOpacity="0.6"
+                            style={{
+                              animation: "atm-draw 8s infinite both",
+                              animationDelay: "2.5s",
+                            }}
+                            pathLength="1"
+                            strokeDasharray="1"
+                            strokeDashoffset="1"
+                          ></line>
+
+                          {/* Post grid */}
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
+                              animationDelay: "2.8s",
+                            }}
+                          >
+                            <rect
+                              x="-70"
+                              y="20"
+                              width="40"
+                              height="40"
+                              rx="6"
+                              fill="currentColor"
+                              fillOpacity="0.08"
+                              strokeOpacity="0.6"
+                              strokeWidth="4"
+                            ></rect>
+                          </g>
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
+                              animationDelay: "3s",
+                            }}
+                          >
+                            <rect
+                              x="-15"
+                              y="20"
+                              width="40"
+                              height="40"
+                              rx="6"
+                              fill="currentColor"
+                              fillOpacity="0.08"
+                              strokeOpacity="0.6"
+                              strokeWidth="4"
+                            ></rect>
+                          </g>
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
+                              animationDelay: "3.2s",
+                            }}
+                          >
+                            <rect
+                              x="40"
+                              y="20"
+                              width="40"
+                              height="40"
+                              rx="6"
+                              fill="currentColor"
+                              fillOpacity="0.08"
+                              strokeOpacity="0.6"
+                              strokeWidth="4"
+                            ></rect>
+                          </g>
+                        </g>
+
+                        {/* 4. Right Section: Cuan */}
+                        <g
+                          style={{
+                            animation: "atm-rise 8s infinite both",
+                            animationDelay: "3.8s",
+                          }}
+                        >
+                          <rect
+                            x="75"
+                            y="-50"
+                            width="190"
+                            height="150"
+                            rx="16"
+                            fill="var(--card)"
+                            strokeOpacity="0.8"
+                            strokeWidth="5"
+                          ></rect>
+
+                          {/* Corner dots */}
+                          <rect
+                            x="69"
+                            y="-56"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            stroke="none"
+                            opacity="0.85"
+                          ></rect>
+                          <rect
+                            x="259"
+                            y="-56"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            stroke="none"
+                            opacity="0.85"
+                          ></rect>
+                          <rect
+                            x="259"
+                            y="94"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            stroke="none"
+                            opacity="0.85"
+                          ></rect>
+                          <rect
+                            x="69"
+                            y="94"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            stroke="none"
+                            opacity="0.85"
+                          ></rect>
+
+                          <g
+                            style={{
+                              animation: "atm-pop 8s infinite both",
+                              animationDelay: "4s",
+                            }}
+                          >
+                            <text
+                              x="95"
+                              y="-24"
+                              fontSize="28"
+                              fontWeight="700"
+                              fill="#10B981"
+                              fillOpacity="0.85"
+                              stroke="none"
+                              dominantBaseline="central"
+                              letterSpacing="0.56"
+                            >
+                              CUAN
+                            </text>
+                          </g>
+
+                          {/* Cuan rows with checkmarks */}
+                          <g>
+                            <line
+                              x1="128"
+                              y1="14"
+                              x2="210"
+                              y2="14"
+                              strokeWidth="10"
+                              strokeOpacity="0.65"
+                              style={{
+                                animation: "atm-draw 8s infinite both",
+                                animationDelay: "4.3s",
+                              }}
+                              pathLength="1"
+                              strokeDasharray="1"
+                              strokeDashoffset="1"
+                            ></line>
+                            <g transform="translate(107 14)">
+                              <g
+                                style={{
+                                  animation: "atm-pop 8s infinite both",
+                                  animationDelay: "4.4s",
+                                }}
+                              >
+                                <rect
+                                  x="-11"
+                                  y="-11"
+                                  width="22"
+                                  height="22"
+                                  rx="6"
+                                  strokeOpacity="0.55"
+                                  strokeWidth="4"
+                                ></rect>
+                              </g>
+                              <g
+                                style={{
+                                  animation: "atm-pop 8s infinite both",
+                                  animationDelay: "4.8s",
+                                }}
+                              >
+                                <rect
+                                  x="-11"
+                                  y="-11"
+                                  width="22"
+                                  height="22"
+                                  rx="6"
+                                  fill="#10B981"
+                                  fillOpacity="0.18"
+                                  stroke="#10B981"
+                                  strokeOpacity="0.95"
+                                  strokeWidth="4"
+                                ></rect>
+                                <path
+                                  d="M-6 0 L-2 4 L7 -5"
+                                  stroke="#10B981"
+                                  strokeWidth="5"
+                                  fill="none"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+
+                          <g>
+                            <line
+                              x1="128"
+                              y1="44"
+                              x2="240"
+                              y2="44"
+                              strokeWidth="10"
+                              strokeOpacity="0.65"
+                              style={{
+                                animation: "atm-draw 8s infinite both",
+                                animationDelay: "5.1s",
+                              }}
+                              pathLength="1"
+                              strokeDasharray="1"
+                              strokeDashoffset="1"
+                            ></line>
+                            <g transform="translate(107 44)">
+                              <g
+                                style={{
+                                  animation: "atm-pop 8s infinite both",
+                                  animationDelay: "5.2s",
+                                }}
+                              >
+                                <rect
+                                  x="-11"
+                                  y="-11"
+                                  width="22"
+                                  height="22"
+                                  rx="6"
+                                  strokeOpacity="0.55"
+                                  strokeWidth="4"
+                                ></rect>
+                              </g>
+                              <g
+                                style={{
+                                  animation: "atm-pop 8s infinite both",
+                                  animationDelay: "5.6s",
+                                }}
+                              >
+                                <rect
+                                  x="-11"
+                                  y="-11"
+                                  width="22"
+                                  height="22"
+                                  rx="6"
+                                  fill="#10B981"
+                                  fillOpacity="0.18"
+                                  stroke="#10B981"
+                                  strokeOpacity="0.95"
+                                  strokeWidth="4"
+                                ></rect>
+                                <path
+                                  d="M-6 0 L-2 4 L7 -5"
+                                  stroke="#10B981"
+                                  strokeWidth="5"
+                                  fill="none"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+
+                          <g>
+                            <line
+                              x1="128"
+                              y1="74"
+                              x2="188"
+                              y2="74"
+                              strokeWidth="10"
+                              strokeOpacity="0.65"
+                              style={{
+                                animation: "atm-draw 8s infinite both",
+                                animationDelay: "5.9s",
+                              }}
+                              pathLength="1"
+                              strokeDasharray="1"
+                              strokeDashoffset="1"
+                            ></line>
+                            <g transform="translate(107 74)">
+                              <g
+                                style={{
+                                  animation: "atm-pop 8s infinite both",
+                                  animationDelay: "6.0s",
+                                }}
+                              >
+                                <rect
+                                  x="-11"
+                                  y="-11"
+                                  width="22"
+                                  height="22"
+                                  rx="6"
+                                  strokeOpacity="0.55"
+                                  strokeWidth="4"
+                                ></rect>
+                              </g>
+                              <g
+                                style={{
+                                  animation: "atm-pop 8s infinite both",
+                                  animationDelay: "6.4s",
+                                }}
+                              >
+                                <rect
+                                  x="-11"
+                                  y="-11"
+                                  width="22"
+                                  height="22"
+                                  rx="6"
+                                  fill="#10B981"
+                                  fillOpacity="0.18"
+                                  stroke="#10B981"
+                                  strokeOpacity="0.95"
+                                  strokeWidth="4"
+                                ></rect>
+                                <path
+                                  d="M-6 0 L-2 4 L7 -5"
+                                  stroke="#10B981"
+                                  strokeWidth="5"
+                                  fill="none"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
                       </g>
                     </g>
                   </svg>
