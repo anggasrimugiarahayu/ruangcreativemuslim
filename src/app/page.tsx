@@ -574,7 +574,7 @@ export default function Home() {
                               y="-24"
                               fontSize="28"
                               fontWeight="700"
-                              fill="#10B981"
+                              fill="oklch(0.75 0.13 150)"
                               fillOpacity="0.85"
                               stroke="none"
                               dominantBaseline="central"
@@ -630,15 +630,15 @@ export default function Home() {
                                   width="22"
                                   height="22"
                                   rx="6"
-                                  fill="#10B981"
+                                  fill="oklch(0.75 0.13 150)"
                                   fillOpacity="0.18"
-                                  stroke="#10B981"
+                                  stroke="oklch(0.75 0.13 150)"
                                   strokeOpacity="0.95"
                                   strokeWidth="4"
                                 ></rect>
                                 <path
                                   d="M-6 0 L-2 4 L7 -5"
-                                  stroke="#10B981"
+                                  stroke="oklch(0.75 0.13 150)"
                                   strokeWidth="5"
                                   fill="none"
                                 ></path>
@@ -691,15 +691,15 @@ export default function Home() {
                                   width="22"
                                   height="22"
                                   rx="6"
-                                  fill="#10B981"
+                                  fill="oklch(0.75 0.13 150)"
                                   fillOpacity="0.18"
-                                  stroke="#10B981"
+                                  stroke="oklch(0.75 0.13 150)"
                                   strokeOpacity="0.95"
                                   strokeWidth="4"
                                 ></rect>
                                 <path
                                   d="M-6 0 L-2 4 L7 -5"
-                                  stroke="#10B981"
+                                  stroke="oklch(0.75 0.13 150)"
                                   strokeWidth="5"
                                   fill="none"
                                 ></path>
@@ -752,15 +752,15 @@ export default function Home() {
                                   width="22"
                                   height="22"
                                   rx="6"
-                                  fill="#10B981"
+                                  fill="oklch(0.75 0.13 150)"
                                   fillOpacity="0.18"
-                                  stroke="#10B981"
+                                  stroke="oklch(0.75 0.13 150)"
                                   strokeOpacity="0.95"
                                   strokeWidth="4"
                                 ></rect>
                                 <path
                                   d="M-6 0 L-2 4 L7 -5"
-                                  stroke="#10B981"
+                                  stroke="oklch(0.75 0.13 150)"
                                   strokeWidth="5"
                                   fill="none"
                                 ></path>
@@ -810,359 +810,43 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <g
-                      strokeOpacity="0.18"
-                      strokeWidth="3"
-                      strokeDasharray="3 14"
-                    >
-                      <line x1="21" y1="0" x2="21" y2="1200"></line>
-                      <line x1="101" y1="0" x2="101" y2="1200"></line>
-                      <line x1="181" y1="0" x2="181" y2="1200"></line>
-                      <line x1="261" y1="0" x2="261" y2="1200"></line>
-                      <line x1="341" y1="0" x2="341" y2="1200"></line>
-                      <line x1="421" y1="0" x2="421" y2="1200"></line>
-                      <line x1="501" y1="0" x2="501" y2="1200"></line>
-                      <line x1="581" y1="0" x2="581" y2="1200"></line>
-                      <line x1="661" y1="0" x2="661" y2="1200"></line>
-                      <line x1="741" y1="0" x2="741" y2="1200"></line>
-                      <line x1="821" y1="0" x2="821" y2="1200"></line>
-                      <line x1="901" y1="0" x2="901" y2="1200"></line>
-                      <line x1="981" y1="0" x2="981" y2="1200"></line>
-                      <line x1="1061" y1="0" x2="1061" y2="1200"></line>
-                      <line x1="1141" y1="0" x2="1141" y2="1200"></line>
-                      <line x1="1221" y1="0" x2="1221" y2="1200"></line>
-                      <line x1="1301" y1="0" x2="1301" y2="1200"></line>
-                      <line x1="1381" y1="0" x2="1381" y2="1200"></line>
-                      <line x1="1461" y1="0" x2="1461" y2="1200"></line>
-                      <line x1="1541" y1="0" x2="1541" y2="1200"></line>
-                      <line x1="1621" y1="0" x2="1621" y2="1200"></line>
-                      <line x1="0" y1="40" x2="1642" y2="40"></line>
-                      <line x1="0" y1="120" x2="1642" y2="120"></line>
-                      <line x1="0" y1="200" x2="1642" y2="200"></line>
-                      <line x1="0" y1="280" x2="1642" y2="280"></line>
-                      <line x1="0" y1="360" x2="1642" y2="360"></line>
-                      <line x1="0" y1="440" x2="1642" y2="440"></line>
-                      <line x1="0" y1="520" x2="1642" y2="520"></line>
-                      <line x1="0" y1="600" x2="1642" y2="600"></line>
-                      <line x1="0" y1="680" x2="1642" y2="680"></line>
-                      <line x1="0" y1="760" x2="1642" y2="760"></line>
-                      <line x1="0" y1="840" x2="1642" y2="840"></line>
-                      <line x1="0" y1="920" x2="1642" y2="920"></line>
-                      <line x1="0" y1="1000" x2="1642" y2="1000"></line>
-                      <line x1="0" y1="1080" x2="1642" y2="1080"></line>
-                      <line x1="0" y1="1160" x2="1642" y2="1160"></line>
-                    </g>
-                    <g transform="translate(821 600)">
                       <style>{`
-                          @keyframes draw-path { 0%, 15% { stroke-dashoffset: 700; } 85%, 100% { stroke-dashoffset: 0; } }
-                          @keyframes pop-node { 0%, 5% { opacity: 0; transform: scale(0.5); } 10%, 95% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.5); } }
-                        `}</style>
+                          @keyframes atm-rise {
+                              0% { opacity: 0; transform: translateY(20px); }
+                              40%, 100% { opacity: 1; transform: translateY(0); }
+                          }
+                          @keyframes atm-pop {
+                              0% { opacity: 0; transform: scale(0.9); }
+                              40%, 100% { opacity: 1; transform: scale(1); }
+                          }
+                          @keyframes atm-draw {
+                              0% { stroke-dashoffset: 1; }
+                              40%, 100% { stroke-dashoffset: 0; }
+                          }
+                          @keyframes atm-turn-a {
+                              0% { transform: perspective(800px) rotateY(15deg); }
+                              40%, 100% { transform: perspective(800px) rotateY(0deg); }
+                          }
+                          @keyframes atm-turn-b {
+                              0% { transform: perspective(800px) rotateY(-15deg); }
+                              40%, 100% { transform: perspective(800px) rotateY(0deg); }
+                          }
+                          @keyframes atm-ring {
+                              0% { opacity: 0; transform: scale(0.9); }
+                              40%, 100% { opacity: 1; transform: scale(1); }
+                          }
+                          @keyframes atm-scroll {
+                              0% { transform: translateY(0); }
+                              20%, 100% { transform: translateY(-40px); }
+                          }
+                          @keyframes atm-bar {
+                              0% { opacity: 0; transform: scaleY(0); transform-origin: bottom; }
+                              40%, 100% { opacity: 1; transform: scaleY(1); transform-origin: bottom; }
+                          }
+                      `}</style>
+<g transform="translate(821 600)"><g transform="translate(-138 -96)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.15s" }}><rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect><g strokeOpacity="0.8" strokeWidth="3.5" fill="none"><path d="M0 -12 L0 12"></path><path d="M-10.5 -6 L10.5 6"></path><path d="M-10.5 6 L10.5 -6"></path></g></g></g><g transform="translate(-46 -96)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.3s" }}><rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect><g strokeOpacity="0.8" strokeWidth="3.5" fill="none"><path d="M0 -12 L10.5 -6 L10.5 6 L0 12 L-10.5 6 L-10.5 -6 Z"></path><circle r="3" fill="currentColor" stroke="none"></circle></g></g></g><g transform="translate(46 -96)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.45s" }}><rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect><g strokeOpacity="0.8" strokeWidth="3.5" fill="none"><path d="M0 -12 Q0 0 12 0 Q0 0 0 12 Q0 0 -12 0 Q0 0 0 -12 Z"></path></g></g></g><g transform="translate(138 -96)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.6s" }}><rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect><g strokeOpacity="0.8" strokeWidth="3.5" fill="none"><path d="M2 -12 A 12 12 0 1 0 2 12 A 9.5 9.5 0 1 1 2 -12 Z"></path></g></g></g><g transform="translate(0 -96)"><g style={{ animation: "atm-ring 8s infinite both" }}><rect x="-29" y="-29" width="58" height="58" rx="18" fill="oklch(0.78 0.15 45)" fillOpacity="0.1" stroke="oklch(0.78 0.15 45)" strokeOpacity="0.95" strokeWidth="5"></rect></g></g><defs><clipPath id="home-v2-chat-viewport"><rect x="-272" y="-60" width="544" height="190"></rect></clipPath></defs><g clipPath="url(#home-v2-chat-viewport)"><g transform="translate(0 -60)"><g style={{ animation: "atm-scroll 8s infinite both" }}><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "2.5s" }}><path d="M 114 4 H 236 a 14 14 0 0 1 14 14 V 36 H 114 a 14 14 0 0 1 -14 -14 V 18 a 14 14 0 0 1 14 -14 Z" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.6" strokeWidth="5"></path><g><line x1="120" y1="20" x2="230" y2="20" strokeWidth="9" strokeOpacity="0.55" style={{ animation: "atm-draw 8s infinite both", animationDelay: "2.7s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g></g><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "3.0s" }}><path d="M -236 46 H 16 a 14 14 0 0 1 14 14 V 86 a 14 14 0 0 1 -14 14 H -250 V 60 a 14 14 0 0 1 14 -14 Z" fill="oklch(0.78 0.15 45)" fillOpacity="0.12" stroke="oklch(0.78 0.15 45)" strokeOpacity="0.95" strokeWidth="5"></path><g><line x1="-230" y1="64" x2="10" y2="64" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g><g><line x1="-230" y1="86" x2="-60" y2="86" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.4s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g></g><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "3.7s" }}><path d="M 164 110 H 236 a 14 14 0 0 1 14 14 V 142 H 164 a 14 14 0 0 1 -14 -14 V 124 a 14 14 0 0 1 14 -14 Z" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.6" strokeWidth="5"></path><g><line x1="170" y1="126" x2="230" y2="126" strokeWidth="9" strokeOpacity="0.55" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.9s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g></g><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "4.2s" }}><path d="M -236 152 H 36 a 14 14 0 0 1 14 14 V 278 a 14 14 0 0 1 -14 14 H -250 V 166 a 14 14 0 0 1 14 -14 Z" fill="oklch(0.78 0.15 45)" fillOpacity="0.12" stroke="oklch(0.78 0.15 45)" strokeOpacity="0.95" strokeWidth="5"></path><g><line x1="-230" y1="174" x2="-110" y2="174" strokeWidth="12" strokeOpacity="0.85" style={{ animation: "atm-draw 8s infinite both", animationDelay: "4.7s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g><g><line x1="-230" y1="190" x2="30" y2="190" strokeWidth="2" strokeOpacity="0.25" style={{ animation: "atm-draw 8s infinite both", animationDelay: "4.9s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g><g><line x1="-210" y1="208" x2="30" y2="208" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "5.1s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(-226 208)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "5.1s" }}><circle r="4.5" fill="oklch(0.78 0.15 45)" stroke="none"></circle></g></g></g><g><line x1="-210" y1="230" x2="-50" y2="230" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "5.4s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(-226 230)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "5.4s" }}><circle r="4.5" fill="oklch(0.78 0.15 45)" stroke="none"></circle></g></g></g><g><line x1="-210" y1="252" x2="10" y2="252" strokeWidth="9" strokeOpacity="0.7" style={{ animation: "atm-draw 8s infinite both", animationDelay: "5.7s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(-226 252)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "5.7s" }}><circle r="4.5" fill="oklch(0.78 0.15 45)" stroke="none"></circle></g></g></g><g><line x1="-230" y1="274" x2="-130" y2="274" strokeWidth="7" strokeOpacity="0.45" style={{ animation: "atm-draw 8s infinite both", animationDelay: "6.0s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g></g></g></g></g>
+</g>
 
-                      {/* Background Path */}
-                      <path
-                        d="M-180 -40 L180 -40 A 40 40 0 0 1 220 0 A 40 40 0 0 1 180 40 L-180 40"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="6"
-                        strokeOpacity="0.1"
-                      ></path>
-
-                      {/* Animated Active Path (Green) */}
-                      <path
-                        d="M-180 -40 L180 -40 A 40 40 0 0 1 220 0 A 40 40 0 0 1 180 40 L-180 40"
-                        fill="none"
-                        stroke="#10B981"
-                        strokeWidth="6"
-                        strokeDasharray="700"
-                        strokeDashoffset="700"
-                        style={{
-                          animation: "draw-path 8s ease-in-out infinite",
-                        }}
-                      ></path>
-
-                      {/* Top Row Nodes (Niche, Bio, Ide, Script) */}
-                      <g transform="translate(-180 -40)">
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="14"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="7"
-                          fill="#10B981"
-                          style={{
-                            animation: "pop-node 8s infinite",
-                            animationDelay: "1.2s",
-                            transformOrigin: "center",
-                          }}
-                        ></circle>
-                        <text
-                          x="0"
-                          y="-28"
-                          fontSize="18"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Niche
-                        </text>
-                      </g>
-                      <g transform="translate(-60 -40)">
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="14"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="7"
-                          fill="#10B981"
-                          style={{
-                            animation: "pop-node 8s infinite",
-                            animationDelay: "2.2s",
-                            transformOrigin: "center",
-                          }}
-                        ></circle>
-                        <text
-                          x="0"
-                          y="-28"
-                          fontSize="18"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Bio
-                        </text>
-                      </g>
-                      <g transform="translate(60 -40)">
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="14"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="7"
-                          fill="#10B981"
-                          style={{
-                            animation: "pop-node 8s infinite",
-                            animationDelay: "3.2s",
-                            transformOrigin: "center",
-                          }}
-                        ></circle>
-                        <text
-                          x="0"
-                          y="-28"
-                          fontSize="18"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Ide
-                        </text>
-                      </g>
-                      <g transform="translate(180 -40)">
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="14"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="7"
-                          fill="#10B981"
-                          style={{
-                            animation: "pop-node 8s infinite",
-                            animationDelay: "4.2s",
-                            transformOrigin: "center",
-                          }}
-                        ></circle>
-                        <text
-                          x="0"
-                          y="-28"
-                          fontSize="18"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Script
-                        </text>
-                      </g>
-
-                      {/* Bottom Row Nodes (Jadwal, Buku, Slide, ATM) - Note the reverse order in physical layout */}
-                      <g transform="translate(180 40)">
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="14"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="7"
-                          fill="#10B981"
-                          style={{
-                            animation: "pop-node 8s infinite",
-                            animationDelay: "5.5s",
-                            transformOrigin: "center",
-                          }}
-                        ></circle>
-                        <text
-                          x="0"
-                          y="38"
-                          fontSize="18"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          ATM
-                        </text>
-                      </g>
-                      <g transform="translate(60 40)">
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="14"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="7"
-                          fill="#10B981"
-                          style={{
-                            animation: "pop-node 8s infinite",
-                            animationDelay: "6.5s",
-                            transformOrigin: "center",
-                          }}
-                        ></circle>
-                        <text
-                          x="0"
-                          y="38"
-                          fontSize="18"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Slide
-                        </text>
-                      </g>
-                      <g transform="translate(-60 40)">
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="14"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="7"
-                          fill="#10B981"
-                          style={{
-                            animation: "pop-node 8s infinite",
-                            animationDelay: "7.5s",
-                            transformOrigin: "center",
-                          }}
-                        ></circle>
-                        <text
-                          x="0"
-                          y="38"
-                          fontSize="18"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Buku
-                        </text>
-                      </g>
-                      <g transform="translate(-180 40)">
-                        {/* Final Node gets a special popup */}
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="18"
-                          fill="var(--card)"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          strokeOpacity="0.4"
-                        ></circle>
-                        <g
-                          style={{
-                            animation: "pop-node 8s infinite",
-                            animationDelay: "8.5s",
-                            transformOrigin: "center",
-                          }}
-                        >
-                          <circle
-                            cx="0"
-                            cy="0"
-                            r="18"
-                            fill="#10B981"
-                            fillOpacity="0.2"
-                            stroke="#10B981"
-                            strokeWidth="5"
-                          ></circle>
-                          <path
-                            d="M-6 0 L-2 4 L8 -4"
-                            fill="none"
-                            stroke="#10B981"
-                            strokeWidth="4"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </g>
-                        <text
-                          x="0"
-                          y="40"
-                          fontSize="18"
-                          fontWeight="600"
-                          fill="currentColor"
-                          opacity="0.8"
-                          textAnchor="middle"
-                        >
-                          Jadwal
-                        </text>
-                      </g>
-                    </g>
                   </svg>
                 </div>
               </div>
@@ -1372,7 +1056,7 @@ export default function Home() {
                           fill="var(--card)"
                         ></circle>
                         {/* Particles */}
-                        <circle cx="-35" cy="-45" r="4" fill="#10B981"></circle>
+                        <circle cx="-35" cy="-45" r="4" fill="oklch(0.75 0.13 150)"></circle>
                         <circle cx="35" cy="-10" r="5" fill="#FACE68"></circle>
                         <circle
                           cx="-25"
@@ -1663,9 +1347,42 @@ export default function Home() {
               strokeLinejoin="round"
               className="w-4 h-4"
             >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                      <style>{`
+                          @keyframes atm-rise {
+                              0% { opacity: 0; transform: translateY(20px); }
+                              40%, 100% { opacity: 1; transform: translateY(0); }
+                          }
+                          @keyframes atm-pop {
+                              0% { opacity: 0; transform: scale(0.9); }
+                              40%, 100% { opacity: 1; transform: scale(1); }
+                          }
+                          @keyframes atm-draw {
+                              0% { stroke-dashoffset: 1; }
+                              40%, 100% { stroke-dashoffset: 0; }
+                          }
+                          @keyframes atm-turn-a {
+                              0% { transform: perspective(800px) rotateY(15deg); }
+                              40%, 100% { transform: perspective(800px) rotateY(0deg); }
+                          }
+                          @keyframes atm-turn-b {
+                              0% { transform: perspective(800px) rotateY(-15deg); }
+                              40%, 100% { transform: perspective(800px) rotateY(0deg); }
+                          }
+                          @keyframes atm-ring {
+                              0% { opacity: 0; transform: scale(0.9); }
+                              40%, 100% { opacity: 1; transform: scale(1); }
+                          }
+                          @keyframes atm-scroll {
+                              0% { transform: translateY(0); }
+                              20%, 100% { transform: translateY(-40px); }
+                          }
+                          @keyframes atm-bar {
+                              0% { opacity: 0; transform: scaleY(0); transform-origin: bottom; }
+                              40%, 100% { opacity: 1; transform: scaleY(1); transform-origin: bottom; }
+                          }
+                      `}</style>
+<g transform="translate(821 600)"><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "0.2s" }}><rect x="-240" y="-108" width="480" height="216" rx="18" fill="currentColor" fillOpacity="0.04" strokeOpacity="0.7" strokeWidth="5"></rect><line x1="-240" y1="-76" x2="240" y2="-76" strokeWidth="3" strokeOpacity="0.28"></line><line x1="118" y1="-76" x2="118" y2="108" strokeWidth="3" strokeOpacity="0.28"></line><g transform="translate(-216 -92)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "0.5s" }}><circle r="5" fill="currentColor" fillOpacity="0.5" stroke="none"></circle></g></g><line x1="-200" y1="-92" x2="-110" y2="-92" strokeWidth="8" strokeOpacity="0.3" style={{ animation: "atm-draw 8s infinite both", animationDelay: "0.65s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "0.85s" }}><rect x="-222" y="-58" width="300" height="132" rx="14" fill="currentColor" fillOpacity="0.06" strokeOpacity="0.4" strokeWidth="4"></rect><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.05s" }}><g fill="currentColor" fillOpacity="0.45" stroke="none"><circle cx="-72" cy="-12" r="22"></circle><path d="M-106.1 34.2 a 34.1 29.700000000000003 0 0 1 68.2 0 Z"></path></g></g><line x1="-206" y1="-46" x2="-160" y2="-46" strokeWidth="6" strokeOpacity="0.3" style={{ animation: "atm-draw 8s infinite both", animationDelay: "1.2s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g style={{ animation: "atm-turn-a 8s infinite both" }}><rect x="-222" y="-58" width="300" height="132" rx="14" fill="none" stroke="oklch(0.75 0.1 248.68)" strokeOpacity="0.95" strokeWidth="5"></rect><g><g transform="translate(-140 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0s" }}><rect x="-2.5" y="-7" width="5" height="14" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(-122.5 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.16s" }}><rect x="-2.5" y="-13" width="5" height="26" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(-105 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.32s" }}><rect x="-2.5" y="-19" width="5" height="38" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(-87.5 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.48s" }}><rect x="-2.5" y="-11" width="5" height="22" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(-70 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0s" }}><rect x="-2.5" y="-22" width="5" height="44" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(-52.5 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.16s" }}><rect x="-2.5" y="-15" width="5" height="30" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(-35 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.32s" }}><rect x="-2.5" y="-9" width="5" height="18" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(-17.5 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.48s" }}><rect x="-2.5" y="-17" width="5" height="34" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(0 52)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0s" }}><rect x="-2.5" y="-10" width="5" height="20" rx="2.5" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g></g></g></g><g style={{ animation: "atm-rise 8s infinite both", animationDelay: "1.35s" }}><rect x="16" y="10" width="84" height="64" rx="10" fill="var(--card)" strokeOpacity="0.55" strokeWidth="4"></rect><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "1.5s" }}><g fill="currentColor" fillOpacity="0.45" stroke="none"><circle cx="58" cy="30" r="9"></circle><path d="M44.05 48.900000000000006 a 13.950000000000001 12.15 0 0 1 27.900000000000002 0 Z"></path></g></g><g style={{ animation: "atm-turn-b 8s infinite both" }}><rect x="16" y="10" width="84" height="64" rx="10" fill="none" stroke="oklch(0.75 0.1 248.68)" strokeOpacity="0.95" strokeWidth="4"></rect><g><g transform="translate(32 62)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0s" }}><rect x="-1.75" y="-4" width="3.5" height="8" rx="1.75" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(43 62)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.16s" }}><rect x="-1.75" y="-7.5" width="3.5" height="15" rx="1.75" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(54 62)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.32s" }}><rect x="-1.75" y="-11" width="3.5" height="22" rx="1.75" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(65 62)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.48s" }}><rect x="-1.75" y="-6" width="3.5" height="12" rx="1.75" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(76 62)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0s" }}><rect x="-1.75" y="-9" width="3.5" height="18" rx="1.75" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g><g transform="translate(87 62)"><g style={{ animation: "atm-bar 8s infinite both", animationDelay: "0.16s" }}><rect x="-1.75" y="-5" width="3.5" height="10" rx="1.75" fill="oklch(0.75 0.1 248.68)" stroke="none"></rect></g></g></g></g></g><line x1="136" y1="-50" x2="192" y2="-50" strokeWidth="8" strokeOpacity="0.4" style={{ animation: "atm-draw 8s infinite both", animationDelay: "1.6s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g><line x1="168" y1="-8" x2="218" y2="-8" strokeWidth="8" strokeOpacity="0.5" style={{ animation: "atm-draw 8s infinite both", animationDelay: "3.0s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(147 -8)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "3.0s" }}><rect x="-9" y="-9" width="18" height="18" rx="5" strokeOpacity="0.5" strokeWidth="3.5"></rect></g><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "3.2s" }}><rect x="-9" y="-9" width="18" height="18" rx="5" fill="oklch(0.75 0.1 248.68)" fillOpacity="0.18" stroke="oklch(0.75 0.1 248.68)" strokeOpacity="0.95" strokeWidth="3.5"></rect><path d="M-4.5 0 L-1.5 3 L5 -4" stroke="oklch(0.75 0.1 248.68)" strokeWidth="3.5" fill="none"></path></g></g></g><g><line x1="168" y1="30" x2="206" y2="30" strokeWidth="8" strokeOpacity="0.5" style={{ animation: "atm-draw 8s infinite both", animationDelay: "4.55s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(147 30)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.55s" }}><rect x="-9" y="-9" width="18" height="18" rx="5" strokeOpacity="0.5" strokeWidth="3.5"></rect></g><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "4.75s" }}><rect x="-9" y="-9" width="18" height="18" rx="5" fill="oklch(0.75 0.1 248.68)" fillOpacity="0.18" stroke="oklch(0.75 0.1 248.68)" strokeOpacity="0.95" strokeWidth="3.5"></rect><path d="M-4.5 0 L-1.5 3 L5 -4" stroke="oklch(0.75 0.1 248.68)" strokeWidth="3.5" fill="none"></path></g></g></g><g><line x1="168" y1="68" x2="213" y2="68" strokeWidth="8" strokeOpacity="0.5" style={{ animation: "atm-draw 8s infinite both", animationDelay: "6.15s" }} pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line><g transform="translate(147 68)"><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "6.15s" }}><rect x="-9" y="-9" width="18" height="18" rx="5" strokeOpacity="0.5" strokeWidth="3.5"></rect></g><g style={{ animation: "atm-pop 8s infinite both", animationDelay: "6.35s" }}><rect x="-9" y="-9" width="18" height="18" rx="5" fill="oklch(0.75 0.1 248.68)" fillOpacity="0.18" stroke="oklch(0.75 0.1 248.68)" strokeOpacity="0.95" strokeWidth="3.5"></rect><path d="M-4.5 0 L-1.5 3 L5 -4" stroke="oklch(0.75 0.1 248.68)" strokeWidth="3.5" fill="none"></path></g></g></g></g>
+
             </svg>{" "}
             ruangcreativemuslim
           </a>
