@@ -1391,16 +1391,18 @@ body {
 
 
 
-.iso-stage .sc-ring-8 { animation: sc-ring-8 12s cubic-bezier(.65,0,.35,1) infinite; }
+
+.iso-stage .sc-ring-8 { animation: sc-ring-8 8s cubic-bezier(.65,0,.35,1) infinite; }
 @keyframes sc-ring-8 {
-  0%, 5% { transform: translate(-138px, -46px); opacity: 0 }
-  7%, 15% { transform: translate(-138px, -46px); opacity: 1 }
-  18%, 27% { transform: translate(-46px, -46px); opacity: 1 }
-  30%, 39% { transform: translate(46px, -46px); opacity: 1 }
-  42%, 51% { transform: translate(138px, -46px); opacity: 1 }
-  54%, 63% { transform: translate(138px, 46px); opacity: 1 }
-  66%, 75% { transform: translate(46px, 46px); opacity: 1 }
-  78%, 87% { transform: translate(-46px, 46px); opacity: 1 }
-  90%, 96% { transform: translate(-138px, 46px); opacity: 1 }
-  98%, 100% { transform: translate(-138px, 46px); opacity: 0 }
+  0%, 2% { transform: translate(-138px, -110px); opacity: 0 }
+  3%, 5% { transform: translate(-138px, -110px); opacity: 1 }
+  6%, 8% { transform: translate(-46px, -110px); opacity: 1 }
+  9%, 11% { transform: translate(46px, -110px); opacity: 1 }
+  12%, 14% { transform: translate(138px, -110px); opacity: 1 }
+  15%, 17% { transform: translate(138px, -45px); opacity: 1 }
+  18%, 20% { transform: translate(46px, -45px); opacity: 1 }
+  21%, 23% { transform: translate(-46px, -45px); opacity: 1 }
+  24%, 26% { transform: translate(-138px, -45px); opacity: 1 }
+  27%, 96% { transform: translate(-46px, -45px); opacity: 1 }
+  97%, 100% { transform: translate(-46px, -45px); opacity: 0 }
 }

@@ -162,49 +162,49 @@ export default function Home() {
                   style={{ top: "50%", left: "50%", width: "270%" }}
                 >
                   <svg viewBox="0 0 1642 1200" className="size-full" aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"><g strokeOpacity="0.18" strokeWidth="3" strokeDasharray="3 14"><line x1="21" y1="0" x2="21" y2="1200"></line><line x1="101" y1="0" x2="101" y2="1200"></line><line x1="181" y1="0" x2="181" y2="1200"></line><line x1="261" y1="0" x2="261" y2="1200"></line><line x1="341" y1="0" x2="341" y2="1200"></line><line x1="421" y1="0" x2="421" y2="1200"></line><line x1="501" y1="0" x2="501" y2="1200"></line><line x1="581" y1="0" x2="581" y2="1200"></line><line x1="661" y1="0" x2="661" y2="1200"></line><line x1="741" y1="0" x2="741" y2="1200"></line><line x1="821" y1="0" x2="821" y2="1200"></line><line x1="901" y1="0" x2="901" y2="1200"></line><line x1="981" y1="0" x2="981" y2="1200"></line><line x1="1061" y1="0" x2="1061" y2="1200"></line><line x1="1141" y1="0" x2="1141" y2="1200"></line><line x1="1221" y1="0" x2="1221" y2="1200"></line><line x1="1301" y1="0" x2="1301" y2="1200"></line><line x1="1381" y1="0" x2="1381" y2="1200"></line><line x1="1461" y1="0" x2="1461" y2="1200"></line><line x1="1541" y1="0" x2="1541" y2="1200"></line><line x1="1621" y1="0" x2="1621" y2="1200"></line><line x1="0" y1="40" x2="1642" y2="40"></line><line x1="0" y1="120" x2="1642" y2="120"></line><line x1="0" y1="200" x2="1642" y2="200"></line><line x1="0" y1="280" x2="1642" y2="280"></line><line x1="0" y1="360" x2="1642" y2="360"></line><line x1="0" y1="440" x2="1642" y2="440"></line><line x1="0" y1="520" x2="1642" y2="520"></line><line x1="0" y1="600" x2="1642" y2="600"></line><line x1="0" y1="680" x2="1642" y2="680"></line><line x1="0" y1="760" x2="1642" y2="760"></line><line x1="0" y1="840" x2="1642" y2="840"></line><line x1="0" y1="920" x2="1642" y2="920"></line><line x1="0" y1="1000" x2="1642" y2="1000"></line><line x1="0" y1="1080" x2="1642" y2="1080"></line><line x1="0" y1="1160" x2="1642" y2="1160"></line></g><g transform="translate(821 600)">
-  <g transform="translate(-138 -46)">
+  <g transform="translate(-138 -110)">
     <g className="sc-pop-15">
       <rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect>
       <LayoutDashboard x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
     </g>
   </g>
-  <g transform="translate(-46 -46)">
+  <g transform="translate(-46 -110)">
     <g className="sc-pop-30">
       <rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect>
       <UserCircle x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
     </g>
   </g>
-  <g transform="translate(46 -46)">
+  <g transform="translate(46 -110)">
     <g className="sc-pop-45">
       <rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect>
       <Lightbulb x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
     </g>
   </g>
-  <g transform="translate(138 -46)">
+  <g transform="translate(138 -110)">
     <g className="sc-pop-60">
       <rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect>
       <FileText x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
     </g>
   </g>
-  <g transform="translate(-138 46)">
+  <g transform="translate(-138 -45)">
     <g className="sc-pop-72">
       <rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect>
       <Copy x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
     </g>
   </g>
-  <g transform="translate(-46 46)">
+  <g transform="translate(-46 -45)">
     <g className="sc-pop-84">
       <rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect>
       <Camera x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
     </g>
   </g>
-  <g transform="translate(46 46)">
+  <g transform="translate(46 -45)">
     <g className="sc-pop-90">
       <rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect>
       <BookOpen x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
     </g>
   </g>
-  <g transform="translate(138 46)">
+  <g transform="translate(138 -45)">
     <g className="sc-pop-105">
       <rect x="-25" y="-25" width="50" height="50" rx="15" fill="currentColor" fillOpacity="0.05" strokeOpacity="0.45" strokeWidth="4"></rect>
       <Calendar x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
@@ -212,6 +212,41 @@ export default function Home() {
   </g>
   <g className="sc-ring-8">
     <rect x="-29" y="-29" width="58" height="58" rx="18" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeOpacity="0.95" strokeWidth="5"></rect>
+  </g>
+  <defs><clipPath id="home-v2-chat-viewport"><rect x="-272" y="10" width="544" height="200"></rect></clipPath></defs>
+  <g clipPath="url(#home-v2-chat-viewport)">
+    <g transform="translate(0 -10)">
+      <g className="sc-scroll">
+        <g className="sc-rise-250">
+          <path d="M 114 24 H 236 a 14 14 0 0 1 14 14 V 56 H 114 a 14 14 0 0 1 -14 -14 V 38 a 14 14 0 0 1 14 -14 Z" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.6" strokeWidth="5"></path>
+          <g><line x1="120" y1="40" x2="230" y2="40" strokeWidth="9" strokeOpacity="0.55" className="sc-draw-270" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g>
+        </g>
+        <g className="sc-rise-300">
+          <path d="M -236 66 H 16 a 14 14 0 0 1 14 14 V 106 a 14 14 0 0 1 -14 14 H -250 V 80 a 14 14 0 0 1 14 -14 Z" fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeOpacity="0.95" strokeWidth="5"></path>
+          <g><line x1="-230" y1="84" x2="10" y2="84" strokeWidth="9" strokeOpacity="0.7" className="sc-draw-320" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g>
+          <g><line x1="-230" y1="106" x2="-60" y2="106" strokeWidth="9" strokeOpacity="0.7" className="sc-draw-340" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g>
+        </g>
+        <g className="sc-rise-370">
+          <path d="M 164 130 H 236 a 14 14 0 0 1 14 14 V 162 H 164 a 14 14 0 0 1 -14 -14 V 144 a 14 14 0 0 1 14 -14 Z" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.6" strokeWidth="5"></path>
+          <g><line x1="170" y1="146" x2="230" y2="146" strokeWidth="9" strokeOpacity="0.55" className="sc-draw-390" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g>
+        </g>
+        <g className="sc-rise-420">
+          <path d="M -236 172 H 36 a 14 14 0 0 1 14 14 V 298 a 14 14 0 0 1 -14 14 H -250 V 186 a 14 14 0 0 1 14 -14 Z" fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeOpacity="0.95" strokeWidth="5"></path>
+          <g><line x1="-230" y1="194" x2="-110" y2="194" strokeWidth="12" strokeOpacity="0.85" className="sc-draw-470" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g>
+          <g><line x1="-230" y1="210" x2="30" y2="210" strokeWidth="2" strokeOpacity="0.25" className="sc-draw-490" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g>
+          <g><line x1="-210" y1="228" x2="30" y2="228" strokeWidth="9" strokeOpacity="0.7" className="sc-draw-510" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+             <g transform="translate(-226 228)"><g className="sc-pop-510"><circle r="4.5" fill="currentColor" stroke="none"></circle></g></g>
+          </g>
+          <g><line x1="-210" y1="250" x2="-50" y2="250" strokeWidth="9" strokeOpacity="0.7" className="sc-draw-540" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+             <g transform="translate(-226 250)"><g className="sc-pop-540"><circle r="4.5" fill="currentColor" stroke="none"></circle></g></g>
+          </g>
+          <g><line x1="-210" y1="272" x2="10" y2="272" strokeWidth="9" strokeOpacity="0.7" className="sc-draw-570" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line>
+             <g transform="translate(-226 272)"><g className="sc-pop-570"><circle r="4.5" fill="currentColor" stroke="none"></circle></g></g>
+          </g>
+          <g><line x1="-230" y1="294" x2="-130" y2="294" strokeWidth="7" strokeOpacity="0.45" className="sc-draw-600" pathLength="1" strokeDasharray="1" strokeDashoffset="1"></line></g>
+        </g>
+      </g>
+    </g>
   </g>
 </g></svg>
                 </div>
