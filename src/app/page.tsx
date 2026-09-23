@@ -29,7 +29,7 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         if (data.followers) {
-          const formatted = (data.followers / 1000).toFixed(0) + "K";
+          const formatted = Math.floor(data.followers / 1000) + "K";
           setFollowerCount(formatted);
         }
       })
