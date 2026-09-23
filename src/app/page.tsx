@@ -210,6 +210,9 @@ export default function Home() {
       <Calendar x="-12" y="-12" width="24" height="24" strokeWidth="2" stroke="currentColor" fill="none" opacity="0.8" />
     </g>
   </g>
+  <g className="sc-ring-8">
+    <rect x="-29" y="-29" width="58" height="58" rx="18" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeOpacity="0.95" strokeWidth="5"></rect>
+  </g>
 </g></svg>
                 </div>
               </div>
