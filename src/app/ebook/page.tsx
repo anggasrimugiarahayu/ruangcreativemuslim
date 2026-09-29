@@ -169,31 +169,31 @@ export default function Page() {
           <div id="hero-slider" className="flex w-full transition-transform duration-500 ease-out" style={{transform: 'translateX(0%)'}}>
             {/* Slide 1: Hero Image */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <Image priority width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594516/Frame_90_siuhne.png" alt="Hero Image" className="w-full h-full object-cover" />
+              <Image priority width={1200} height={800} src="/img_ebook/hero.png" alt="Hero Image" className="w-full h-full object-cover" />
             </div>
             {/* Slide 2: Feb */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_87_ramlga.png" alt="Screenshot Februari" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="/img_ebook/feb.png" alt="Screenshot Februari" className="w-full h-full object-cover" />
             </div>
             {/* Slide 3: Mar */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_86_mqz5pa.png" alt="Screenshot Maret" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="/img_ebook/mar.png" alt="Screenshot Maret" className="w-full h-full object-cover" />
             </div>
             {/* Slide 4: Apr */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_85_r93b9z.png" alt="Screenshot April" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="/img_ebook/apr.png" alt="Screenshot April" className="w-full h-full object-cover" />
             </div>
             {/* Slide 5: Mei */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594191/Frame_84_ddf2ev.png" alt="Screenshot Mei" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="/img_ebook/may.png" alt="Screenshot Mei" className="w-full h-full object-cover" />
             </div>
             {/* Slide 6: Jun */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_89_zlhea8.png" alt="Screenshot Juni" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="/img_ebook/jun.png" alt="Screenshot Juni" className="w-full h-full object-cover" />
             </div>
             {/* Slide 7: Jul */}
             <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center shrink-0">
-              <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786594192/Frame_88_xxwua5.png" alt="Screenshot Juli" className="w-full h-full object-cover" />
+              <Image width={1200} height={800} src="/img_ebook/jul.png" alt="Screenshot Juli" className="w-full h-full object-cover" />
             </div>
           </div>
           {/* Navigation Buttons */}
