@@ -316,7 +316,7 @@ export default function Page() {
         {/* Media Mockup Cover Ebook */}
         <div className="relative w-full rounded-[16px] overflow-hidden bg-[#18181b] flex flex-col border border-[#27272a]/50 shadow-lg text-left mb-8">
           <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center">
-            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786599040/Frame_91_sifujb.png" alt="Cover Ebook Ruang Ngonten" className="w-full h-full object-cover" />
+            <Image width={1200} height={800} src="/img_ebook/solusi.png" alt="Cover Ebook Ruang Ngonten" className="w-full h-full object-cover" />
           </div>
         </div>
         {/* APA ITU RUANG NGONTEN FACELESS? */}
@@ -473,7 +473,7 @@ export default function Page() {
         {/* Media Mockup 7 Fase */}
         <div className="relative w-full rounded-[16px] overflow-hidden bg-[#18181b] flex flex-col border border-[#27272a]/50 shadow-lg text-left mb-6">
           <div className="relative w-full aspect-video bg-[#18181b] flex items-center justify-center">
-            <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786600798/Frame_92_asjwai.png" alt="Visual 7 Fase Ngonten" className="w-full h-full object-cover" />
+            <Image width={1200} height={800} src="/img_ebook/isi_rn.png" alt="Visual 7 Fase Ngonten" className="w-full h-full object-cover" />
           </div>
         </div>
         <div className="space-y-2 w-full" id="features-container">
