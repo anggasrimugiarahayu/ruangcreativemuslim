@@ -291,7 +291,7 @@ export default function ToolsPage() {
 
                 {/*  Image Mockup  */}
                 <div className="relative w-full rounded-2xl overflow-hidden bg-[#18181b]">
-                    <Image priority width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786615228/Frame_163_c4qwlu.png"
+                    <Image priority width={1200} height={800} src="/img_tools/solusi.png"
                         alt="Mockup Ruang Ngonten" className="w-full h-auto object-cover" />
                 </div>
 
@@ -391,7 +391,7 @@ export default function ToolsPage() {
 
                 {/*  Image Mockup Dashboard  */}
                 <div className="relative w-full rounded-2xl overflow-hidden bg-[#18181b] mb-8 sm:mb-10">
-                    <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1787134538/Frame_164_fqfjrv.png"
+                    <Image width={1200} height={800} src="/img_tools/8_tools.png"
                         alt="Mockup Dashboard Ruang Ngonten" className="w-full h-auto object-cover" />
                 </div>
 
