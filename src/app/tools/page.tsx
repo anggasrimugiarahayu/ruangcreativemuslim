@@ -601,7 +601,7 @@ export default function ToolsPage() {
                         {/*  Slides  */}
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <Image width={1200} height={800} src="/image_7slide/slide1.jpeg"
+                            <Image width={1200} height={800} src="/img_7_slide/slide1.jpeg"
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
@@ -609,7 +609,7 @@ export default function ToolsPage() {
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <Image width={1200} height={800} src="/image_7slide/slide2.jpeg"
+                            <Image width={1200} height={800} src="/img_7_slide/slide2.jpeg"
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
@@ -617,7 +617,7 @@ export default function ToolsPage() {
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <Image width={1200} height={800} src="/image_7slide/slide3.jpeg"
+                            <Image width={1200} height={800} src="/img_7_slide/slide3.jpeg"
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
@@ -625,7 +625,7 @@ export default function ToolsPage() {
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <Image width={1200} height={800} src="/image_7slide/slide4.jpeg"
+                            <Image width={1200} height={800} src="/img_7_slide/slide4.jpeg"
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
@@ -633,7 +633,7 @@ export default function ToolsPage() {
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <Image width={1200} height={800} src="/image_7slide/slide5.jpeg"
+                            <Image width={1200} height={800} src="/img_7_slide/slide5.jpeg"
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
@@ -641,7 +641,7 @@ export default function ToolsPage() {
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <Image width={1200} height={800} src="/image_7slide/slide6.jpeg"
+                            <Image width={1200} height={800} src="/img_7_slide/slide6.jpeg"
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
@@ -649,7 +649,7 @@ export default function ToolsPage() {
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <Image width={1200} height={800} src="/image_7slide/slide7.jpeg"
+                            <Image width={1200} height={800} src="/img_7_slide/slide7.jpeg"
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
@@ -657,7 +657,7 @@ export default function ToolsPage() {
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
-                            <Image width={1200} height={800} src="/image_7slide/slide8.jpeg"
+                            <Image width={1200} height={800} src="/img_7_slide/slide8.jpeg"
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
@@ -683,7 +683,7 @@ export default function ToolsPage() {
                             {/*  Items  */}
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326542/ChatGPT_Image_Aug_10_2026_at_08_43_10_AM_jsx1tb.png"
+                                <Image width={1200} height={800} src="/img_10_style/watercolor_storybook.jpeg"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -691,7 +691,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329168/ChatGPT_Image_Aug_10_2026_at_09_27_53_AM_s4ufnb.png"
+                                <Image width={1200} height={800} src="/img_10_style/watercolor_whimsical_doodle.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -699,7 +699,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329581/ChatGPT_Image_Aug_10_2026_at_09_38_39_AM_c4s6er.png"
+                                <Image width={1200} height={800} src="/img_10_style/3d_textile_storybook_art.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -707,7 +707,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786330912/ChatGPT_Image_Aug_10_2026_at_10_00_13_AM_trj70f.png"
+                                <Image width={1200} height={800} src="/img_10_style/colored_Pencil_illustratio.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -715,7 +715,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786331571/ChatGPT_Image_Aug_10_2026_at_10_11_07_AM_ioyf8e.png"
+                                <Image width={1200} height={800} src="/img_10_style/childrens_book_illustration.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -726,7 +726,7 @@ export default function ToolsPage() {
                         <div className="flex shrink-0 animate-scroll-left gap-4 pr-4">
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786326542/ChatGPT_Image_Aug_10_2026_at_08_43_10_AM_jsx1tb.png"
+                                <Image width={1200} height={800} src="/img_10_style/watercolor_storybook.jpeg"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -734,7 +734,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329168/ChatGPT_Image_Aug_10_2026_at_09_27_53_AM_s4ufnb.png"
+                                <Image width={1200} height={800} src="/img_10_style/watercolor_whimsical_doodle.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -742,7 +742,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786329581/ChatGPT_Image_Aug_10_2026_at_09_38_39_AM_c4s6er.png"
+                                <Image width={1200} height={800} src="/img_10_style/3d_textile_storybook_art.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -750,7 +750,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786330912/ChatGPT_Image_Aug_10_2026_at_10_00_13_AM_trj70f.png"
+                                <Image width={1200} height={800} src="/img_10_style/colored_Pencil_illustratio.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -758,7 +758,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786331571/ChatGPT_Image_Aug_10_2026_at_10_11_07_AM_ioyf8e.png"
+                                <Image width={1200} height={800} src="/img_10_style/childrens_book_illustration.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -773,15 +773,15 @@ export default function ToolsPage() {
                             {/*  Items  */}
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786332342/ChatGPT_Image_Aug_10_2026_at_10_21_38_AM_vtobjp.png"
+                                <Image width={1200} height={800} src="/img_10_style/urban_street_graffiti_art.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
-                                    Cozy Storybook</div>
+                                    Urban Street Graffiti Art</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786333623/ChatGPT_Image_Aug_10_2026_at_10_46_22_AM_bn3ds0.png"
+                                <Image width={1200} height={800} src="/img_10_style/editorial_storybook.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -789,7 +789,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334169/ChatGPT_Image_Aug_10_2026_at_10_54_37_AM_qmvoyz.png"
+                                <Image width={1200} height={800} src="/img_10_style/cottagecore_storybook.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -797,15 +797,15 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334905/ChatGPT_Image_Aug_10_2026_at_11_07_32_AM_arst0y.png"
+                                <Image width={1200} height={800} src="/img_10_style/comic_studio.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
-                                    High-Fidelity Islamic Comic</div>
+                                    Comic Studio</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786335476/ChatGPT_Image_Aug_10_2026_at_11_17_11_AM_pyp34z.png"
+                                <Image width={1200} height={800} src="/img_10_style/vintage_chalkboard.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -816,15 +816,15 @@ export default function ToolsPage() {
                         <div className="flex shrink-0 animate-scroll-right gap-4 pr-4">
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786332342/ChatGPT_Image_Aug_10_2026_at_10_21_38_AM_vtobjp.png"
+                                <Image width={1200} height={800} src="/img_10_style/urban_street_graffiti_art.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
-                                    Cozy Storybook</div>
+                                    Urban Street Graffiti Art</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786333623/ChatGPT_Image_Aug_10_2026_at_10_46_22_AM_bn3ds0.png"
+                                <Image width={1200} height={800} src="/img_10_style/editorial_storybook.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -832,7 +832,7 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334169/ChatGPT_Image_Aug_10_2026_at_10_54_37_AM_qmvoyz.png"
+                                <Image width={1200} height={800} src="/img_10_style/cottagecore_storybook.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
@@ -840,15 +840,15 @@ export default function ToolsPage() {
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786334905/ChatGPT_Image_Aug_10_2026_at_11_07_32_AM_arst0y.png"
+                                <Image width={1200} height={800} src="/img_10_style/comic_studio.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
-                                    High-Fidelity Islamic Comic</div>
+                                    Comic Studio</div>
                             </div>
                             <div
                                 className="w-[160px] sm:w-[200px] shrink-0 aspect-[3/4] bg-[#18181b] rounded-xl border border-white/10 relative overflow-hidden">
-                                <Image width={1200} height={800} src="https://res.cloudinary.com/dlevfqbc/image/upload/v1786335476/ChatGPT_Image_Aug_10_2026_at_11_17_11_AM_pyp34z.png"
+                                <Image width={1200} height={800} src="/img_10_style/vintage_chalkboard.png"
                                     className="w-full h-full object-cover"  alt="Image" />
                                 <div
                                     className="absolute bottom-2 left-2 bg-white text-black px-2 py-1 rounded-md text-[9px] sm:text-[10px] font-bold font-heading">
