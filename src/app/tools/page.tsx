@@ -593,8 +593,8 @@ export default function ToolsPage() {
                 <div className="bg-[#18181b] rounded-2xl border border-white/10 p-5 sm:p-8 mb-8">
                     <h3 className="text-lg sm:text-xl font-black font-heading text-white mb-2">Satu carousel utuh, satu
                         style konsisten.</h3>
-                    <p className="text-gray-400 text-[13px] sm:text-[14px] mb-6">Contoh output nyata 7 slide, konsisten dari
-                        1 sampai 7, langsung dari AI tanpa edit tambahan.</p>
+                    <p className="text-gray-400 text-[13px] sm:text-[14px] mb-6">Contoh output nyata 8 slide, konsisten dari
+                        1 sampai 8, langsung dari AI tanpa edit tambahan.</p>
 
                     <div
                         className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory no-scrollbar cursor-grab active:cursor-grabbing">
@@ -605,7 +605,7 @@ export default function ToolsPage() {
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
-                                1/7</div>
+                                1/8</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
@@ -613,7 +613,7 @@ export default function ToolsPage() {
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
-                                2/7</div>
+                                2/8</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
@@ -621,7 +621,7 @@ export default function ToolsPage() {
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
-                                3/7</div>
+                                3/8</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
@@ -629,7 +629,7 @@ export default function ToolsPage() {
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
-                                4/7</div>
+                                4/8</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
@@ -637,7 +637,7 @@ export default function ToolsPage() {
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
-                                5/7</div>
+                                5/8</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
@@ -645,7 +645,7 @@ export default function ToolsPage() {
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
-                                6/7</div>
+                                6/8</div>
                         </div>
                         <div
                             className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
@@ -653,7 +653,15 @@ export default function ToolsPage() {
                                 className="w-full h-full object-cover"  alt="Image" />
                             <div
                                 className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
-                                7/7</div>
+                                7/8</div>
+                        </div>
+                        <div
+                            className="snap-center shrink-0 w-[220px] sm:w-[260px] aspect-[3/4] bg-[#0f0f11] rounded-xl border border-white/10 overflow-hidden relative">
+                            <Image width={1200} height={800} src="/image_7slide/slide8.jpeg"
+                                className="w-full h-full object-cover"  alt="Image" />
+                            <div
+                                className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-bold">
+                                8/8</div>
                         </div>
                     </div>
                 </div>
